@@ -1,0 +1,29 @@
+{
+  "successful": true,
+  "data": {
+    "siteEntry": [
+      {
+        "permissionLevel": "siteOwner",
+        "siteUrl": "sc-domain:farazmkhan.com"
+      },
+      {
+        "permissionLevel": "siteUnverifiedUser",
+        "siteUrl": "sc-domain:antiaginghacks.net"
+      },
+      {
+        "permissionLevel": "siteOwner",
+        "siteUrl": "sc-domain:fullyvital.com"
+      },
+      {
+        "permissionLevel": "siteOwner",
+        "siteUrl": "https://fullyvital.com/"
+      },
+      {
+        "permissionLevel": "siteUnverifiedUser",
+        "siteUrl": "sc-domain:fullyvitalreviews.com"
+      }
+    ]
+  },
+  "error": null,
+  "logId": "log_wS3I1ytfQRA4"
+}

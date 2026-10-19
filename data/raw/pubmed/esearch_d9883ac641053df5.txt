@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"14","retmax":"8","retstart":"0","idlist":["12190644","329391","25210329","21712905","30410886","17558044","21712911","25368468"],"translationset":[],"querytranslation":"\"trichologist\"[All Fields]"}}

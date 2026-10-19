@@ -1,0 +1,1477 @@
+<!doctype html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//fullyvital.com/cdn/shop/t/191/assets/slick.min.js?v=33408031789270915591789423973"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></script>
+
+    <link href="//fullyvital.com/cdn/shop/t/191/assets/custom-general-new.css?v=46757555415764395811789572226" rel="stylesheet" type="text/css" media="all" />
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0"
+    >
+      <meta name="theme-color" content="#ffffff">
+      <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>
+      internal-reporting
+    </title><meta name="description" content="FullyVital Internal Reporting — internal tool for pulling advertising performance data. Not a public-facing product.">
+  <link rel="canonical" href="https://fullyvital.com/pages/internal-reporting" />
+
+<link rel="shortcut icon" href="//fullyvital.com/cdn/shop/files/FullyVital-ico-2.png?v=1744382594&width=96">
+      <link rel="apple-touch-icon" href="//fullyvital.com/cdn/shop/files/FullyVital-ico-2.png?v=1744382594&width=180"><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin><link rel="preload" href="//fullyvital.com/cdn/fonts/source_serif_4/sourceserif4_n4.0b3e8927bb8678aae824c5f2b6a3826350623570.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="//fullyvital.com/cdn/fonts/inter/inter_n4.b2a3f24c19b4de56e8871f609e73ca7f6d2e2bb9.woff2" as="font" type="font/woff2" crossorigin><meta property="og:type" content="website">
+  <meta property="og:title" content="internal-reporting"><meta property="og:image" content="http://fullyvital.com/cdn/shop/files/fully-vital-home-image.jpg?v=1728511303&width=2048">
+  <meta property="og:image:secure_url" content="https://fullyvital.com/cdn/shop/files/fully-vital-home-image.jpg?v=1728511303&width=2048">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628"><meta property="og:description" content="FullyVital Internal Reporting — internal tool for pulling advertising performance data. Not a public-facing product."><meta property="og:url" content="https://fullyvital.com/pages/internal-reporting">
+<meta property="og:site_name" content="FullyVital"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="internal-reporting">
+  <meta name="twitter:description" content="FullyVital Internal Reporting — internal tool for pulling advertising performance data. Not a public-facing product."><meta name="twitter:image" content="https://fullyvital.com/cdn/shop/files/fully-vital-home-image.jpg?crop=center&height=1200&v=1728511303&width=1200">
+  <meta name="twitter:image:alt" content=""><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fullyvital.com"
+      },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "internal-reporting",
+            "item": "https://fullyvital.com/pages/internal-reporting"
+          }]
+  }
+</script><style>/* Typography (heading) */
+  @font-face {
+  font-family: "Source Serif 4";
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//fullyvital.com/cdn/fonts/source_serif_4/sourceserif4_n4.0b3e8927bb8678aae824c5f2b6a3826350623570.woff2") format("woff2"),
+       url("//fullyvital.com/cdn/fonts/source_serif_4/sourceserif4_n4.5759d0c758bab9c1ee75668d3957dcd23b6fac99.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//fullyvital.com/cdn/fonts/source_serif_4/sourceserif4_i4.529d9717a8db4329d1f4cd7dffe2bdc99435ecfa.woff2") format("woff2"),
+       url("//fullyvital.com/cdn/fonts/source_serif_4/sourceserif4_i4.39385a9408187ae37751a5680159592298d30721.woff") format("woff");
+}
+
+/* Typography (body) */
+  @font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//fullyvital.com/cdn/fonts/inter/inter_n4.b2a3f24c19b4de56e8871f609e73ca7f6d2e2bb9.woff2") format("woff2"),
+       url("//fullyvital.com/cdn/fonts/inter/inter_n4.af8052d517e0c9ffac7b814872cecc27ae1fa132.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//fullyvital.com/cdn/fonts/inter/inter_i4.feae1981dda792ab80d117249d9c7e0f1017e5b3.woff2") format("woff2"),
+       url("//fullyvital.com/cdn/fonts/inter/inter_i4.62773b7113d5e5f02c71486623cf828884c85c6e.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//fullyvital.com/cdn/fonts/inter/inter_n7.02711e6b374660cfc7915d1afc1c204e633421e4.woff2") format("woff2"),
+       url("//fullyvital.com/cdn/fonts/inter/inter_n7.6dab87426f6b8813070abd79972ceaf2f8d3b012.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//fullyvital.com/cdn/fonts/inter/inter_i7.b377bcd4cc0f160622a22d638ae7e2cd9b86ea4c.woff2") format("woff2"),
+       url("//fullyvital.com/cdn/fonts/inter/inter_i7.7c69a6a34e3bb44fcf6f975857e13b9a9b25beb4.woff") format("woff");
+}
+
+:root {
+    /* Container */
+    --container-max-width: 100%;
+    --container-xxs-max-width: 27.5rem; /* 440px */
+    --container-xs-max-width: 42.5rem; /* 680px */
+    --container-sm-max-width: 61.25rem; /* 980px */
+    --container-md-max-width: 71.875rem; /* 1150px */
+    --container-lg-max-width: 78.75rem; /* 1260px */
+    --container-xl-max-width: 85rem; /* 1360px */
+    --container-gutter: 1.25rem;
+
+    --section-vertical-spacing: 2rem;
+    --section-vertical-spacing-tight:2rem;
+
+    --section-stack-gap:1.5rem;
+    --section-stack-gap-tight:1.5rem;
+
+    /* Form settings */
+    --form-gap: 1.25rem; /* Gap between fieldset and submit button */
+    --fieldset-gap: 1rem; /* Gap between each form input within a fieldset */
+    --form-control-gap: 0.625rem; /* Gap between input and label (ignored for floating label) */
+    --checkbox-control-gap: 0.75rem; /* Horizontal gap between checkbox and its associated label */
+    --input-padding-block: 0.65rem; /* Vertical padding for input, textarea and native select */
+    --input-padding-inline: 0.8rem; /* Horizontal padding for input, textarea and native select */
+    --checkbox-size: 0.875rem; /* Size (width and height) for checkbox */
+
+    /* Other sizes */
+    --sticky-area-height: calc(var(--announcement-bar-is-sticky, 0) * var(--announcement-bar-height, 0px) + var(--header-is-sticky, 0) * var(--header-is-visible, 1) * var(--header-height, 0px));
+
+    /* RTL support */
+    --transform-logical-flip: 1;
+    --transform-origin-start: left;
+    --transform-origin-end: right;
+
+    /**
+     * ---------------------------------------------------------------------
+     * TYPOGRAPHY
+     * ---------------------------------------------------------------------
+     */
+
+    /* Font properties */
+    --heading-font-family: "Source Serif 4", serif;
+    --heading-font-weight: 400;
+    --heading-font-style: normal;
+    --heading-text-transform: normal;
+    --heading-letter-spacing: 0.03em;
+    --text-font-family: Inter, sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --text-letter-spacing: 0.0em;
+    --button-font: var(--heading-font-style) var(--heading-font-weight) var(--text-sm) / 1.65 var(--heading-font-family);
+    --button-text-transform: uppercase;
+    --button-letter-spacing: 0.18em;
+
+    /* Font sizes */--text-heading-size-factor: 1.5;
+    --text-h1: max(0.6875rem, clamp(1.375rem, 1.146341463414634rem + 0.975609756097561vw, 2rem) * var(--text-heading-size-factor));
+    --text-h2: max(0.6875rem, clamp(1.25rem, 1.0670731707317074rem + 0.7804878048780488vw, 1.75rem) * var(--text-heading-size-factor));
+    --text-h3: max(0.6875rem, clamp(1.125rem, 1.0335365853658536rem + 0.3902439024390244vw, 1.375rem) * var(--text-heading-size-factor));
+    --text-h4: max(0.6875rem, clamp(1rem, 0.9542682926829268rem + 0.1951219512195122vw, 1.125rem) * var(--text-heading-size-factor));
+    --text-h5: calc(0.875rem * var(--text-heading-size-factor));
+    --text-h6: calc(0.75rem * var(--text-heading-size-factor));
+
+    --text-xs: 0.9375rem;
+    --text-sm: 1.0rem;
+    --text-base: 1.0625rem;
+    --text-lg: 1.1875rem;
+    --text-xl: 1.25rem;
+
+    /* Rounded variables (used for border radius) */
+    --rounded-full: 9999px;
+    --button-border-radius: 1.25rem;
+    --input-border-radius: 0.0rem;
+
+    /* Box shadow */
+    --shadow-sm: 0 2px 8px rgb(0 0 0 / 0.05);
+    --shadow: 0 5px 15px rgb(0 0 0 / 0.05);
+    --shadow-md: 0 5px 30px rgb(0 0 0 / 0.05);
+    --shadow-block: px px px rgb(var(--text-primary) / 0.0);
+
+    /**
+     * ---------------------------------------------------------------------
+     * OTHER
+     * ---------------------------------------------------------------------
+     */
+
+    --checkmark-svg-url: url(//fullyvital.com/cdn/shop/t/191/assets/checkmark.svg?v=77552481021870063511789423973);
+    --cursor-zoom-in-svg-url: url(//fullyvital.com/cdn/shop/t/191/assets/cursor-zoom-in.svg?v=115787239031883068791789423973);
+  }
+
+  [dir="rtl"]:root {
+    /* RTL support */
+    --transform-logical-flip: -1;
+    --transform-origin-start: right;
+    --transform-origin-end: left;
+  }
+
+  @media screen and (min-width: 700px) {
+    :root {
+      /* Typography (font size) */
+      --text-xs: 1.0rem;
+      --text-sm: 1.0625rem;
+      --text-base: 1.125rem;
+      --text-lg: 1.25rem;
+      --text-xl: 1.375rem;
+
+      /* Spacing settings */
+      --container-gutter: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    :root {
+      /* Spacing settings */
+      --container-gutter: 3rem;
+
+      --section-vertical-spacing: 3rem;
+      --section-vertical-spacing-tight: 3rem;
+
+      --section-stack-gap:2.25rem;
+      --section-stack-gap-tight:2.25rem;
+    }
+  }:root {/* Overlay used for modal */
+    --page-overlay: 0 0 0 / 0.4;
+
+    /* We use the first scheme background as default */
+    --page-background: ;
+
+    /* Product colors */
+    --on-sale-text: 227 44 43;
+    --on-sale-badge-background: 227 44 43;
+    --on-sale-badge-text: 255 255 255;
+    --sold-out-badge-background: 239 239 239;
+    --sold-out-badge-text: 0 0 0 / 0.65;
+    --custom-badge-background: 28 28 28;
+    --custom-badge-text: 255 255 255;
+    --star-color: 255 153 0;
+
+    /* Status colors */
+    --success-background: 212 227 203;
+    --success-text: 48 122 7;
+    --warning-background: 253 241 224;
+    --warning-text: 237 138 0;
+    --error-background: 243 204 204;
+    --error-text: 203 43 43;
+  }.color-scheme--scheme-1 {
+      /* Color settings */--accent: 26 26 26;
+      --text-color: 4 28 27;
+      --background: 255 255 255 / 1.0;
+      --background-without-opacity: 255 255 255;
+      --background-gradient: ;--border-color: 217 221 221;/* Button colors */
+      --button-background: 26 26 26;
+      --button-text-color: 255 255 255;
+
+      /* Circled buttons */
+      --circle-button-background: 4 28 27;
+      --circle-button-text-color: 40 167 69;
+    }.shopify-section:has(.section-spacing.color-scheme--bg-54922f2e920ba8346f6dc0fba343d673) + .shopify-section:has(.section-spacing.color-scheme--bg-54922f2e920ba8346f6dc0fba343d673:not(.bordered-section)) .section-spacing {
+      padding-block-start: 0;
+    }.color-scheme--scheme-2 {
+      /* Color settings */--accent: 245 219 139;
+      --text-color: 48 48 48;
+      --background: 246 246 246 / 1.0;
+      --background-without-opacity: 246 246 246;
+      --background-gradient: ;--border-color: 216 216 216;/* Button colors */
+      --button-background: 245 219 139;
+      --button-text-color: 48 48 48;
+
+      /* Circled buttons */
+      --circle-button-background: 28 28 28;
+      --circle-button-text-color: 245 219 139;
+    }.shopify-section:has(.section-spacing.color-scheme--bg-5578ea28fbf78b0977cb41051cc26aa7) + .shopify-section:has(.section-spacing.color-scheme--bg-5578ea28fbf78b0977cb41051cc26aa7:not(.bordered-section)) .section-spacing {
+      padding-block-start: 0;
+    }.color-scheme--scheme-3 {
+      /* Color settings */--accent: 255 255 255;
+      --text-color: 255 255 255;
+      --background: 101 28 30 / 1.0;
+      --background-without-opacity: 101 28 30;
+      --background-gradient: ;--border-color: 124 62 64;/* Button colors */
+      --button-background: 255 255 255;
+      --button-text-color: 28 28 28;
+
+      /* Circled buttons */
+      --circle-button-background: 255 255 255;
+      --circle-button-text-color: 28 28 28;
+    }.shopify-section:has(.section-spacing.color-scheme--bg-13635643544da16e4a28970a276d8359) + .shopify-section:has(.section-spacing.color-scheme--bg-13635643544da16e4a28970a276d8359:not(.bordered-section)) .section-spacing {
+      padding-block-start: 0;
+    }.color-scheme--scheme-4 {
+      /* Color settings */--accent: 255 255 255;
+      --text-color: 255 255 255;
+      --background: 43 47 43 / 1.0;
+      --background-without-opacity: 43 47 43;
+      --background-gradient: ;--border-color: 75 78 75;/* Button colors */
+      --button-background: 255 255 255;
+      --button-text-color: 28 28 28;
+
+      /* Circled buttons */
+      --circle-button-background: 255 255 255;
+      --circle-button-text-color: 28 28 28;
+    }.shopify-section:has(.section-spacing.color-scheme--bg-d6c26dc513e34aa805f73353e8b8be7f) + .shopify-section:has(.section-spacing.color-scheme--bg-d6c26dc513e34aa805f73353e8b8be7f:not(.bordered-section)) .section-spacing {
+      padding-block-start: 0;
+    }.color-scheme--scheme-24f85b90-a1dc-463e-9b9c-e38b96fa0289 {
+      /* Color settings */--accent: 40 167 69;
+      --text-color: 92 92 92;
+      --background: 255 255 255 / 1.0;
+      --background-without-opacity: 255 255 255;
+      --background-gradient: ;--border-color: 231 231 231;/* Button colors */
+      --button-background: 40 167 69;
+      --button-text-color: 255 255 255;
+
+      /* Circled buttons */
+      --circle-button-background: 255 255 255;
+      --circle-button-text-color: 28 28 28;
+    }.shopify-section:has(.section-spacing.color-scheme--bg-54922f2e920ba8346f6dc0fba343d673) + .shopify-section:has(.section-spacing.color-scheme--bg-54922f2e920ba8346f6dc0fba343d673:not(.bordered-section)) .section-spacing {
+      padding-block-start: 0;
+    }.color-scheme--scheme-ed6d4813-bb70-4374-af65-4325a82f7edf {
+      /* Color settings */--accent: 92 92 92;
+      --text-color: 92 92 92;
+      --background: 236 238 240 / 1.0;
+      --background-without-opacity: 236 238 240;
+      --background-gradient: ;--border-color: 214 216 218;/* Button colors */
+      --button-background: 92 92 92;
+      --button-text-color: 255 255 255;
+
+      /* Circled buttons */
+      --circle-button-background: 92 92 92;
+      --circle-button-text-color: 255 255 255;
+    }.shopify-section:has(.section-spacing.color-scheme--bg-081c98ade03c2fe5541f10418d01f672) + .shopify-section:has(.section-spacing.color-scheme--bg-081c98ade03c2fe5541f10418d01f672:not(.bordered-section)) .section-spacing {
+      padding-block-start: 0;
+    }.color-scheme--dialog {
+      /* Color settings */--accent: 245 219 139;
+      --text-color: 48 48 48;
+      --background: 246 246 246 / 1.0;
+      --background-without-opacity: 246 246 246;
+      --background-gradient: ;--border-color: 216 216 216;/* Button colors */
+      --button-background: 245 219 139;
+      --button-text-color: 48 48 48;
+
+      /* Circled buttons */
+      --circle-button-background: 28 28 28;
+      --circle-button-text-color: 245 219 139;
+    }
+</style><script>
+  // This allows to expose several variables to the global scope, to be used in scripts
+  window.themeVariables = {
+    settings: {
+      showPageTransition: null,
+      pageType: "page",
+      moneyFormat: "${{amount}}",
+      moneyWithCurrencyFormat: "${{amount}} USD",
+      currencyCodeEnabled: false,
+      cartType: "drawer",
+      staggerMenuApparition: true
+    },
+
+    strings: {
+      addedToCart: "Added to your cart!",
+      closeGallery: "Close gallery",
+      zoomGallery: "Zoom picture",
+      errorGallery: "Image cannot be loaded",
+      shippingEstimatorNoResults: "Sorry, we do not ship to your address.",
+      shippingEstimatorOneResult: "There is one shipping rate for your address:",
+      shippingEstimatorMultipleResults: "There are several shipping rates for your address:",
+      shippingEstimatorError: "One or more error occurred while retrieving shipping rates:",
+      next: "Next",
+      previous: "Previous"
+    },
+
+    mediaQueries: {
+      'sm': 'screen and (min-width: 700px)',
+      'md': 'screen and (min-width: 1000px)',
+      'lg': 'screen and (min-width: 1150px)',
+      'xl': 'screen and (min-width: 1400px)',
+      '2xl': 'screen and (min-width: 1600px)',
+      'sm-max': 'screen and (max-width: 699px)',
+      'md-max': 'screen and (max-width: 999px)',
+      'lg-max': 'screen and (max-width: 1149px)',
+      'xl-max': 'screen and (max-width: 1399px)',
+      '2xl-max': 'screen and (max-width: 1599px)',
+      'motion-safe': '(prefers-reduced-motion: no-preference)',
+      'motion-reduce': '(prefers-reduced-motion: reduce)',
+      'supports-hover': 'screen and (pointer: fine)',
+      'supports-touch': 'screen and (hover: none)'
+    }
+  };</script><script async crossorigin fetchpriority="high" src="/cdn/shopifycloud/importmap-polyfill/es-modules-shim.2.4.0.js"></script>
+<script type="importmap">{
+        "imports": {
+          "vendor": "//fullyvital.com/cdn/shop/t/191/assets/vendor.min.js?v=118757129943152772801789423973",
+          "theme": "//fullyvital.com/cdn/shop/t/191/assets/theme.js?v=70325116984028649941789423973",
+          "photoswipe": "//fullyvital.com/cdn/shop/t/191/assets/photoswipe.min.js?v=13374349288281597431789423973"
+        }
+      }
+    </script>
+
+    <script type="module" src="//fullyvital.com/cdn/shop/t/191/assets/vendor.min.js?v=118757129943152772801789423973"></script>
+    <script type="module" src="//fullyvital.com/cdn/shop/t/191/assets/theme.js?v=70325116984028649941789423973"></script>
+
+    <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="C1bqhJ82nE7GxYW3uc8_5DYMFq6B3ED1p21v_N3gb18">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/57681182916/digital_wallets/dialog">
+<meta id="in-context-paypal-metadata" data-shop-id="57681182916" data-venmo-supported="true" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+<link rel="ucp" href="/.well-known/ucp" version="2026-08-25"><script async="async" src="/checkouts/internal/preloads.js?locale=en-US"></script>
+<script id="shopify-features" type="application/json">{"accessToken":"08645687569f8cf0cb9c86ad425bed1d","betas":["rich-media-storefront-analytics"],"domain":"fullyvital.com","predictiveSearch":true,"shopId":57681182916,"locale":"en"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "fullyvital.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "US";
+Shopify.theme = {"name":"New-Colors-09-20","id":153279168708,"schema_name":"Prestige","schema_version":"10.7.0","theme_store_id":null,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "fullyvital.com/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";
+Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";
+Shopify.SignInWithShop = Shopify.SignInWithShop || {};
+Shopify.SignInWithShop.User = Shopify.SignInWithShop.User || {};
+Shopify.SignInWithShop.User.recognized = false;</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  window.Shopify.SignInWithShop = window.Shopify.SignInWithShop || {};
+  window.Shopify.SignInWithShop.assetMetrics = { sampleRate: 0.25 };
+  window.Shopify.SignInWithShop.eligible = true;
+</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"page"}</script>
+<script defer="defer" async type="module" src="https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js"></script>
+<script type="module">
+  await import("https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
+
+  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"listener":["modules/v2/loader.listener.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"]};
+</script>
+<script>(function() {
+  var isLoaded = false;
+  function asyncLoad() {
+    if (isLoaded) return;
+    isLoaded = true;
+    var urls = ["https:\/\/static.rechargecdn.com\/assets\/js\/widget.min.js?shop=fullyvital.myshopify.com","\/\/staticw2.yotpo.com\/6JUILC8AjjD1ydDsU41oks2b2FrNLrcAHU59stYx\/widget.js?shop=fullyvital.myshopify.com","https:\/\/static.shareasale.com\/json\/shopify\/deduplication.js?shop=fullyvital.myshopify.com","https:\/\/static.shareasale.com\/json\/shopify\/shareasale-tracking.js?sasmid=138351\u0026ssmtid=19038\u0026shop=fullyvital.myshopify.com","https:\/\/cdn-app.cart-bot.net\/public\/js\/append.js?shop=fullyvital.myshopify.com","https:\/\/app.octaneai.com\/oi4wohk1jwq5gacv\/shopify.js?x=G4IKYUv4mCqU0MhR\u0026shop=fullyvital.myshopify.com","\/\/cdn.shopify.com\/proxy\/2949e81f763cf37d6111859619bb4e3c6ef2541c1ae3d34a6af19fd3c5d2ad85\/api.goaffpro.com\/loader.js?shop=fullyvital.myshopify.com\u0026sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA","https:\/\/sdk.postscript.io\/sdk-script-loader.bundle.js?shopId=686517\u0026shop=fullyvital.myshopify.com","https:\/\/s3.eu-west-1.amazonaws.com\/production-klarna-il-shopify-osm\/9b281ea3896e823dc21a80a7781a2a2c53b8ecc2\/fullyvital.myshopify.com-1789951123494.js?shop=fullyvital.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":57681182916,"offset":-25200,"reqid":"b4eb8065-55cc-417c-baf8-862c02238ec5-1791836336","pageurl":"fullyvital.com\/pages\/internal-reporting","s":"pages-120890163396","u":"169785821c9e","p":"page","rtyp":"page","rid":120890163396};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//fullyvital.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
+<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "//fullyvital.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script id="shopify-origin-trials" async="async" integrity="sha256-qJbe/jEZBHtr5W/BlA2cKAz3vkXu6vJQyLjgvgCC86g=" src="//cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-318ab40a.js" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
+<script>
+  window.Shopify = window.Shopify || {};
+  window.Shopify.MCP = window.Shopify.MCP || {};
+  window.Shopify.MCP.enabled = true;
+  window.Shopify.MCP.shop = "fullyvital.myshopify.com";
+  window.Shopify.MCP.mcpEndpoint = "https:\/\/fullyvital.com\/api\/mcp";
+  window.Shopify.MCP.tools = [{"name":"search_shop_policies_and_faqs","description":"Used to get facts about the stores policies, products, or services.\nSome examples of questions you can ask are:\n  - What is your return policy?\n  - What is your shipping policy?\n  - What is your phone number?\n  - What are your hours of operation?\"\nSet policy_types to also get the store's written policies (full text and URL).\n","inputSchema":{"$schema":"https:\/\/json-schema.org\/draft\/2020-12\/schema","type":"object","properties":{"query":{"type":"string","description":"A natural language query."},"context":{"type":"string","description":"Additional information about the request such as user demographics, mood, location, or other relevant details that could help in tailoring the response appropriately."},"policy_types":{"type":"array","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]},"description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns\/exchanges\/damaged items, [\"contact\"] for phone\/hours\/address. Include every kind the question touches. Omit it to get only FAQ answers."}},"required":["query"]}}];
+</script>
+<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/fullyvital.com\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-f427de6a.js","sha256-ypGF+5vIq4Psw4WG7nsVtdd\/TCfsJWnrNuACdqLCElY=");})();
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://fullyvital.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+<script id='scb4127' type='text/javascript' async='' src='https://fullyvital.com/cdn/shopifycloud/privacy-banner/storefront-banner.js'></script><script integrity="sha256-/LA1C2Bx6899fYCos0FS9qLj2opaGFm7AXrTUvBEb4s=" data-source-attribution="shopify.remote_product_tracking" data-shopify-remote-tracking="{&quot;session_id&quot;:&quot;01M4RW9C18RZVZ0TNCC76X7NV4&quot;,&quot;publisher_shop_id&quot;:57681182916,&quot;theme_id&quot;:153279168708,&quot;theme_published&quot;:true,&quot;theme_store_id&quot;:0,&quot;placement&quot;:&quot;collection&quot;,&quot;event_data&quot;:{&quot;handle&quot;:&quot;internal-reporting&quot;,&quot;page_type&quot;:&quot;page&quot;},&quot;recommendations_tracking_enabled&quot;:true}" defer="defer" src="//fullyvital.com/cdn/shopifycloud/storefront/assets/storefront/remote_product_tracking-91d95044.js" crossorigin="anonymous"></script>
+<link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="https://fullyvital.com/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
+<style id="shopify-accelerated-checkout-cart">
+        #shopify-buyer-consent {
+  margin-top: 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+#shopify-buyer-consent.hidden {
+  display: none;
+}
+
+#shopify-subscription-policy-button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#shopify-subscription-policy-button::before {
+  box-shadow: none;
+}
+
+      </style>
+
+<script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+<link href="//fullyvital.com/cdn/shop/t/191/assets/theme.css?v=54101399637203919501789572514" rel="stylesheet" type="text/css" media="all" /><link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0576/8118/2916/files/fully-vital-anti-gray-hero-section.jpg?v=1750101360" fetchpriority="high">
+    <link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0576/8118/2916/files/fully-vital-anti-gray-hero-section-mobile-3.jpg?v=1750102441" media="(max-width: 768px)" fetchpriority="high">
+    
+  <!-- BEGIN app block: shopify://apps/intelligems-a-b-testing/blocks/intelligems-script/fa83b64c-0c77-4c0c-b4b2-b94b42f5ef19 --><script>
+  window._template = {
+    directory: "",
+    name: "page",
+    suffix: ""
+  };
+  window.__productIdFromTemplate = null;
+  window.__plpCollectionIdFromTemplate = null;
+  window.igProductData = (function() {
+    const data = {};return data;
+  })();
+</script>
+
+<script type="module" blocking="render" fetchpriority="high" src="https://cdn.intelligems.io/esm/320960bf4a73/bundle.js" data-em-disable async></script>
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/V6D24K/klaviyo.js?company_id=V6D24K"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+
+  <script>
+    window.klaviyoReviewsProductDesignMode = false
+  </script>
+
+
+
+
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/postscript-sms-marketing/blocks/sdk/019be67b-1a2f-7589-97a3-72f1751f443e -->
+<script id="embedded-sdk">
+    window.ps_extension_shop_id = 686517;
+</script>
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf -->
+
+
+  <script type="text/javascript" src="https://cdn-widgetsrepository.yotpo.com/v1/loader/6JUILC8AjjD1ydDsU41oks2b2FrNLrcAHU59stYx?languageCode=en" async></script>
+
+
+
+  
+<!-- END app block --><!-- BEGIN app block: shopify://apps/videowise-video-commerce/blocks/script_embed/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d -->
+
+
+
+
+<link
+  rel="preload"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  href="https://assets.videowise.com/style.css.gz"
+  id="videowise-style-css">
+<script
+  defer
+  src="https://assets.videowise.com/vendors.js.gz"
+  id="videowise-vendors-js"></script>
+<script
+  defer
+  src="https://assets.videowise.com/client.js.gz"
+  id="videowise-client-js"></script>
+
+<link rel="dns-prefetch" href="https://assets.videowise.com/" />
+
+<link rel="dns-prefetch" href="https://cdn2.videowise.com/" />
+
+<link rel="dns-prefetch" href="https://api-cdn.videowise.com/" />
+
+<link rel="dns-prefetch" href="https://images.videowise.com/" />
+
+<link rel="dns-prefetch" href="https://cdn.videowise.com/" />
+
+<!-- END app block --><script src="https://cdn.shopify.com/extensions/01a111ff-2bc4-794b-b8ec-9c2712d49b5d/test-sms-55/assets/sdk-embed-script-loader.js" type="text/javascript" defer="defer"></script>
+<script src="https://cdn.shopify.com/extensions/01a11e34-4cfe-7758-8ce2-d7b551b7557a/klaviyo-email-marketing-76/assets/app.js" type="text/javascript" defer="defer"></script>
+<link href="https://cdn.shopify.com/extensions/01a11e34-4cfe-7758-8ce2-d7b551b7557a/klaviyo-email-marketing-76/assets/app.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://cdn.shopify.com/extensions/01a08d12-a50f-75bf-b4af-76fa0f2e317e/page-speed-optimizer-6/assets/shopify-speed.js" type="text/javascript" defer="defer"></script>
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 57681182916,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script>
+  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
+</script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 57681182916,storefrontBaseUrl: "https://fullyvital.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://fullyvital.com/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["4c64608a","16072cab"],webPixelsConfigList: [{"id":"1860698308","configuration":"{\"shopDomain\":\"fullyvital.myshopify.com\",\"accountId\":\"1204\",\"basisPixelVisit\":\"55c5efc1eaf1c777\",\"basisPixelCart\":\"6ff291b34e3402ab\",\"basisPixelCheckout\":\"43c25bf3bc6bb5bc\",\"analyticsApiURL\":\"https:\\\/\\\/kp-9dfa-api.klickly.com\\\/wp\",\"checkoutApiURL\":\"https:\\\/\\\/kp-9dfa-api.klickly.com\\\/cs\",\"cartApiURL\":\"https:\\\/\\\/kp-9dfa-api.klickly.com\\\/cc\",\"ardDataApiURL\":\"https:\\\/\\\/kp-9dfa-api.klickly.com\\\/ard\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"efdf7a548489ec4e8275e6f4b26ccd39","type":"APP","apiClientId":1821457,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"1697611972","configuration":"{\"shopId\":\"fullyvital.myshopify.com\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"31536d5a2ef62c1887054e49fd58dba0","type":"APP","apiClientId":4845829,"privacyPurposes":["ANALYTICS"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"1519485124","configuration":"{\"pixel_id\":\"4285949871690446\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"bd2f978c17a94bbb8a74d43de2165dc5","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted","enabledFlags":["9a3ed68a"]},{"id":"1401684164","configuration":"{\"shopId\":\"686517\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"2eedfe5ca9c7d4954f200bfa1ffb380d","type":"APP","apiClientId":2328352,"privacyPurposes":["MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted","enabledFlags":["9a3ed68a"]},{"id":"1383596228","configuration":"{\"shop\":\"fullyvital.myshopify.com\",\"cookie_duration\":\"604800\",\"first_touch_or_last\":\"last_touch\",\"goaffpro_identifiers\":\"gfp_ref,ref,aff,wpam_id,click_id\",\"ignore_ad_clicks\":\"false\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"a74598cb423e21a6befc33d5db5fba42","type":"APP","apiClientId":2744533,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"1351188676","configuration":"{\"accountID\":\"V6D24K\",\"webPixelConfig\":\"eyJlbmFibGVBZGRlZFRvQ2FydEV2ZW50cyI6IHRydWV9\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"c63c5b72c8d77be5f2d27d14c081da38","type":"APP","apiClientId":123074,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted","enabledFlags":["9a3ed68a"]},{"id":"1266876612","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"9bce1c0cdfc09538057898e4ff134fa2","type":"APP","apiClientId":30400643073,"privacyPurposes":["ANALYTICS"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"1073643716","configuration":"{\"masterTagID\":\"19038\",\"merchantID\":\"138351\",\"appPath\":\"https:\/\/daedalus.shareasale.com\",\"storeID\":\"NaN\",\"xTypeMode\":\"NaN\",\"xTypeValue\":\"NaN\",\"channelDedup\":\"NaN\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"f300cca684872f2df140f714437af558","type":"APP","apiClientId":4929191,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"812515524","configuration":"{\"store_id\":\"131025\",\"environment\":\"prod\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"10c4f173702937db6fa4bf871600cafd","type":"APP","apiClientId":294517,"privacyPurposes":["ANALYTICS"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"557252804","configuration":"{\"config\":\"{\\\"google_tag_ids\\\":[\\\"G-WDZL75M80X\\\",\\\"AW-345321169\\\",\\\"GT-P8V2H83\\\"],\\\"target_country\\\":\\\"US\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-WDZL75M80X\\\",\\\"AW-345321169\\\/fLttCND2mYsDENHd1KQB\\\"]},{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-WDZL75M80X\\\",\\\"AW-345321169\\\/Br0jCNP2mYsDENHd1KQB\\\"]},{\\\"type\\\":\\\"remove_from_cart\\\",\\\"action_label\\\":\\\"G-WDZL75M80X\\\"},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-WDZL75M80X\\\",\\\"AW-345321169\\\/9ueDCMr2mYsDENHd1KQB\\\",\\\"MC-9HZ4W6MNMW\\\"]},{\\\"type\\\":\\\"add_shipping_info\\\",\\\"action_label\\\":\\\"G-WDZL75M80X\\\"},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-WDZL75M80X\\\",\\\"AW-345321169\\\/dDLICMf2mYsDENHd1KQB\\\",\\\"MC-9HZ4W6MNMW\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-WDZL75M80X\\\",\\\"AW-345321169\\\/X1GbCMT2mYsDENHd1KQB\\\",\\\"MC-9HZ4W6MNMW\\\"]},{\\\"type\\\":\\\"view_item_list\\\",\\\"action_label\\\":\\\"G-WDZL75M80X\\\"},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-WDZL75M80X\\\",\\\"AW-345321169\\\/eop7CNb2mYsDENHd1KQB\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-WDZL75M80X\\\",\\\"AW-345321169\\\/VtglCM32mYsDENHd1KQB\\\"]},{\\\"type\\\":\\\"view_cart\\\",\\\"action_label\\\":\\\"G-WDZL75M80X\\\"}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a3321ca85cf5aaf6b57585fcd8d67b3a","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted","enabledFlags":["9a3ed68a"]},{"id":"118194372","configuration":"{\"botID\":\"oi4wohk1jwq5gacv\",\"octaneDomain\":\"https:\/\/app.octaneai.com\",\"octaneNewDomain\":\"https:\/\/app2.octaneai.com\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"aace1440a9416e8b2805b96c7b2f2fe0","type":"APP","apiClientId":2012438,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_email","read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"16548036","configuration":"{\"myshopifyDomain\":\"fullyvital.myshopify.com\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"23b97d18e2aa74363140dc29c9284e87","type":"APP","apiClientId":2775569,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_phone","read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"50397380","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Google Ads Purchase Tracking"},{"id":"117571780","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"2","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"GTM"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"FullyVital","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"fullyvital.myshopify.com","countryCode":"US","storefrontUrl":"https:\/\/fullyvital.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://fullyvital.com/cdn","7ec887c8w14f9f074p854094e1m1370c602",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"true","themeId":"153279168708","themePublished":"true","eventMetadataId":"ea5b71c6-f585-4c5b-b5c0-48ab85768355","pageType":"page","resourceId":"120890163396","shopId":"57681182916","storefrontBaseUrl":"https:\/\/fullyvital.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"4c64608a\", \"16072cab\"]","isMerchantRequest":"false","hashVersion":"7ec887c8w14f9f074p854094e1m1370c602","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'USD';
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":120890163396,"requestId":"b4eb8065-55cc-417c-baf8-862c02238ec5-1791836336"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        if (method == 'track' || method == 'page') {
+          var pageUrl;
+          try {
+            pageUrl = window.location.href;
+          } catch (e) {}
+          var pageReferrer;
+          try {
+            pageReferrer = document.referrer;
+          } catch (e) {}
+          try {
+            if (window.__TREKKIE_SHIM_QUEUE == null) {
+              window.__TREKKIE_SHIM_QUEUE = [];
+            }
+            window.__TREKKIE_SHIM_QUEUE.push({
+              from: 'trekkie-stub',
+              method: method,
+              args: args.slice(1),
+              pageContext: {
+                url: pageUrl,
+                referrer: pageReferrer
+              }
+            });
+          } catch (e) {
+            // no-op
+          }
+        }
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.onerror = function(e) {
+  var scriptFallback = document.createElement('script');
+  scriptFallback.type = 'text/javascript';
+  scriptFallback.onerror = function(error) {
+          var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 57681182916,
+      theme_id: 153279168708,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//fullyvital.com/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js"});
+
+  };
+  scriptFallback.async = true;
+  scriptFallback.src = '//fullyvital.com/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js';
+  first.parentNode.insertBefore(scriptFallback, first);
+};
+script.async = true;
+script.src = '//fullyvital.com/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js';
+first.parentNode.insertBefore(script, first);
+
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":57681182916,"isMerchantRequest":null,"themeId":153279168708,"themeCityHash":"5177748282988751844","contentLanguage":"en","currency":"USD","eventMetadataId":"ea5b71c6-f585-4c5b-b5c0-48ab85768355"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["764d78cb","4c64608a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+    window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":120890163396,"requestId":"b4eb8065-55cc-417c-baf8-862c02238ec5-1791836336","shopifyEmitted":true});
+
+    var eventsListenerScript = document.createElement('script');
+    eventsListenerScript.async = true;
+    eventsListenerScript.src = "//fullyvital.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js";
+    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+})();</script>
+  <script>
+  if (!window.ga || (window.ga && typeof window.ga !== 'function')) {
+    window.ga = function ga() {
+      (window.ga.q = window.ga.q || []).push(arguments);
+      if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+        window.Shopify.analytics.publish("ga_stub_called", {}, {sendTo: "google_osp_migration"});
+      }
+      console.error("Shopify's Google Analytics stub called with:", Array.from(arguments), "\nSee https://help.shopify.com/manual/promoting-marketing/pixels/pixel-migration#google for more information.");
+    };
+    if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+      window.Shopify.analytics.publish("ga_stub_initialized", {}, {sendTo: "google_osp_migration"});
+    }
+  }
+</script>
+<script
+  defer
+  src="https://fullyvital.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.10.1.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="57681182916"
+  data-render-region="gcp-us-west1"
+  data-page-type="page"
+  data-theme-instance-id="153279168708"
+  data-theme-name="Prestige"
+  data-theme-version="10.7.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https://fullyvital.com/api/collect"
+></script>
+<meta name="shopify-y" content="d3f24313-46f6-4d22-9e00-0fb74c6352f6" data-expiration="1823393936000"><meta name="shopify-s" content="6e286c3a-7ca2-48e4-8e3e-a298ff4d7549" data-expiration="1791838136000">
+</head>
+
+  
+<body class="features--zoom-image  color-scheme color-scheme--scheme-1"><template id="drawer-default-template">
+  <div part="base">
+    <div part="overlay"></div>
+
+    <div part="content">
+      <header part="header">
+        <slot name="header"></slot>
+
+        <dialog-close-button style="display: contents">
+          <button type="button" part="close-button tap-area" aria-label="Close"><svg aria-hidden="true" focusable="false" fill="none" width="14" class="icon icon-close" viewBox="0 0 16 16">
+      <path d="m1 1 14 14M1 15 15 1" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+
+  </button>
+        </dialog-close-button>
+      </header>
+
+      <div part="body">
+        <slot></slot>
+      </div>
+
+      <footer part="footer">
+        <slot name="footer"></slot>
+      </footer>
+    </div>
+  </div>
+</template><template id="modal-default-template">
+  <div part="base">
+    <div part="overlay"></div>
+
+    <div part="content">
+      <header part="header">
+        <slot name="header"></slot>
+
+        <dialog-close-button style="display: contents">
+          <button type="button" part="close-button tap-area" aria-label="Close"><svg aria-hidden="true" focusable="false" fill="none" width="14" class="icon icon-close" viewBox="0 0 16 16">
+      <path d="m1 1 14 14M1 15 15 1" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+
+  </button>
+        </dialog-close-button>
+      </header>
+
+      <div part="body">
+        <slot></slot>
+      </div>
+    </div>
+  </div>
+</template><template id="popover-default-template">
+  <div part="base">
+    <div part="overlay"></div>
+
+    <div part="content">
+      <header part="header">
+        <slot name="header"></slot>
+
+        <dialog-close-button style="display: contents">
+          <button type="button" part="close-button tap-area" aria-label="Close"><svg aria-hidden="true" focusable="false" fill="none" width="14" class="icon icon-close" viewBox="0 0 16 16">
+      <path d="m1 1 14 14M1 15 15 1" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+
+  </button>
+        </dialog-close-button>
+      </header>
+
+      <div part="body">
+        <slot></slot>
+      </div>
+    </div>
+  </div>
+</template><template id="header-search-default-template">
+  <div part="base">
+    <div part="overlay"></div>
+
+    <div part="content">
+      <slot></slot>
+    </div>
+  </div>
+</template><template id="video-media-default-template">
+  <slot></slot>
+
+  <svg part="play-button" fill="none" width="48" height="48" viewBox="0 0 48 48">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24Zm-18 0-9-6.6v13.2l9-6.6Z" fill="var(--play-button-background, #ffffff)"/>
+  </svg>
+</template><loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
+    <a href="#main" allow-hash-change class="skip-to-content sr-only">Skip to content</a>
+
+    <span
+      id="header-scroll-tracker"
+      style="position: absolute; width: 1px; height: 1px; top: var(--header-scroll-tracker-offset, 10px); left: 0;"
+    ></span>
+
+    <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/6JUILC8AjjD1ydDsU41oks2b2FrNLrcAHU59stYx" async></script><!-- BEGIN sections: header-group -->
+<aside id="shopify-section-sections--20833841086660__announcement-bar" class="shopify-section shopify-section-group-header-group shopify-section--announcement-bar"><style>
+    :root {
+      --announcement-bar-is-sticky: 0;--header-scroll-tracker-offset: var(--announcement-bar-height);}#shopify-section-sections--20833841086660__announcement-bar {
+      --announcement-bar-font-size: 0.75rem;
+    }
+
+    @media screen and (min-width: 999px) {
+      #shopify-section-sections--20833841086660__announcement-bar {
+        --announcement-bar-font-size: 0.875rem;
+      }
+    }
+  </style>
+
+  <height-observer variable="announcement-bar">
+    <div class="announcement-bar color-scheme color-scheme--scheme-3"><announcement-bar-carousel allow-swipe  id="carousel-sections--20833841086660__announcement-bar" class="announcement-bar__carousel"><p class="prose heading is-selected" >FREE Shipping on Autoship & Orders $60+&nbsp;&nbsp;<a href="/collections/all" title="Shop Hair Wellness Products"><strong>Shop Now</strong></a></p></announcement-bar-carousel></div>
+  </height-observer>
+
+  <script>
+    document.documentElement.style.setProperty('--announcement-bar-height', `${document.getElementById('shopify-section-sections--20833841086660__announcement-bar').clientHeight.toFixed(2)}px`);
+  </script><style> #shopify-section-sections--20833841086660__announcement-bar .announcement-bar {padding-block: 0.4em;} </style></aside><header id="shopify-section-sections--20833841086660__header" class="shopify-section shopify-section-group-header-group shopify-section--header"><style>
+  :root {
+    --header-is-sticky: 1;
+  }
+
+  #shopify-section-sections--20833841086660__header {
+    --header-grid: "primary-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
+    --header-padding-block: 1rem;
+    --header-transparent-header-text-color: 255 255 255;
+    --header-separation-border-color: 0 0 0 / 0;
+
+    position: relative;
+    z-index: 4;
+  }
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-sections--20833841086660__header {
+      --header-padding-block: 1.2rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    #shopify-section-sections--20833841086660__header {--header-grid: "logo primary-nav secondary-nav" / minmax(max-content, 1fr) auto minmax(max-content, 1fr);}
+  }#shopify-section-sections--20833841086660__header {
+      position: sticky;
+      top: 0;
+    }
+
+    .shopify-section--announcement-bar ~ #shopify-section-sections--20833841086660__header {
+      top: calc(var(--announcement-bar-is-sticky, 0) * var(--announcement-bar-height, 0px));
+    }#shopify-section-sections--20833841086660__header {
+      --header-logo-width: 130px;
+    }
+
+    @media screen and (min-width: 700px) {
+      #shopify-section-sections--20833841086660__header {
+        --header-logo-width: 180px;
+      }
+    }</style>
+
+<height-observer variable="header">
+  <x-header  class="header color-scheme color-scheme--scheme-1">
+      <a href="/" class="header__logo"><span class="sr-only">FullyVital</span><img src="//fullyvital.com/cdn/shop/files/FV_Logo_1.png?v=1787606981&amp;width=1333" alt="" srcset="//fullyvital.com/cdn/shop/files/FV_Logo_1.png?v=1787606981&amp;width=360 360w, //fullyvital.com/cdn/shop/files/FV_Logo_1.png?v=1787606981&amp;width=540 540w" width="1333" height="292" sizes="180px" class="header__logo-image"></a>
+    
+<nav class="header__primary-nav header__primary-nav--center" aria-label="Primary navigation">
+        <button type="button" aria-controls="sidebar-menu" class="md:hidden">
+          <span class="sr-only">Navigation menu</span><svg aria-hidden="true" fill="none" focusable="false" width="24" class="header__nav-icon icon icon-hamburger" viewBox="0 0 24 24">
+      <path d="M1 19h22M1 12h22M1 5h22" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+    </svg></button><ul class="contents unstyled-list md-max:hidden">
+
+              <li class="header__primary-nav-item" data-title="Shop All"><a href="/collections/all" class="block h6" >Shop All</a></li>
+
+              <li class="header__primary-nav-item" data-title="Membership"><a href="/pages/membership" class="block h6" >Membership</a></li>
+
+              <li class="header__primary-nav-item" data-title="Explore"><dropdown-menu-disclosure follow-summary-link trigger="click"><details class="header__menu-disclosure">
+                      <summary data-follow-link="/pages/hair-growth-science" class="h6">Explore</summary><ul class="header__dropdown-menu header__dropdown-menu--restrictable unstyled-list" role="list"><li><a href="/pages/ingredients" class="link-faded-reverse" >Our Ingredients</a></li><li><a href="/pages/hair-growth-science" class="link-faded-reverse" >Our Science</a></li><li><a href="/pages/about-us" class="link-faded-reverse" >About Us</a></li><li><a href="/pages/fully-vital-hair-reviews-results" class="link-faded-reverse" >Our Results</a></li></ul></details></dropdown-menu-disclosure></li>
+
+              <li class="header__primary-nav-item" data-title="Take 1-Min Quiz"><a href="/pages/hair-quiz" class="block h6" >Take 1-Min Quiz</a></li></ul></nav><nav class="header__secondary-nav" aria-label="Secondary navigation"><ul class="contents unstyled-list"><li class="header__account-link sm-max:hidden">
+            <a href="https://fullyvital.com/customer_authentication/redirect?locale=en&region_country=US">
+              <span class="sr-only">Login</span><svg aria-hidden="true" fill="none" focusable="false" width="24" class="header__nav-icon icon icon-account" viewBox="0 0 24 24">
+      <path d="M16.125 8.75c-.184 2.478-2.063 4.5-4.125 4.5s-3.944-2.021-4.125-4.5c-.187-2.578 1.64-4.5 4.125-4.5 2.484 0 4.313 1.969 4.125 4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3.017 20.747C3.783 16.5 7.922 14.25 12 14.25s8.217 2.25 8.984 6.497" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+    </svg></a>
+          </li><li class="header__search-link">
+            <a href="/search" aria-controls="header-search-sections--20833841086660__header">
+              <span class="sr-only">Search</span><svg aria-hidden="true" fill="none" focusable="false" width="24" class="header__nav-icon icon icon-search" viewBox="0 0 24 24">
+      <path d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+      <path d="M15.857 15.858 21 21.001" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+    </svg></a>
+          </li><li class="relative header__cart-link">
+          <a href="/cart" aria-controls="cart-drawer" data-no-instant>
+            <span class="sr-only">Cart</span><svg aria-hidden="true" fill="none" focusable="false" width="24" class="header__nav-icon icon icon-cart" viewBox="0 0 24 24"><path d="M4.75 8.25A.75.75 0 0 0 4 9L3 19.125c0 1.418 1.207 2.625 2.625 2.625h12.75c1.418 0 2.625-1.149 2.625-2.566L20 9a.75.75 0 0 0-.75-.75H4.75Zm2.75 0v-1.5a4.5 4.5 0 0 1 4.5-4.5v0a4.5 4.5 0 0 1 4.5 4.5v1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><cart-dot class="header__cart-dot  "></cart-dot>
+          </a>
+        </li>
+      </ul>
+    </nav><header-search id="header-search-sections--20833841086660__header" class="header-search">
+  <div class="container">
+    <form id="predictive-search-form" action="/search" method="GET" aria-owns="header-predictive-search" class="header-search__form" role="search">
+      <div class="header-search__form-control"><svg aria-hidden="true" fill="none" focusable="false" width="20" class="icon icon-search" viewBox="0 0 24 24">
+      <path d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+      <path d="M15.857 15.858 21 21.001" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+    </svg><input type="search" name="q" spellcheck="false" class="header-search__input h5 sm:h4" aria-label="Search" placeholder="Search for...">
+
+        <dialog-close-button class="contents">
+          <button type="button">
+            <span class="sr-only">Close</span><svg aria-hidden="true" focusable="false" fill="none" width="16" class="icon icon-close" viewBox="0 0 16 16">
+      <path d="m1 1 14 14M1 15 15 1" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+
+  </button>
+        </dialog-close-button>
+      </div>
+    </form>
+
+    <predictive-search id="header-predictive-search" class="predictive-search">
+      <div class="predictive-search__content" slot="results"></div>
+    </predictive-search>
+  </div>
+</header-search><template id="header-sidebar-template">
+  <div part="base">
+    <div part="overlay"></div>
+
+    <div part="content">
+      <header part="header">
+        <dialog-close-button class="contents">
+          <button type="button" part="close-button tap-area" aria-label="Close"><svg aria-hidden="true" focusable="false" fill="none" width="16" class="icon icon-close" viewBox="0 0 16 16">
+      <path d="m1 1 14 14M1 15 15 1" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+
+  </button>
+        </dialog-close-button>
+      </header>
+
+      <div part="panel-list">
+        <slot name="main-panel"></slot><slot name="collapsible-panel"></slot></div>
+    </div>
+  </div>
+</template>
+
+<header-sidebar id="sidebar-menu" class="header-sidebar drawer drawer--sm color-scheme color-scheme--scheme-1" template="header-sidebar-template" open-from="left"><div class="header-sidebar__main-panel" slot="main-panel">
+    <div class="header-sidebar__scroller">
+      <ul class="header-sidebar__linklist divide-y unstyled-list" role="list"><li><a href="/collections/all" class="header-sidebar__linklist-button h6">Shop Bestsellers</a></li><li><a href="https://fullyvital.com/collections/hair-density-products" class="header-sidebar__linklist-button h6">Shop Hair Growth</a></li><li><a href="https://fullyvital.com/collections/anti-gray-hair-products" class="header-sidebar__linklist-button h6">Shop Anti-Gray</a></li><li><a href="/pages/membership" class="header-sidebar__linklist-button h6">Join Membership</a></li><li><a href="/pages/hair-quiz" class="header-sidebar__linklist-button h6">Take Our 1-Min Quiz</a></li><li><button type="button" class="header-sidebar__linklist-button h6" aria-controls="header-panel-6" aria-expanded="false">Explore<svg aria-hidden="true" focusable="false" fill="none" width="12" class="icon icon-chevron-right  icon--direction-aware" viewBox="0 0 10 10">
+      <path d="m3 9 4-4-4-4" stroke="currentColor" stroke-linecap="square"/>
+    </svg></button></li></ul>
+    </div><div class="header-sidebar__footer"><a href="https://fullyvital.com/customer_authentication/redirect?locale=en&region_country=US" class="text-with-icon smallcaps sm:hidden"><svg aria-hidden="true" fill="none" focusable="false" width="20" class="icon icon-account" viewBox="0 0 24 24">
+      <path d="M16.125 8.75c-.184 2.478-2.063 4.5-4.125 4.5s-3.944-2.021-4.125-4.5c-.187-2.578 1.64-4.5 4.125-4.5 2.484 0 4.313 1.969 4.125 4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3.017 20.747C3.783 16.5 7.922 14.25 12 14.25s8.217 2.25 8.984 6.497" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+    </svg>Login</a></div></div><header-sidebar-collapsible-panel class="header-sidebar__collapsible-panel" slot="collapsible-panel">
+      <div class="header-sidebar__scroller"><div id="header-panel-6" class="header-sidebar__sub-panel" hidden>
+              <button type="button" class="header-sidebar__back-button link-faded is-divided text-with-icon h6 md:hidden" data-action="close-panel"><svg aria-hidden="true" focusable="false" fill="none" width="12" class="icon icon-chevron-left  icon--direction-aware" viewBox="0 0 10 10">
+      <path d="M7 1 3 5l4 4" stroke="currentColor" stroke-linecap="square"/>
+    </svg>Explore</button>
+
+              <ul class="header-sidebar__linklist divide-y unstyled-list" role="list"><li><a href="/pages/fully-vital-hair-reviews-results" class="header-sidebar__linklist-button h6">Our Results</a></li><li><a href="/pages/hair-growth-science" class="header-sidebar__linklist-button h6">Our Science</a></li><li><a href="/pages/ingredients" class="header-sidebar__linklist-button h6">Our Ingredients</a></li><li><a href="/pages/about-us" class="header-sidebar__linklist-button h6">About Us</a></li></ul></div></div>
+    </header-sidebar-collapsible-panel></header-sidebar><script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2045688682503750');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2045688682503750&ev=PageView&noscript=1"
+/></noscript></x-header>
+</height-observer>
+
+<script>
+  document.documentElement.style.setProperty('--header-height', `${document.getElementById('shopify-section-sections--20833841086660__header').clientHeight.toFixed(2)}px`);
+</script>
+
+
+<style> @media (max-width: 720px) {#shopify-section-sections--20833841086660__header .header__logo-image {height: 30px !important; object-fit: cover !important; }} </style></header>
+<!-- END sections: header-group --><!-- BEGIN sections: overlay-group -->
+<section id="shopify-section-sections--20833842168004__cart-drawer" class="shopify-section shopify-section-group-overlay-group shopify-section--cart-drawer"><cart-drawer id="cart-drawer" class="cart-drawer drawer drawer--center-body color-scheme color-scheme--scheme-1" initial-focus="false" handle-editor-events>
+  <p class="h4" slot="header">Cart</p><p class="h5 text-center">Your cart is empty</p></cart-drawer>
+
+</section>
+<!-- END sections: overlay-group --><main id="main" class="anchor">
+      <section id="shopify-section-template--20833845280964__main" class="shopify-section shopify-section--main-page"><div class="section-spacing section-spacing--tight color-scheme color-scheme--scheme-1 color-scheme--bg-54922f2e920ba8346f6dc0fba343d673">
+  <div class="container container--sm">
+    <div class="section-stack">
+        <div class="prose"><p><meta charset="utf-8">FullyVital Internal Reporting — internal tool for pulling advertising performance data. Not a public-facing product.</p></div></div>
+  </div>
+</div>
+</section>
+<!-- BEGIN sections: footer-group -->
+<footer id="shopify-section-sections--20833841021124__footer" class="shopify-section shopify-section-group-footer-group shopify-section--footer"><style>
+  #shopify-section-sections--20833841021124__footer {
+    --footer-content-justify-items: space-between;
+  }
+
+</style><div class="footer color-scheme color-scheme--scheme-4 color-scheme--bg-d6c26dc513e34aa805f73353e8b8be7f ">
+  <div class="container">
+    <div class="footer__inner"><div class="footer__block-list"><div class="footer__block footer__block--app" ><div id="shopify-block-AVnl2YVJKOWdMU3ArR__klaviyo_email_marketing_sms_form_embed_block_BUwDrT" class="shopify-block shopify-app-block">
+  <div class="klaviyo-form-VD3SUh"></div>
+
+
+
+
+</div></div><div class="footer__block footer__block--links" ><div class="v-stack gap-4 sm:gap-5"><p class="h6">HAIR WELLNESS</p><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
+                            <a href="/collections/all" class="link-faded">Shop Bestsellers</a>
+                          </li><li>
+                            <a href="/pages/membership" class="link-faded">Join Membership</a>
+                          </li><li>
+                            <a href="/pages/hair-growth-science" class="link-faded">Science</a>
+                          </li><li>
+                            <a href="/pages/fully-vital-hair-reviews-results" class="link-faded">Our Results</a>
+                          </li><li>
+                            <a href="/pages/ingredients" class="link-faded">Ingredients</a>
+                          </li><li>
+                            <a href="/blogs/hair-care" class="link-faded">Blog</a>
+                          </li><li>
+                            <a href="/pages/frequently-asked-questions-faq" class="link-faded">FAQ</a>
+                          </li><li>
+                            <a href="/pages/faraz-khan" class="link-faded">Author</a>
+                          </li><li>
+                            <a href="https://account.fullyvital.com/profile?locale=en&region_country=US&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmdWxseXZpdGFsLm15c2hvcGlmeS5jb20iLCJmbGFncyI6W10sImV4cCI6MTc5MjQ0MTEzNiwibmJmIjoxNzkxODM2MzM2fQ.-yeLtnt0Qh-RAlGreTYImts7Dr9UB6d02kaFb6N0ieo" class="link-faded">My Account</a>
+                          </li></ul>
+                    </div></div><div class="footer__block footer__block--links" ><div class="v-stack gap-4 sm:gap-5"><p class="h6">COMPANY</p><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
+                            <a href="/pages/about-us" class="link-faded">Our Story</a>
+                          </li><li>
+                            <a href="/pages/contact-us" class="link-faded">Contact Us</a>
+                          </li><li>
+                            <a href="/pages/hair-wellness-sms-subscribe-page" class="link-faded">Sign Up For SMS</a>
+                          </li><li>
+                            <a href="/pages/shop-now-pay-later" class="link-faded">Buy Now Pay Later</a>
+                          </li><li>
+                            <a href="/policies/refund-policy" class="link-faded">Return Policy</a>
+                          </li><li>
+                            <a href="/policies/privacy-policy" class="link-faded">Privacy Policy</a>
+                          </li><li>
+                            <a href="/policies/terms-of-service" class="link-faded">Terms of Service</a>
+                          </li><li>
+                            <a href="/pages/wholesale" class="link-faded">Wholesale</a>
+                          </li></ul>
+                    </div></div><div class="footer__block footer__block--text" ><div class="v-stack gap-4 sm:gap-5"><p class="h6">About</p><div class="prose text-subdued"><p>FullyVital® uses a 360 degree, science-backed approach to thinning hair and gray hairs. Our products contain clinical ingredients to support your hair rejuvenation goals - so you can feel your most confident.</p><p>Statements regarding dietary supplements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. </p><p>FullyVital is a registered trademark of FULLY VITAL, LLC</p></div></div></div></div><div class="footer__aside"><p class="heading text-subdued text-xxs">© 2026 - FullyVital <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a></p><ul class="payment-methods unstyled-list"><li><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-american_express"><title id="pi-american_express">American Express</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"/><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#0071CE" style="fill:#0071CE;fill:color(display-p3 0.0000 0.4431 0.8078);fill-opacity:1;"/><path d="M3 0.5H35C36.3348 0.5 37.5 1.58692 37.5 3V21C37.5 22.4239 36.4239 23.5 35 23.5H3C1.66524 23.5 0.5 22.4131 0.5 21V3C0.5 1.57614 1.57614 0.5 3 0.5Z" stroke="black" stroke-opacity="0.07" style="stroke:black;stroke-opacity:0.07;"/><path d="M25.8662 6.33203V3H31L31.8662 5.5332L32.7334 3H37V14.2002H36.7998L34.8672 16.2656L36.7998 18.3594H37V21.2666H33.5996L31.9336 19.3994L30.2002 21.2666H19.4668V12.666H16L20.2666 3H24.4004L25.8662 6.33203ZM20.5996 20.2656H27V18.5322H22.666V17.3994H26.8662V15.666H22.666V14.5322H27V12.7988H20.5996V20.2656ZM30.5332 16.5322L27 20.2656H29.5996L31.8662 17.8662L34.0664 20.2656H36.7324L33.1992 16.4658L36.7324 12.7988H34.1328L31.8662 15.1992L29.7324 12.7988H27L30.5332 16.5322ZM17.666 11.7324H19.9326L20.5332 10.1992H23.999L24.666 11.7324H26.999L23.666 4.19922H20.999L17.666 11.7324ZM33.5996 4.19922L31.9326 8.86621L30.1992 4.19922H27V11.666H29.0664V6.39941L31 11.666H32.7998L34.7324 6.39941V11.666H36.7324V4.13281L33.5996 4.19922ZM23.2656 8.46582H21.2656L22.2656 5.99902L23.2656 8.46582Z" fill="white" style="fill:white;fill-opacity:1;"/></svg>
+</li><li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z" /><path fill="#FFF" d="M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875" /><g><g><path fill="#000" d="M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858" /><path fill="#000" d="M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048" /></g><g><path fill="#000" d="M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z" /><path fill="#000" d="M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z" /><path fill="#000" d="M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z" /></g></g></svg>
+</li><li><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-diners_club"><title id="pi-diners_club">Diners Club</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8"/></svg></li><li><svg viewBox="0 0 38 24" width="38" height="24" role="img" aria-labelledby="pi-discover" fill="none" xmlns="http://www.w3.org/2000/svg"><title id="pi-discover">Discover</title><path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="#fff"/><path d="M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52 1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69 2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0 .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9 0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z" fill="#231F20"/><path d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint0_linear)"/><path opacity=".65" d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint1_linear)"/><path d="M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z" fill="#231F20"/><path d="M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z" fill="#231F20"/><path d="M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z" fill="#F48120"/><defs><linearGradient id="pi-paint0_linear" x1="21.657" y1="12.275" x2="19.632" y2="9.104" gradientUnits="userSpaceOnUse"><stop stop-color="#F89F20"/><stop offset=".25" stop-color="#F79A20"/><stop offset=".533" stop-color="#F68D20"/><stop offset=".62" stop-color="#F58720"/><stop offset=".723" stop-color="#F48120"/><stop offset="1" stop-color="#F37521"/></linearGradient><linearGradient id="pi-paint1_linear" x1="21.338" y1="12.232" x2="18.378" y2="6.446" gradientUnits="userSpaceOnUse"><stop stop-color="#F58720"/><stop offset=".359" stop-color="#E16F27"/><stop offset=".703" stop-color="#D4602C"/><stop offset=".982" stop-color="#D05B2E"/></linearGradient></defs></svg></li><li><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-google_pay"><title id="pi-google_pay">Google Pay</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"/><path d="M18.093 11.976v3.2h-1.018v-7.9h2.691a2.447 2.447 0 0 1 1.747.692 2.28 2.28 0 0 1 .11 3.224l-.11.116c-.47.447-1.098.69-1.747.674l-1.673-.006zm0-3.732v2.788h1.698c.377.012.741-.135 1.005-.404a1.391 1.391 0 0 0-1.005-2.354l-1.698-.03zm6.484 1.348c.65-.03 1.286.188 1.778.613.445.43.682 1.03.65 1.649v3.334h-.969v-.766h-.049a1.93 1.93 0 0 1-1.673.931 2.17 2.17 0 0 1-1.496-.533 1.667 1.667 0 0 1-.613-1.324 1.606 1.606 0 0 1 .613-1.336 2.746 2.746 0 0 1 1.698-.515c.517-.02 1.03.093 1.49.331v-.208a1.134 1.134 0 0 0-.417-.901 1.416 1.416 0 0 0-.98-.368 1.545 1.545 0 0 0-1.319.717l-.895-.564a2.488 2.488 0 0 1 2.182-1.06zM23.29 13.52a.79.79 0 0 0 .337.662c.223.176.5.269.785.263.429-.001.84-.17 1.146-.472.305-.286.478-.685.478-1.103a2.047 2.047 0 0 0-1.324-.374 1.716 1.716 0 0 0-1.03.294.883.883 0 0 0-.392.73zm9.286-3.75l-3.39 7.79h-1.048l1.281-2.728-2.224-5.062h1.103l1.612 3.885 1.569-3.885h1.097z" fill="#5F6368"/><path d="M13.986 11.284c0-.308-.024-.616-.073-.92h-4.29v1.747h2.451a2.096 2.096 0 0 1-.9 1.373v1.134h1.464a4.433 4.433 0 0 0 1.348-3.334z" fill="#4285F4"/><path d="M9.629 15.721a4.352 4.352 0 0 0 3.01-1.097l-1.466-1.14a2.752 2.752 0 0 1-4.094-1.44H5.577v1.17a4.53 4.53 0 0 0 4.052 2.507z" fill="#34A853"/><path d="M7.079 12.05a2.709 2.709 0 0 1 0-1.735v-1.17H5.577a4.505 4.505 0 0 0 0 4.075l1.502-1.17z" fill="#FBBC04"/><path d="M9.629 8.44a2.452 2.452 0 0 1 1.74.68l1.3-1.293a4.37 4.37 0 0 0-3.065-1.183 4.53 4.53 0 0 0-4.027 2.5l1.502 1.171a2.715 2.715 0 0 1 2.55-1.875z" fill="#EA4335"/></svg>
+</li><li><svg width="38" height="24" role="img" aria-labelledby="pi-jcb" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><title id="pi-jcb">JCB</title><g fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"/></g><path d="M11.5 5H15v11.5a2.5 2.5 0 0 1-2.5 2.5H9V7.5A2.5 2.5 0 0 1 11.5 5z" fill="#006EBC"/><path d="M18.5 5H22v11.5a2.5 2.5 0 0 1-2.5 2.5H16V7.5A2.5 2.5 0 0 1 18.5 5z" fill="#F00036"/><path d="M25.5 5H29v11.5a2.5 2.5 0 0 1-2.5 2.5H23V7.5A2.5 2.5 0 0 1 25.5 5z" fill="#2AB419"/><path d="M10.755 14.5c-1.06 0-2.122-.304-2.656-.987l.78-.676c.068 1.133 3.545 1.24 3.545-.19V9.5h1.802v3.147c0 .728-.574 1.322-1.573 1.632-.466.144-1.365.221-1.898.221zm8.116 0c-.674 0-1.388-.107-1.965-.366-.948-.425-1.312-1.206-1.3-2.199.012-1.014.436-1.782 1.468-2.165 1.319-.49 3.343-.261 3.926.27v.972c-.572-.521-1.958-.898-2.919-.46-.494.226-.737.917-.744 1.448-.006.56.245 1.252.744 1.497.953.467 2.39.04 2.919-.441v1.01c-.358.255-1.253.434-2.129.434zm8.679-2.587c.37-.235.582-.567.582-1.005 0-.438-.116-.687-.348-.939-.206-.207-.58-.469-1.238-.469H23v5h3.546c.696 0 1.097-.23 1.315-.415.283-.25.426-.53.426-.96 0-.431-.155-.908-.737-1.212zm-1.906-.281h-1.428v-1.444h1.495c.956 0 .944 1.444-.067 1.444zm.288 2.157h-1.716v-1.513h1.716c.986 0 1.083 1.513 0 1.513z" fill="#FFF" fill-rule="nonzero"/></g></svg></li><li><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"/><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#1C1C1C" style="fill:#1C1C1C;fill:color(display-p3 0.1098 0.1098 0.1098);fill-opacity:1;"/><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#232323" style="fill:#232323;fill:color(display-p3 0.1373 0.1373 0.1373);fill-opacity:1;"/><path d="M14.6364 19.2727C18.8538 19.2727 22.2727 15.8538 22.2727 11.6364C22.2727 7.41892 18.8538 4 14.6364 4C10.4189 4 7 7.41892 7 11.6364C7 15.8538 10.4189 19.2727 14.6364 19.2727Z" fill="#EB001B" style="fill:#EB001B;fill:color(display-p3 0.9216 0.0000 0.1059);fill-opacity:1;"/><path d="M23.3637 19.2727C27.5811 19.2727 31 15.8538 31 11.6364C31 7.41892 27.5811 4 23.3637 4C19.1462 4 15.7273 7.41892 15.7273 11.6364C15.7273 15.8538 19.1462 19.2727 23.3637 19.2727Z" fill="#F79E1B" style="fill:#F79E1B;fill:color(display-p3 0.9686 0.6196 0.1059);fill-opacity:1;"/><path d="M22.2727 11.6362C22.2727 9.01797 20.9637 6.72706 19 5.41797C17.0364 6.83615 15.7273 9.12706 15.7273 11.6362C15.7273 14.1452 17.0364 16.5452 19 17.8543C20.9637 16.5452 22.2727 14.2543 22.2727 11.6362Z" fill="#FF5F00" style="fill:#FF5F00;fill:color(display-p3 1.0000 0.3725 0.0000);fill-opacity:1;"/></svg>
+</li><li><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"/><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"/><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"/></svg></li><li><svg viewBox="0 0 38 24" width="38" height="24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-venmo"><title id="pi-venmo">Venmo</title><g fill="none" fill-rule="evenodd"><rect fill-opacity=".07" fill="#000" width="38" height="24" rx="3"/><path fill="#3D95CE" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M24.675 8.36c0 3.064-2.557 7.045-4.633 9.84h-4.74L13.4 6.57l4.151-.402 1.005 8.275c.94-1.566 2.099-4.025 2.099-5.702 0-.918-.154-1.543-.394-2.058l3.78-.783c.437.738.634 1.499.634 2.46z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+</li><li><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"/><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#142FBD" style="fill:#142FBD;fill:color(display-p3 0.0784 0.1843 0.7412);fill-opacity:1;"/><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#1532CB" style="fill:#1532CB;fill:color(display-p3 0.0824 0.1961 0.7961);fill-opacity:1;"/><path d="M29.5944 10.2167H29.2778C28.8556 11.2722 28.5389 11.8 28.2222 13.3833H30.2278C29.9111 11.8 29.9111 11.0611 29.5944 10.2167V10.2167ZM32.6556 16.4444H30.8611C30.7556 16.4444 30.7556 16.4444 30.65 16.3389L30.4389 15.3889L30.3333 15.1778H27.8C27.6944 15.1778 27.5889 15.1778 27.5889 15.3889L27.2722 16.3389C27.2722 16.4444 27.1667 16.4444 27.1667 16.4444H24.95L25.1611 15.9167L28.2222 8.73889C28.2222 8.21111 28.5389 8 29.0667 8H30.65C30.7556 8 30.8611 8 30.8611 8.21111L32.3389 15.0722C32.4444 15.4944 32.55 15.8111 32.55 16.2333C32.6556 16.3389 32.6556 16.3389 32.6556 16.4444V16.4444ZM18.5111 16.1278L18.9333 14.2278C19.0389 14.2278 19.1444 14.3333 19.1444 14.3333C19.8833 14.65 20.6222 14.8611 21.3611 14.7556C21.5722 14.7556 21.8889 14.65 22.1 14.5444C22.6278 14.3333 22.6278 13.8056 22.2056 13.3833C21.9944 13.1722 21.6778 13.0667 21.3611 12.8556C20.9389 12.6444 20.5167 12.4333 20.2 12.1167C18.9333 11.0611 19.3556 9.58333 20.0944 8.84444C20.7278 8.42222 21.0444 8 21.8889 8C23.1556 8 24.5278 8 25.1611 8.21111H25.2667C25.1611 8.84444 25.0556 9.37222 24.8444 10.0056C24.3167 9.79444 23.7889 9.58333 23.2611 9.58333C22.9444 9.58333 22.6278 9.58333 22.3111 9.68889C22.1 9.68889 21.9944 9.79444 21.8889 9.9C21.6778 10.1111 21.6778 10.4278 21.8889 10.6389L22.4167 11.0611C22.8389 11.2722 23.2611 11.4833 23.5778 11.6944C24.1056 12.0111 24.6333 12.5389 24.7389 13.1722C24.95 14.1222 24.6333 14.9667 23.7889 15.6C23.2611 16.0222 23.05 16.2333 22.3111 16.2333C20.8333 16.2333 19.6722 16.3389 18.7222 16.0222C18.6167 16.2333 18.6167 16.2333 18.5111 16.1278V16.1278ZM14.8167 16.4444C14.9222 15.7056 14.9222 15.7056 15.0278 15.3889C15.5556 13.0667 16.0833 10.6389 16.5056 8.31667C16.6111 8.10556 16.6111 8 16.8222 8H18.7222C18.5111 9.26667 18.3 10.2167 17.9833 11.3778C17.6667 12.9611 17.35 14.5444 16.9278 16.1278C16.9278 16.3389 16.8222 16.3389 16.6111 16.3389L14.8167 16.4444ZM5 8.21111C5 8.10556 5.21111 8 5.31667 8H8.90556C9.43333 8 9.85556 8.31667 9.96111 8.84444L10.9111 13.4889C10.9111 13.5944 10.9111 13.5944 11.0167 13.7C11.0167 13.5944 11.1222 13.5944 11.1222 13.5944L13.3389 8.21111C13.2333 8.10556 13.3389 8 13.4444 8H15.6611C15.6611 8.10556 15.6611 8.10556 15.5556 8.21111L12.2833 15.9167C12.1778 16.1278 12.1778 16.2333 12.0722 16.3389C11.9667 16.4444 11.7556 16.3389 11.5444 16.3389H9.96111C9.85556 16.3389 9.75 16.3389 9.75 16.1278L8.06111 9.58333C7.85 9.37222 7.53333 9.05556 7.11111 8.95C6.47778 8.63333 5.31667 8.42222 5.10556 8.42222L5 8.21111Z" fill="white" style="fill:white;fill-opacity:1;"/></svg>
+</li></ul></div>
+    </div>
+  </div>
+</div>
+
+</footer>
+<!-- END sections: footer-group --></main>
+<!-- Klaviyo Manual Tag -->
+  <script async type="text/javascript" src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=V6D24K"></script> 
+  <script> 
+    var _learnq = _learnq || []; 
+    if ('') { 
+        _learnq.push(['identify', { 
+        '$email' : '' 
+        }]); 
+    } 
+  </script>
+  <!-- End Klaviyo Tag -->
+
+<!-- Klaviyo AddToCart Javascript -->
+
+<!-- End Klaviyo AddToCart Javascript -->
+  
+    <!-- Microsoft Clarity script -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "7pzayj834d");
+</script>
+
+  <!-- 
+  <script type="text/javascript">
+    (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/6JUILC8AjjD1ydDsU41oks2b2FrNLrcAHU59stYx/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+  </script>
+   -->
+
+<!-- userway ADA compliance code -->
+<script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "lyml8NC5pv");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+ 
+<!-- Fotorama scripts 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+-->
+
+  <!-- Quantcast Tag -->
+  <script type="text/javascript">
+    window._qevents = window._qevents || [];
+
+    (function() {
+      var elem = document.createElement('script');
+      elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+      elem.async = true;
+      elem.type = "text/javascript";
+      var scpt = document.getElementsByTagName('script')[0];
+      scpt.parentNode.insertBefore(elem, scpt);
+    })();
+
+    window._qevents.push({
+      qacct:"p-S7pHeSRnSEZNk",
+      uid:"__INSERT_EMAIL_HERE__"
+    });
+    
+    console.log('>>>>', "$");
+  </script>
+
+  <noscript>
+    <div style="display:none;">
+      <img src="//pixel.quantserve.com/pixel/p-S7pHeSRnSEZNk.gif" border="0" height="1" width="1" alt="Quantcast"/>
+    </div>
+  </noscript>
+  <!-- End Quantcast tag -->
+  
+<!-- lite vimeo loader -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js"></script>
+
+
+<!-- Shahzaib Custom JS -->
+
+
+<!-- Shahzaib Custom JS -->
+<script>
+/* OCU cart drawer: hide qty selector for selling plans that require 3+ units */
+(() => {
+  const MIN_PLAN_QTY = 3;
+
+  const getPlanQty = (item) => {
+    const plan = item?.selling_plan_allocation?.selling_plan;
+    if (!plan) return 0;
+    const opt = plan.options?.find(({ name }) => /product\s*quantity/i.test(name));
+    return parseInt(opt?.value, 10) || parseInt(plan.name?.match(/(\d+)\s*-?\s*month/i)?.[1], 10) || 0;
+  };
+
+  const getCart = () => window.Zipify?.Cart?.instance?.cart || window.Zipify?.Cart?.cart;
+
+  const lockQuantity = () => {
+    (getCart()?.items ?? []).forEach((item) => {
+      const qty = document.querySelector(`.ocu-cart-drawer [data-key="${item.key}"] .ocu-quantity`);
+      if (!qty) return;
+      const planQty = getPlanQty(item);
+      const lock = planQty >= MIN_PLAN_QTY && item.quantity >= planQty;
+      lock ? qty.style.setProperty('display', 'none', 'important') : qty.style.removeProperty('display');
+    });
+  };
+
+  let t;
+  const schedule = () => { clearTimeout(t); t = setTimeout(lockQuantity, 50); };
+
+  new MutationObserver(schedule).observe(document.documentElement, { childList: true, subtree: true });
+  ['ocu:cart:loaded', 'ocu:cart:updated', 'ocu:product:added', 'ocu:cart:open'].forEach((e) => addEventListener(e, schedule));
+
+  window._ocuLockQuantity = lockQuantity;
+})();
+</script>
+  <style> zx-modal .prose {text-align: center;} .modal_image {max-height: 70vh; width: auto; max-width: 100%; height: auto;} .text-subdued {font-size: 13px;} </style>
+<div id="shopify-block-AQmluZzRtdWVZZjkrT__11753626725791430220" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: cart-drawer --><script>((o,c,u)=>{o[c]=o[c]||{},o[u]=o[u]||{},o[c].OCU=o[c].OCU||{api:o[u]}})(window,'Zipify','OCUApi');</script><template data-ocu-cart-additional-buttons-src>
+  <div class="dynamic-checkout__content" id="dynamic-checkout-cart" data-shopify="dynamic-checkout-cart"> <shopify-accelerated-checkout-cart wallet-configs="[{&quot;supports_subs&quot;:true,&quot;supports_def_opts&quot;:false,&quot;name&quot;:&quot;paypal&quot;,&quot;wallet_params&quot;:{&quot;shopId&quot;:57681182916,&quot;countryCode&quot;:&quot;US&quot;,&quot;merchantName&quot;:&quot;FullyVital&quot;,&quot;phoneRequired&quot;:false,&quot;companyRequired&quot;:false,&quot;shippingType&quot;:&quot;shipping&quot;,&quot;shopifyPaymentsEnabled&quot;:false,&quot;hasManagedSellingPlanState&quot;:false,&quot;requiresBillingAgreement&quot;:true,&quot;gatewayType&quot;:&quot;CONNECTED&quot;,&quot;merchantId&quot;:&quot;M789JL3E994YS&quot;,&quot;sdkUrl&quot;:&quot;https://www.paypal.com/sdk/js?components=buttons\u0026commit=false\u0026currency=USD\u0026locale=en_US\u0026client-id=AexZEtAxk09Ncgj6FSWFFyGKbxxAZ_LTyJ2DPdJWl1YUlecinmc5AfIaRF2qYjWlusWahlzz6SVkY5Ci\u0026merchant-id=M789JL3E994YS\u0026intent=authorize&quot;,&quot;serviceableCountryCodes&quot;:[&quot;AD&quot;,&quot;AE&quot;,&quot;AG&quot;,&quot;AI&quot;,&quot;AL&quot;,&quot;AT&quot;,&quot;AU&quot;,&quot;AW&quot;,&quot;AX&quot;,&quot;BA&quot;,&quot;BB&quot;,&quot;BE&quot;,&quot;BG&quot;,&quot;BH&quot;,&quot;BL&quot;,&quot;BM&quot;,&quot;BN&quot;,&quot;BO&quot;,&quot;BQ&quot;,&quot;BS&quot;,&quot;BY&quot;,&quot;BZ&quot;,&quot;CA&quot;,&quot;CC&quot;,&quot;CH&quot;,&quot;CL&quot;,&quot;CN&quot;,&quot;CO&quot;,&quot;CR&quot;,&quot;CW&quot;,&quot;CX&quot;,&quot;CY&quot;,&quot;CZ&quot;,&quot;DE&quot;,&quot;DK&quot;,&quot;DM&quot;,&quot;DO&quot;,&quot;EC&quot;,&quot;EE&quot;,&quot;ES&quot;,&quot;FI&quot;,&quot;FJ&quot;,&quot;FK&quot;,&quot;FO&quot;,&quot;FR&quot;,&quot;GB&quot;,&quot;GD&quot;,&quot;GF&quot;,&quot;GG&quot;,&quot;GI&quot;,&quot;GL&quot;,&quot;GP&quot;,&quot;GR&quot;,&quot;GT&quot;,&quot;GY&quot;,&quot;HK&quot;,&quot;HN&quot;,&quot;HR&quot;,&quot;HT&quot;,&quot;HU&quot;,&quot;ID&quot;,&quot;IL&quot;,&quot;IM&quot;,&quot;IO&quot;,&quot;IS&quot;,&quot;IT&quot;,&quot;JE&quot;,&quot;JM&quot;,&quot;JO&quot;,&quot;JP&quot;,&quot;KN&quot;,&quot;KR&quot;,&quot;KW&quot;,&quot;KY&quot;,&quot;LA&quot;,&quot;LB&quot;,&quot;LC&quot;,&quot;LI&quot;,&quot;LT&quot;,&quot;LU&quot;,&quot;LV&quot;,&quot;MC&quot;,&quot;MD&quot;,&quot;ME&quot;,&quot;MF&quot;,&quot;MK&quot;,&quot;MO&quot;,&quot;MQ&quot;,&quot;MS&quot;,&quot;MT&quot;,&quot;MU&quot;,&quot;MV&quot;,&quot;MX&quot;,&quot;MY&quot;,&quot;NI&quot;,&quot;NL&quot;,&quot;NO&quot;,&quot;NZ&quot;,&quot;OM&quot;,&quot;PA&quot;,&quot;PE&quot;,&quot;PG&quot;,&quot;PL&quot;,&quot;PM&quot;,&quot;PT&quot;,&quot;PY&quot;,&quot;QA&quot;,&quot;RE&quot;,&quot;RO&quot;,&quot;RS&quot;,&quot;RU&quot;,&quot;SA&quot;,&quot;SE&quot;,&quot;SG&quot;,&quot;SI&quot;,&quot;SJ&quot;,&quot;SK&quot;,&quot;SM&quot;,&quot;SR&quot;,&quot;SV&quot;,&quot;SX&quot;,&quot;TC&quot;,&quot;TM&quot;,&quot;TR&quot;,&quot;TT&quot;,&quot;TW&quot;,&quot;UA&quot;,&quot;UM&quot;,&quot;US&quot;,&quot;UY&quot;,&quot;VA&quot;,&quot;VC&quot;,&quot;VE&quot;,&quot;VG&quot;,&quot;XK&quot;,&quot;YT&quot;,&quot;ZA&quot;]}}]" access-token="08645687569f8cf0cb9c86ad425bed1d" buyer-country="US" buyer-locale="en" buyer-currency="USD" shop-id="57681182916" cart-id="7ddca5d1c1b42565e80de0fa2ef40ef6" enabled-flags="[&quot;1172c16a&quot;,&quot;a1d1f9a1&quot;,&quot;f5afabb3&quot;,&quot;370070f3&quot;]" > <div class="wallet-button-wrapper"> <ul class='wallet-cart-grid wallet-cart-grid--skeleton' role="list" data-shopify-buttoncontainer="true"> <li data-testid='grid-cell' class='wallet-cart-button-container'><div class='wallet-cart-button wallet-cart-button__skeleton' role='button' disabled aria-hidden='true'>&nbsp</div></li> </ul> </div> </shopify-accelerated-checkout-cart> </div>
+</template><script>
+(() => {((o,c,u)=>{o[c]=o[c]||{},o[c][u]=o[c][u]||{api:{},integrations:{}}})(window,'Zipify','Cart');
+  if (Zipify.Cart.snippet) return;
+
+  Zipify.Cart.version = Zipify.Cart.version ?? '2025/11/11';
+  Zipify.Cart.assetUrl = 'https://cdn.shopify.com/extensions/01a1305d-d6e5-72f0-b3df-81e1a27b8cd2/ocu-in-checkout-1127/assets/zipify-cart-drawer.js';
+  Zipify.Cart.domain = 'fullyvital.myshopify.com';
+  Zipify.Cart.moneyFormat = '${{amount}}';
+  Zipify.Cart.moneyWithCurrencyFormat = '${{amount}} USD';
+  Zipify.Cart.tags = [];
+  Zipify.Cart.ordersCount = null;
+  Zipify.Cart.cart = {"note":null,"attributes":{},"original_total_price":0,"total_price":0,"total_discount":0,"total_weight":0.0,"item_count":0,"items":[],"requires_shipping":false,"currency":"USD","items_subtotal_price":0,"cart_level_discount_applications":[],"checkout_charge_amount":0};
+  Zipify.Cart.product = null;
+  Zipify.Cart.collectionVariantHandles = {};
+  Zipify.Cart.metafileds = ({"general":{"settings":{"app_endpoint":"https:\/\/ocu.zipify.com","proxy_url":"\/apps\/oneclickupsell","sdp":"https:\/\/e7d54b729aaf49ea8b2f80dae22860aa@sentry.zipify.com\/52","inc_sdp":"https:\/\/f14faca962674f149161045845b21b35@sentry.zipify.com\/50","popup_locations":{"product":false,"cart":true,"collection":false,"index":false,"page":false,"zp_page":false,"zp_index":false,"zp_product":false,"zp_collection":false},"popup_settings":{"popup_frequency":"everytime"},"snippet_source":"extension","cart_drawer_extension":true,"cart_drawer_upsell":true,"ads_widget":false,"features":{"ppw":true,"cart_drawer":true},"offer_scripts":{"zipify-oneclickupsell-multiple":false,"zipify-oneclickupsell-single":false,"zipify-oneclickupsell-on-page":false}},"integrations":{"skip_cart":"false"}}})?.general?.settings;
+  Zipify.Cart.accessibility = {
+    close: 'Translation missing: en.accessibility.close',
+    discount: 'Translation missing: en.customer.order.discount',
+    cartTitle: 'Translation missing: en.sections.cart.title',
+    quantityLabel: 'Translation missing: en.sections.cart.headings.quantity',
+    remove: (title) => 'Translation missing: en.sections.cart.remove_title'.replace('\{\{ title \}\}', title),
+    decrease: (title) => 'Translation missing: en.products.product.quantity.decrease'.replace('\{\{ product \}\}', title),
+    increase: (title) => 'Translation missing: en.products.product.quantity.increase'.replace('\{\{ product \}\}', title),
+    quantity: (title) => 'Translation missing: en.products.product.quantity.input_label'.replace('\{\{ product \}\}', title),
+    cartCount: (count) => 'Translation missing: en.sections.header.cart_count'.replace(/\d+?/, count),
+  };
+
+  const loadExtension=()=>{let e=document.createElement("script");e.src=Zipify.Cart.assetUrl,e.defer=!0,document.head.append(e),Zipify.Cart.loaded=!0;return e};
+  const extension = loadExtension();
+  extension.onload = () => Zipify.Cart.integrations.init();
+})();
+</script><!-- END app snippet -->
+
+
+</div><div id="shopify-block-AVElYbHJnemxjbVVrN__10840395464443086010" class="shopify-block shopify-app-block">
+
+
+<script>
+  console.log("[Alia app extension] v1.0.5");
+
+  const BACKEND_URL = "https://backend.alia-prod.com";
+
+  window.ALIA_SHOPIFY_EXTENSION_INFO = {
+    customerID: "",
+    country: "US",
+    market: "us",
+    language: "en"
+  }
+
+  if (document.readyState !== "loading") {
+    initAlia();
+  } else {
+    document.addEventListener("DOMContentLoaded", () => initAlia(), { once: true });
+  }
+
+  async function initAlia() {
+    const url = BACKEND_URL + "/public/launcher.js?shopifyUrl=fullyvital.myshopify.com";
+    const script = document.createElement("script");
+    script.src = url;
+    script.async = true;
+    document.head.appendChild(script);
+  }
+</script>
+
+</div><div id="shopify-block-ANEZ6YUIrWjB2bzZUU__11068332061543699368" class="shopify-block shopify-app-block"></div><div id="shopify-block-AMXlNNXM5SWtGZ0cxR__17151115064775110295" class="shopify-block shopify-app-block"><style data-recharge-theme='{"has_theme_customization": true, "design_mode": false }'>
+  .recharge-theme {
+    /* App */
+    --recharge-app-background: #F9F8F4;
+    --recharge-app-container: 1200px;
+    --recharge-app-vertical-padding: 32px;
+
+    /* Brand colors */
+    
+--recharge-color-brand: #28A745;
+
+    /* Tints */
+    --recharge-color-brand-120: #1f8236;
+    --recharge-color-brand-20: #53b96a;
+    --recharge-color-brand-40: #7eca8f;
+    --recharge-color-brand-60: #a9dcb5;
+    --recharge-color-brand-75: #c9e9d1;
+    --recharge-color-brand-85: #dff2e3;
+
+    /* Neutral */
+    --recharge-color-neutral: hsl(134, 35%, 7%);
+    --recharge-color-neutral-80: hsl(134, 7%, 25%);
+    --recharge-color-neutral-70: hsl(134, 5%, 35%);
+    --recharge-color-neutral-40: hsl(134, 3%, 63%);
+    --recharge-color-neutral-10: hsl(134, 2%, 91%);
+    
+
+    /* Links */
+    --recharge-button-secondary: #0070C0;
+    --recharge-button-secondary-120: #005693;
+    --recharge-button-secondary-60: #66a9d9;
+
+    /* Images */
+    --recharge-images-ratio: 1;
+
+    /* Cards */
+    
+    --recharge-cards-background: #FFFFFF;
+    
+
+    
+    --recharge-cards-border-color: RGBA(0,0,0,0);
+    
+
+    /* Fonts */
+    --recharge-typography-scale: 16px;
+    --recharge-typography-size-1: calc(3 * var(--recharge-typography-scale));
+    --recharge-typography-size-2: calc(2.25 * var(--recharge-typography-scale));
+    --recharge-typography-size-3: calc(1.625 * var(--recharge-typography-scale));
+    --recharge-typography-size-4: calc(1.25 * var(--recharge-typography-scale));
+    --recharge-typography-size-5: calc(1 * var(--recharge-typography-scale));
+    --recharge-typography-size-6: calc(.875 * var(--recharge-typography-scale));
+
+    /** Text **/
+    --recharge-typography-light: #FFFFFF;
+    --recharge-typography-primary: var(--recharge-color-neutral);
+    --recharge-typography-secondary: var(--recharge-color-neutral-70);
+
+    /* Corners */
+    --recharge-corners-radius: 16px;
+
+    
+    /* Button corners */
+    --recharge-button-border-radius: calc(var(--recharge-corners-radius) * 1.5);
+
+    /* Views */
+    
+    --recharge-views-background: #F9F8F4;
+    
+
+    /* Buttons */
+    --recharge-button-font-family: inherit;
+    --recharge-button-brand: var(--recharge-color-brand);
+    --recharge-button-color: #FFFFFF;
+  }
+</style>
+
+</div><div id="shopify-block-AaUVQZ3RJdytsVHRjb__3667842014806057753" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: snippet -->
+
+
+
+
+
+<!-- END app snippet -->
+
+</div><div id="shopify-block-AK2cvU1YxM2RudVVoa__17368511000352060744" class="shopify-block shopify-app-block"><script type="text/javascript">
+    window.gfp_customer = {
+      id: "",
+      email: "",
+      first_name: "",
+      last_name: ""
+    }
+    function gfpLoadWidgets() {
+    if (!document.querySelector('script[src="https://widgets.goaffpro.app/main.js"]')) {
+      var s = document.createElement('script');
+      s.type = 'module';
+      s.src = 'https://widgets.goaffpro.app/main.js';
+      document.head.appendChild(s);
+    }
+  }
+</script>
+
+ <script type="text/javascript" async="true" src="/a/goaffpro/loader.js"></script>
+
+
+
+
+
+
+
+
+</div><script src="https://cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
+</body>
+</html>

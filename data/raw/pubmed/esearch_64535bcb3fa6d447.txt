@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"21","retmax":"5","retstart":"0","idlist":["40700102","3335323","37736439","40416147","40786321"],"translationset":[],"querytranslation":"\"zinc induced copper deficiency\"[Title]"}}

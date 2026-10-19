@@ -1,0 +1,8 @@
+endpoint,rows,cost_usd,cached
+/v3/dataforseo_labs/google/ranked_keywords/live,1000,0.132,False
+/v3/dataforseo_labs/google/ranked_keywords/live,500,0.072,False
+/v3/dataforseo_labs/google/ranked_keywords/live,248,0.04176,False
+/v3/dataforseo_labs/google/ranked_keywords/live,36,0.01632,False
+/v3/dataforseo_labs/google/domain_rank_overview/live,1,0.01212,False
+/v3/dataforseo_labs/google/relevant_pages/live,100,0.024,False
+/v3/backlinks/summary/live,0,0.024036,False

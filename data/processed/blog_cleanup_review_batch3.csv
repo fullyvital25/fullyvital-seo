@@ -1,0 +1,5 @@
+path,decision,redirect_to,why
+/blogs/hair-care/best-anti-gray-products-men-30s,MERGE: unpublish + 301 to target,/blogs/hair-care/gray-hair-in-men,men's listicle folded into hub 2 (approved hub plan)
+/blogs/hair-care/best-anti-gray-products-men-40s,MERGE: unpublish + 301 to target,/blogs/hair-care/gray-hair-in-men,men's listicle folded into hub 2 (approved hub plan)
+/blogs/hair-care/how-much-hair-loss-is-normal,MERGE: unpublish + 301 to target,/blogs/hair-care/is-this-normal-shedding,older duplicate of the new shedding post (replaces the planned rewrite)
+/blogs/hair-care/diffuse-alopecia,MERGE: unpublish + 301 to target,/blogs/hair-care/diffuse-thinning-vs-pattern-baldness,older duplicate of the new diffuse-thinning post (replaces the planned fold-in)

@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"49","retmax":"7","retstart":"0","idlist":["30745687","36076278","29513056","24289554","28968134","25399534","22450520"],"translationset":[],"querytranslation":"(\"acetylcysteine\"[Title/Abstract] OR \"N-acetylcysteine\"[Title/Abstract]) AND (\"hair\"[Title] OR \"alopecia\"[Title] OR \"follicle\"[Title])"}}

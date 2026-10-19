@@ -1,0 +1,204 @@
+path,source,phase2_decision,decision,redirect_to,cluster,clicks_16m,impressions_90d,referring_domains
+/blogs/hair-care/shampoo-bowl,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",2.0,42.0,0
+/blogs/hair-vitamins/collagen,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Collagen,1.0,40.0,0
+/blogs/hair-care/the-best-hair-growth-serum,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,"Growth products: serums, shampoos, kits",1.0,36.0,0
+/blogs/hair-care/best-hair-growth-serums,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,"Growth products: serums, shampoos, kits",1.0,42.0,0
+/blogs/hair-care/thermal-reconditioning,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,2.0,42.0,0
+/blogs/hair-care/dht-blocking-shampoo,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Saw palmetto & DHT blockers,2.0,13.0,0
+/blogs/hair-care/scalp-massage-for-hair-growth,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/scalp-massage,Remedies & how to stop hair loss,2.0,0.0,0
+/blogs/hair-care/hair-serum-for-growth,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",2.0,14.0,0
+/blogs/hair-care/our-philosophy-healthy-hair-growth,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,2.0,4.0,0
+/blogs/hair-vitamins/castor-oil,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/castor-oil-for-hair-growth,Topical oils & natural ingredients,2.0,30.0,0
+/blogs/hair-care/hair-growth-shampoo,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",2.0,6.0,0
+/blogs/hair-care/dutasteride,held,Remove (off-strategy topic),"REMOVE: unpublish, let 404",,"Drugs: minoxidil, finasteride & Rx",2.0,5.0,0
+/blogs/hair-care/hair-turban,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,2.0,11.0,0
+/blogs/hair-care/keratin-treatment,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,2.0,0.0,0
+/blogs/hair-care/micro-needling,held,Fold into the planned hub for this cluster,LATER: fold into planned hub,,Remedies & how to stop hair loss,1.0,0.0,0
+/blogs/hair-care/fully-vital-or-mielle-organics,held,"Remove (indirect brand comparison, no demand)","REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),1.0,42.0,0
+/blogs/hair-vitamins/amino-acids,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/amino-acids-for-hair-growth,Hair vitamins & supplements (commercial),1.0,20.0,0
+/blogs/hair-vitamins/saw-palmetto,held,Merge into existing page on the same subtopic,LATER: merge after refresh test (target is in the test),/blogs/hair-care/does-saw-palmetto-fight-hair-thinning,Topical oils & natural ingredients,1.0,13.0,0
+/blogs/hair-care/conditioning,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",1.0,16.0,0
+/blogs/hair-care/folate,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,"Iron, vitamin D & deficiencies",1.0,17.0,0
+/blogs/hair-care/caffeine,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-vitamins/caffeine,Topical oils & natural ingredients,1.0,7.0,0
+/blogs/hair-care/lisa-hair-growth-story,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,1.0,3.0,0
+/blogs/hair-care/fully-vital-hair-growth-reviews-kristin,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,1.0,43.0,0
+/blogs/hair-care/changing-hormones-hair-thinning,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Life stages: postpartum, pregnancy, menopause",1.0,4.0,0
+/blogs/hair-vitamins/marula-oil,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Topical oils & natural ingredients,1.0,7.0,0
+/blogs/hair-care/hair-growth-serums,held,"Remove (no demand, no clear home)",REMOVE: unpublish + 301 (has backlinks; check target),/blogs/hair-care/hair-growth-products-that-work,"Growth products: serums, shampoos, kits",1.0,47.0,1
+/blogs/hair-care/frequently-asked-questions-hair-growth-system,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",1.0,31.0,0
+/blogs/hair-care/copper-peptides-hair-thinning,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Peptides & copper peptides,1.0,0.0,0
+/blogs/hair-vitamins/protein,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Protein & food for hair,0.0,0.0,0
+/blogs/hair-vitamins/rosemary-oil,held,Merge into the rewrite of the same topic,MERGE: unpublish + 301 to target,/blogs/hair-care/rosemary-oil-for-hair-growth,Topical oils & natural ingredients,0.0,0.0,0
+/blogs/hair-vitamins/amla,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,0.0,0
+/blogs/hair-vitamins/neem,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Remedies & how to stop hair loss,0.0,13.0,0
+/blogs/hair-care/5-step-plan-to-delay-grays,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Gray: reversal, slowing & stopping",0.0,6.0,0
+/blogs/hair-vitamins/jojoba-oil,held,Fold into the planned hub for this cluster,LATER: fold into planned hub,,Topical oils & natural ingredients,0.0,0.0,0
+/blogs/hair-vitamins/argan-oil,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Topical oils & natural ingredients,0.0,0.0,0
+/blogs/hair-vitamins/coconut-oil,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Topical oils & natural ingredients,0.0,1.0,0
+/blogs/hair-vitamins/shikakai,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,0.0,0
+/blogs/hair-vitamins/fenugreek,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Speed & regrowth timelines,0.0,0.0,0
+/blogs/hair-vitamins/lavender-oil,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/lavender-oil-for-hair,Topical oils & natural ingredients,0.0,0.0,0
+/blogs/hair-vitamins/tea-tree-oil,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Topical oils & natural ingredients,0.0,0.0,0
+/blogs/hair-vitamins/aloe-vera,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/aloe-vera-gel,Topical oils & natural ingredients,0.0,4.0,0
+/blogs/hair-vitamins/nettle-leaf,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/nettle-leaf,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/propecia,held,Remove (off-strategy topic),"REMOVE: unpublish, let 404",,"Drugs: minoxidil, finasteride & Rx",0.0,0.0,0
+/blogs/hair-care/dermatologist,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Hair growth: general,0.0,6.0,107
+/blogs/hair-care/types-of-hair-loss,held,Fold into the planned hub for this cluster,LATER: fold into planned hub,,Remedies & how to stop hair loss,0.0,0.0,0
+/blogs/hair-care/vitamin-c,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-vitamins/vitamin-c,Hair vitamins & supplements (commercial),0.0,0.0,0
+/blogs/hair-care/essential-oils,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-vitamins/best-essential-oils,Topical oils & natural ingredients,0.0,0.0,0
+/blogs/hair-care/alopecia,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/androgenetic-alopecia,"Conditions: alopecia, TE, PCOS, thyroid…",0.0,0.0,0
+/blogs/hair-care/hair-thinning,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Remedies & how to stop hair loss,0.0,0.0,0
+/blogs/hair-care/essential-oils-for-hair-growth,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-vitamins/best-essential-oils,Topical oils & natural ingredients,0.0,8.0,1
+/blogs/hair-care/biotin,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/is-biotin-good-for-hair,Biotin,0.0,0.0,0
+/blogs/hair-care/female-pattern-baldness,held,Fold into the planned hub for this cluster,LATER: fold into planned hub,,Women's thinning & hair loss,0.0,0.0,0
+/blogs/hair-care/gingko-biloba,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-vitamins/gingko-biloba,Hair growth: general,0.0,1.0,0
+/blogs/hair-care/hyaluronic-acid,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-vitamins/hyaluronic-acid,Hair growth: general,0.0,21.0,0
+/blogs/hair-care/phthalates,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/keratin,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Hair growth: general,0.0,7.0,0
+/blogs/hair-care/which-vitamin-deficiency-causes-hair-loss,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,"Iron, vitamin D & deficiencies",0.0,0.0,0
+/blogs/hair-care/best-hairgrowth-serum,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,0.0,0
+/blogs/hair-care/ketoconazole,held,Remove (off-strategy topic),"REMOVE: unpublish, let 404",,"Drugs: minoxidil, finasteride & Rx",0.0,16.0,0
+/blogs/hair-care/hair-plugs,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/stem-cell-therapy,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Procedures & devices,0.0,0.0,0
+/blogs/hair-care/rogaine,held,Remove (off-strategy topic),"REMOVE: unpublish, let 404",,"Drugs: minoxidil, finasteride & Rx",0.0,28.0,0
+/blogs/hair-care/postpartum-alopecia,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Conditions: alopecia, TE, PCOS, thyroid…",0.0,0.0,0
+/blogs/hair-care/follicular-unit-extraction,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth cycle & biology,0.0,0.0,0
+/blogs/hair-care/diffuse-alopecia,held,Fold into the planned hub for this cluster,LATER: fold into planned hub,,"Conditions: alopecia, TE, PCOS, thyroid…",0.0,20.0,0
+/blogs/hair-care/hair-cycle,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Hair growth cycle & biology,0.0,35.0,0
+/blogs/hair-care/thyroid-disorders,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Conditions: alopecia, TE, PCOS, thyroid…",0.0,6.0,0
+/blogs/hair-care/dihydrotestosterone,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Saw palmetto & DHT blockers,0.0,7.0,0
+/blogs/hair-care/biotin-vs-collagen,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Biotin,0.0,0.0,0
+/blogs/hair-care/medications-that-cause-hair-loss,held,Remove (off-strategy topic),"REMOVE: unpublish, let 404",,Medications that cause hair loss,0.0,0.0,0
+/blogs/hair-care/thyroid-hair-loss,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,"Conditions: alopecia, TE, PCOS, thyroid…",0.0,1.0,0
+/blogs/hair-care/telogen-phase,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Conditions: alopecia, TE, PCOS, thyroid…",0.0,3.0,0
+/blogs/hair-care/can-hair-loss-be-reversed,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Hair growth: general,0.0,14.0,0
+/blogs/hair-care/what-vitamin-deficiency-causes-hair-loss,held,Merge into the rewrite of the same topic,MERGE: unpublish + 301 to target,/blogs/hair-care/which-vitamin-deficiency-causes-hair-loss,"Iron, vitamin D & deficiencies",0.0,0.0,0
+/blogs/hair-care/shampoo-for-hair-growth,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,2.0,0
+/blogs/hair-care/how-much-hair-loss-is-normal,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Shedding & how much is normal,0.0,12.0,0
+/blogs/hair-care/beehive,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/trichiasis,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/best-hair-growth-serum,held,Merge into the rewrite of the same topic,MERGE: unpublish + 301 to target,/blogs/hair-care/best-hair-growth-serums,"Growth products: serums, shampoos, kits",0.0,13.0,0
+/blogs/hair-care/covid-hair-loss-regrow-hair,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Conditions: alopecia, TE, PCOS, thyroid…",0.0,0.0,0
+/blogs/hair-care/roller-effective-regrowing-hair,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/the-ultimate-natural-hair-growth-plan-revealed,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,26.0,0
+/blogs/hair-care/hair-growth-cycle,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth cycle & biology,0.0,0.0,0
+/blogs/hair-care/the-3-types-of-hair-loss-and-the-reasons-for-each,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Causes of hair loss & thinning,0.0,0.0,0
+/blogs/hair-care/how-stress-causes-hair-thinning,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth cycle & biology,0.0,9.0,0
+/blogs/hair-care/does-biotin-work-hair-thinning,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Biotin,0.0,0.0,0
+/blogs/hair-care/how-kristin-regrew-her-hair-after-extreme-hair-loss,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,1.0,0
+/blogs/hair-care/low-thyroid-hair-thinning,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Conditions: alopecia, TE, PCOS, thyroid…",0.0,0.0,0
+/blogs/hair-care/biotin-for-hair-growth,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/is-biotin-good-for-hair,Biotin,0.0,0.0,0
+/blogs/hair-care/biotin-for-hair,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/is-biotin-good-for-hair,Biotin,0.0,2.0,0
+/blogs/hair-care/microneedling-at-home,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/microneedling-before-and-after,Procedures & devices,0.0,0.0,0
+/blogs/hair-care/derma-roller-for-hair,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Procedures & devices,0.0,0.0,0
+/blogs/hair-care/microneedling,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/microneedling-before-and-after,Procedures & devices,0.0,0.0,0
+/blogs/hair-care/dermaroller,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Procedures & devices,0.0,0.0,0
+/blogs/hair-care/hair-serum,held,Merge into the rewrite of the same topic,MERGE: unpublish + 301 to target,/blogs/hair-care/best-hair-growth-serums,"Gray: reversal, slowing & stopping",0.0,0.0,0
+/blogs/hair-care/rosemary-oil-for-hair-growth,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Topical oils & natural ingredients,0.0,3.0,0
+/blogs/hair-care/5-best-foods-hair-growth,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,20.0,0
+/blogs/hair-care/vitamin-d-hair-loss,held,Merge into the rewrite of the same topic,MERGE: unpublish + 301 to target,/blogs/hair-vitamins/vitamin-d,"Iron, vitamin D & deficiencies",0.0,0.0,0
+/blogs/hair-care/danielle-youthful-hair-thinning-regrowth,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,8.0,0
+/blogs/hair-care/womens-hair-loss-reasons,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Causes of hair loss & thinning,0.0,2.0,0
+/blogs/hair-care/inflammation-causes-hair-loss,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/angie-hair-regrowth-after-thinning,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,3.0,0
+/blogs/hair-care/stress-hair-loss,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Causes of hair loss & thinning,0.0,0.0,0
+/blogs/hair-care/mesotherapy,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Remedies & how to stop hair loss,0.0,10.0,0
+/blogs/hair-care/does-wearing-a-hat-cause-hair-loss,held,Merge into existing page on the same subtopic,LATER: merge after refresh test (target is in the test),/blogs/hair-care/does-wearing-hats-cause-hair-loss,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/oziva-or-fully-vital,held,"Remove (indirect brand comparison, no demand)","REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,20.0,0
+/blogs/hair-care/hairbust-or-fully-vital,held,"Remove (indirect brand comparison, no demand)","REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,0.0,0
+/blogs/hair-care/philip-kingsley-v-fully-vital,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,10.0,0
+/blogs/hair-care/hair-falling-out-during-pregnancy,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Life stages: postpartum, pregnancy, menopause",0.0,0.0,0
+/blogs/hair-care/hair-loss-vitamin-deficiency,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/iron-deficiency-hair-loss,Topical oils & natural ingredients,0.0,0.0,0
+/blogs/hair-vitamins/vitamin-d,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,"Iron, vitamin D & deficiencies",0.0,0.0,0
+/blogs/hair-vitamins/keratin,held,Merge into the rewrite of the same topic,MERGE: unpublish + 301 to target,/blogs/hair-care/keratin,Remedies & how to stop hair loss,0.0,0.0,0
+/blogs/hair-vitamins/biotin,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/is-biotin-good-for-hair,Biotin,0.0,0.0,0
+/blogs/hair-care/gray-highlights,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Gray: general,0.0,47.0,0
+/blogs/hair-care/biotin-gummies,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/is-biotin-good-for-hair,Biotin,0.0,12.0,0
+/blogs/hair-care/gray-hair-purple-shampoo,held,Remove (off-strategy topic),"REMOVE: unpublish, let 404",,"Gray: coverage, dye & styling",0.0,0.0,0
+/blogs/hair-care/grey-highlights,held,Remove (off-strategy topic),"REMOVE: unpublish, let 404",,"Gray: coverage, dye & styling",0.0,0.0,0
+/blogs/hair-care/laser-hair-therapy,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/low-level-laser-therapy,Procedures & devices,0.0,0.0,0
+/blogs/hair-care/regrow-hair,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Speed & regrowth timelines,0.0,0.0,0
+/blogs/hair-care/uneven-hairline,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Hairline, crown & bald spots",0.0,0.0,0
+/blogs/hair-care/does-creatine-cause-hair-loss,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/creatine-hair-loss,"Supplement myths: creatine, protein shakes",0.0,0.0,0
+/blogs/hair-care/follicular-unit-transplantation,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/cold-cap-therapy,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Procedures & devices,0.0,0.0,0
+/blogs/hair-care/biotin-hair-growth-serum,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/is-biotin-good-for-hair,Biotin,0.0,10.0,0
+/blogs/hair-care/hair-growth-serums-for-women,held,Merge into the rewrite of the same topic,MERGE: unpublish + 301 to target,/blogs/hair-care/best-hair-growth-serums,"Growth products: serums, shampoos, kits",0.0,5.0,0
+/blogs/hair-care/best-hair-growth-serum-for-brunetttes,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,31.0,0
+/blogs/hair-care/pre-poo,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/platelet-rich-plasma-therapy,held,"Remove (no demand, no clear home)","REMOVE: unpublish, let 404",,Remedies & how to stop hair loss,0.0,0.0,0
+/blogs/hair-care/hair-loss-vitamins,held,Rewrite as supporting article (distinct subtopic with demand),LATER: rewrite (content queue),,Hair vitamins & supplements (commercial),0.0,0.0,0
+/blogs/hair-care/what-medications-cause-hair-loss,held,Remove (off-strategy topic),"REMOVE: unpublish, let 404",,Medications that cause hair loss,0.0,0.0,0
+/blogs/hair-care/biotin-hair-loss,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/is-biotin-good-for-hair,Biotin,0.0,0.0,0
+/blogs/hair-care/hair-growth-supplements,held,Merge into existing page on the same subtopic,MERGE: unpublish + 301 to target,/blogs/hair-care/how-to-use-fully-vital-hair-supplements,Hair vitamins & supplements (commercial),0.0,12.0,0
+/blogs/hair-care/fullyvital-vs-arey-anti-gray-comparison,comparison,"Keep and refresh (brand has search demand): honest, sourced comparison, no claims about the competitor you can't support",KEEP (in your content calendar),,Hair growth: general,17.0,742.0,0
+/blogs/hair-care/nutrafol-vs-fully-vital,comparison,"Keep and refresh (brand has search demand): honest, sourced comparison, no claims about the competitor you can't support",KEEP + refresh later (direct competitor),,Competitor brands (growth),82.0,818.0,0
+/blogs/hair-care/fully-vital-vs-for-hers,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",7.0,109.0,0
+/blogs/hair-care/fully-vital-vs-sephora-collection,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),2.0,12.0,0
+/blogs/hair-care/fully-vital-vs-dow,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,1.0,20.0,0
+/blogs/hair-care/fully-vital-vs-the-ordinary,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Remedies & how to stop hair loss,1.0,7.0,0
+/blogs/hair-care/ultrax-labs-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,1.0,28.0,0
+/blogs/hair-care/fullyvital-vs-particle-anti-gray-comparison,comparison,"Keep and refresh (brand has search demand): honest, sourced comparison, no claims about the competitor you can't support",KEEP (in your content calendar),,Gray: competitor brands,1.0,110.0,0
+/blogs/hair-care/pura-dor-vs-fully-vital,comparison,"Keep and refresh (brand has search demand): honest, sourced comparison, no claims about the competitor you can't support",KEEP + refresh later (direct competitor),,Competitor brands (growth),2.0,165.0,0
+/blogs/hair-care/bosley-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Drugs: minoxidil, finasteride & Rx",2.0,84.0,0
+/blogs/hair-care/the-mane-choice-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),2.0,41.0,0
+/blogs/hair-care/ds-labs-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,2.0,7.0,0
+/blogs/hair-care/bingo-cosmetic-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),1.0,4.0,0
+/blogs/hair-care/fully-vital-vs-dr-barbara-sturm,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",1.0,20.0,0
+/blogs/hair-care/fully-vital-vs-hair-labs,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,1.0,2.0,0
+/blogs/hair-care/briogeo-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),1.0,2.0,0
+/blogs/hair-care/tula-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,1.0,15.0,0
+/blogs/hair-care/happy-head-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Competitor brands (growth),1.0,6.0,0
+/blogs/hair-care/hairfinity-vs-fully-vital-choosing-the-best-products-for-hair-growth,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,1.0,26.0,0
+/blogs/hair-care/fully-vital-vs-monat,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,1.0,19.0,0
+/blogs/hair-care/divi-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Competitor brands (growth),1.0,40.0,0
+/blogs/hair-care/elon-vs-fully-vital-1,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,6.0,0
+/blogs/hair-care/olly-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Competitor brands (growth),0.0,17.0,0
+/blogs/hair-care/movita-organics-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,21.0,0
+/blogs/hair-care/fully-vital-vs-wellbel,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,41.0,0
+/blogs/hair-care/elon-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,6.0,0
+/blogs/hair-care/ouai-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,19.0,0
+/blogs/hair-care/fully-vital-vs-wishcare,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,16.0,0
+/blogs/hair-care/shea-moisture-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,5.0,0
+/blogs/hair-care/mielle-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair vitamins & supplements (commercial),0.0,9.0,0
+/blogs/hair-care/hairmax-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Competitor brands (growth),0.0,13.0,0
+/blogs/hair-care/shapiro-md-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Drugs: minoxidil, finasteride & Rx",0.0,14.0,0
+/blogs/hair-care/nioxin-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Conditions: alopecia, TE, PCOS, thyroid…",0.0,46.0,0
+/blogs/hair-care/sisley-paris-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,2.0,21.0,0
+/blogs/hair-care/fully-vital-vs-r-co,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",2.0,6.0,0
+/blogs/hair-care/nutree-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,2.0,19.0,0
+/blogs/hair-care/fully-vital-vs-dr-hempster,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,2.0,19.0,0
+/blogs/hair-care/revela-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",2.0,31.0,0
+/blogs/hair-care/fully-vital-vs-purc-organics,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,1.0,13.0,0
+/blogs/hair-care/fully-vital-vs-hask-hair-serum,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",1.0,11.0,0
+/blogs/hair-care/fully-vital-vs-aveda,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",1.0,12.0,0
+/blogs/hair-care/mizani-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,1.0,26.0,0
+/blogs/hair-care/keranique-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Competitor brands (growth),1.0,13.0,0
+/blogs/hair-care/fully-vital-vs-its-a-10,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",1.0,27.0,0
+/blogs/hair-care/sugar-bear-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,0.0,7.0,0
+/blogs/hair-care/fully-vital-vs-cristinas-curls,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,0.0,11.0,0
+/blogs/hair-care/olaplex-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Competitor brands (growth),0.0,8.0,0
+/blogs/hair-care/fully-vital-vs-wella-professionals,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,46.0,0
+/blogs/hair-care/fully-vital-vs-kiehls,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,30.0,0
+/blogs/hair-care/hum-nutrition-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Competitor brands (growth),0.0,6.0,0
+/blogs/hair-care/miss-jessies-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,0.0,4.0,0
+/blogs/hair-care/thicker-fuller-hair-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,0.0,12.0,0
+/blogs/hair-care/fully-vital-vs-organix,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,13.0,0
+/blogs/hair-care/fully-vital-vs-living-proof,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,24.0,0
+/blogs/hair-care/fully-vital-vs-biosilk,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,12.0,0
+/blogs/hair-care/fully-vital-vs-nexxus,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,10.0,0
+/blogs/hair-care/fully-vital-vs-bumble-and-bumble,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,21.0,0
+/blogs/hair-care/artnaturals-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,0.0,9.0,0
+/blogs/hair-care/diffuse-thinning-vs-pattern-baldness,comparison,Not a brand comparison: treat as a normal post (keep),KEEP (in your content calendar),,Hair growth: general,0.0,64.0,0
+/blogs/hair-care/fullyvital-vs-mayraki-anti-gray-comparison,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,KEEP (in your content calendar),,Gray: competitor brands,0.0,25.0,0
+/blogs/hair-care/postpartum-hair-loss-vs-something-else,comparison,Not a brand comparison: treat as a normal post (keep),KEEP (in your content calendar),,"Life stages: postpartum, pregnancy, menopause",0.0,0.0,0
+/blogs/hair-care/fullyvital-vs-heyhair-anti-gray-comparison,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,KEEP (in your content calendar),,Gray: competitor brands,0.0,0.0,0
+/blogs/hair-care/act-acre-vs-fullyvital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,KEEP (in your content calendar),,Hair growth: general,0.0,0.0,0
+/blogs/hair-care/vegamour-vs-fully-vital,comparison,"Keep and refresh (brand has search demand): honest, sourced comparison, no claims about the competitor you can't support",KEEP + refresh later (direct competitor),,Competitor brands (growth),13.0,85.0,0
+/blogs/hair-care/revitalash-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,4.0,26.0,0
+/blogs/hair-care/wellbel-vs-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,3.0,53.0,0
+/blogs/hair-care/viviscal-vs-fully-vital,comparison,"Keep and refresh (brand has search demand): honest, sourced comparison, no claims about the competitor you can't support",KEEP + refresh later (direct competitor),,Competitor brands (growth),2.0,111.0,0
+/blogs/hair-care/hairtamin-versus-fully-vital,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,Hair growth: general,0.0,60.0,0
+/blogs/hair-care/kerastase-vs-fully-vital-premium-hair-care-showdown-for-thicker-locks,comparison,Remove (no demand for this brand); fold any useful content into a 'FullyVital alternatives' guide,"REMOVE: unpublish, let 404",,"Growth products: serums, shampoos, kits",0.0,140.0,0
+/blogs/hair-care/glutathione-for-gray-hair,gray duplicate,duplicate of an existing gray page,LATER: merge after refresh test (target is in the test),/blogs/hair-vitamins/glutathione,gray,,,0
+/blogs/hair-care/gray-hair-ingredients-ranked-by-evidence,gray duplicate,duplicate of an existing gray page,MERGE: unpublish + 301 to target,/blogs/hair-care/anti-gray-hair-ingredients-what-actually-works,gray,,,0

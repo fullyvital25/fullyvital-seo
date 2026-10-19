@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"1141","retmax":"8","retstart":"0","idlist":["36081446","38825536","41561359","34668238","37305185","42835645","31210464","6238807"],"translationset":[],"querytranslation":"\"trichology\"[All Fields]"}}

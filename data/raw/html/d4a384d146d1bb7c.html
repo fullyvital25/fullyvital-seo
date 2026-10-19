@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-9cf1a7dd0be57c39186","applicationID":"778233373","transactionName":"elpdRUQKCA9cQEpOXVtGWkVTShcKV1UJXGdYR0dYVQkB","queueTime":2,"applicationTime":72,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-9cf1a7dd0be57c39186",applicationID:"778233373",browserID:"778247165"};;/*! For license information please see nr-loader-rum-1.323.0.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,1e6,"KC",0,i,"qh",0,"SESSION_ERROR"])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.323.0"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.323.0.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.323.0.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-zhTI1o3vPu0UcYWUELiLeb9P46+LBW0K7R4KO/PafMc68L5tJ2mSHyvZtcNeG9Cw/PTZstuo62K1wwaoAsHdXQ=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.323.0.PROD"]=self["webpackChunk:NRBA-1.323.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,1768));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://www.MDhair.co/article/premature-hair-graying" rel="canonical" />
+  <title>How to slow down hair graying? | MDhair</title>
+
+  <meta property="og:title" content="How to slow down hair graying?">
+  <meta property="og:description" content="Premature graying hair is frustrating. Fo-ti ( aka Polygonum Multiflorum or He Shou Wu) is believed to increase melanocyte activity and help prevent and slow down hair graying.">
+  <meta property="og:image" content="https://d2u2x4jugfrtkr.cloudfront.net/blog_articles/thumbnails/000/000/053/original/skin58_Beautiful_woman_with_grey_hair_in_her_50s_sitting_in_a_1c73edd8-c6f6-4c06-bc26-1d0923d1ddbe_3.jpg?1741702947">
+  <meta property="og:url" content="https://www.mdhair.co/article/premature-hair-graying" />
+  <meta property="og:type" content="website">
+
+  <meta name="description" content="Premature graying hair is frustrating. Fo-ti ( aka Polygonum Multiflorum or He Shou Wu) is believed to increase melanocyte activity and help prevent and slow down hair graying."/>
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@MDhair">
+  <meta name="twitter:image" content="https://d2u2x4jugfrtkr.cloudfront.net/blog_articles/thumbnails/000/000/053/original/skin58_Beautiful_woman_with_grey_hair_in_her_50s_sitting_in_a_1c73edd8-c6f6-4c06-bc26-1d0923d1ddbe_3.jpg?1741702947">
+
+  <link id="favicon" rel="icon" href="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/075/original/favicon-16-black.png?1737363780" sizes="16x16">
+<link id="favicon-32" rel="icon" href="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/076/original/favicon-32-black.png?1737363798" sizes="32x32">
+
+<script>
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  if (!isSafari) {
+    function updateFavicon() {
+      const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      let favicon = document.getElementById('favicon');
+      if (favicon) {
+        favicon.parentNode.removeChild(favicon);
+      }
+
+      let favicon32 = document.getElementById('favicon-32');
+      if (favicon32) {
+        favicon32.parentNode.removeChild(favicon32);
+      }
+
+      favicon = document.createElement('link');
+      favicon.id = 'favicon';
+      favicon.rel = 'icon';
+      favicon.sizes = '16x16';
+
+      favicon32 = document.createElement('link');
+      favicon32.id = 'favicon-32';
+      favicon32.rel = 'icon';
+      favicon32.sizes = '32x32';
+
+      const randomString = Math.random();
+      favicon.href = isDarkMode 
+        ? "https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/077/original/favicon-16-white.png?1737363816?v=" + randomString
+        : "https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/075/original/favicon-16-black.png?1737363780?v=" + randomString;
+
+      favicon32.href = isDarkMode 
+        ? "https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/078/original/favicon-32-white.png?1737363831?v=" + randomString
+        : "https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/076/original/favicon-32-black.png?1737363798?v=" + randomString;
+
+      document.head.appendChild(favicon);
+      document.head.appendChild(favicon32);
+    }
+
+    updateFavicon();
+
+    const colorSchemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    if (colorSchemeMediaQuery.addEventListener) {
+      colorSchemeMediaQuery.addEventListener('change', updateFavicon);
+    } else {
+      colorSchemeMediaQuery.addListener(updateFavicon);
+    }
+  }
+</script>
+
+
+    <link rel="stylesheet" media="all" href="/assets/frontend/layout-d7ae1157b58fb8c3fe328bb0e9b82af64e4f04058e32d38f0abf94292abf5504.css" />
+
+    <script>
+    (function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+		0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+    mixpanel.init("e54c5a295d3194b5fce6412d3a74d272");
+  </script>
+
+  <script src="/assets/website-1a7100f665252ea76b251b3d40af4b0f64d596589be56beec9dba94c18baaaee.js"></script>
+    <link rel="stylesheet" media="all" href="/assets/accessibility-346e627e9f3cb744cf2481fb900ba09ab7064863f993c6128297e3485012476b.css" />
+    <script src="/assets/accessibility-55baffa1159301ecb5fa118126ef6032bf9a076531beaf90d8b7dec82c46d80e.js" defer="defer"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="XCu-TB_L_N9wMfSz_-sxTKuwnEDaJSMtwa9T8nOo0HJMbmNdElR5t97ooXNIJeZ7YitnBBZ5LdG4m98mXAtJvw" />
+
+
+    <!-- Universal Ads pixel -->
+<script>
+  (function () {
+    if (document.querySelector('script[data-sdk-name="uapx"]')) return;
+
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.setAttribute('data-sdk-name', 'uapx');
+    script.src = 'https://connect.universalads.com/uap.js';
+    script.async = true;
+    script.onload = function () {
+      window.uapx.startWithConfig({ general: {
+        install_id_enabled: true,
+        pers_tr: true,
+        collect_page_info: true,
+        collect_ga: true,
+        product_id: '45d5d5af-f82a-4baf-8adf-dbe1e8811f53',
+        access_token: '47b906ca14d7e1e836b3403da87f7e0a1f928b78'
+      } });
+      window.uapx.sendConversion('page_view');
+
+      window.mdhairUaReady = true;
+      window.dispatchEvent(new Event('mdhair:ua-ready'));
+    };
+    document.head.appendChild(script);
+  })();
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72506489-3">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-72506489-3');
+      gtag('config', 'AW-10799210686');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '934099420866029');
+      // Insert your pixel ID here.
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=934099420866029&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Snap Pixel Code -->
+    <script type='text/javascript'>
+      (function(win, doc, sdk_url){
+        if(win.snaptr) return;
+        var tr=win.snaptr=function(){
+          tr.handleRequest? tr.handleRequest.apply(tr, arguments):tr.queue.push(arguments);
+        };
+        tr.queue = [];
+        var s='script';
+        var new_script_section=doc.createElement(s);
+        new_script_section.async=!0;
+        new_script_section.src=sdk_url;
+        var insert_pos=doc.getElementsByTagName(s)[0];
+        insert_pos.parentNode.insertBefore(new_script_section, insert_pos);
+      })(window, document, 'https://sc-static.net/scevent.min.js');
+
+      snaptr('init','ffd3e71b-a45c-49e0-9e29-8b21220f0e60')
+      snaptr('track','PAGE_VIEW')
+    </script>
+    <!-- End Snap Pixel Code -->
+
+    <!-- DO NOT MODIFY -->
+    <!-- Quora Pixel Code (JS Helper) -->
+    <script>
+      !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+      qp('init', 'aaedf023b1ca4329a3e0a0a34c995fcb');
+      qp('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/aaedf023b1ca4329a3e0a0a34c995fcb/pixel?tag=ViewContent&noscript=1"/></noscript>
+    <!-- End of Quora Pixel Code -->
+
+    <!-- Bing Pixel Code -->
+    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"187021225"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+    <!-- End Bing Pixel Code -->
+
+    <!-- TikTok Pixel Code -->
+    <script>
+      !function (w, d, t) {
+        w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+        )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+        ttq.load('C83MD18JVRJLR9PJIJG0');
+        ttq.page();
+      }(window, document, 'ttq');
+
+    </script>
+    <!-- End TikTok Pixel Code -->
+
+    <!-- Twitter conversion tracking base code -->
+    <script>
+      !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+      },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+      twq('config','odxbo');
+      twq('event', 'tw-odxbo-odxbp', {
+      });
+    </script>
+    <!-- End Twitter conversion tracking base code -->
+
+    <!-- Pinterest Pixel Base Code -->
+    <script>
+      !function(e){if(!window.pintrk){window.pintrk = function () {
+        window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+        n=window.pintrk;n.queue=[],n.version="3.0";var
+        t=document.createElement("script");t.async=!0,t.src=e;var
+        r=document.getElementsByTagName("script")[0];
+        r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+      pintrk('load', '2613270174612', {});
+      pintrk('page');
+      pintrk('track', 'pagevisit');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2613270174612&noscript=1" />
+    </noscript>
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2613270174612&event=pagevisit&noscript=1" />
+    </noscript>
+    <!-- End Pinterest Pixel Base Code -->
+
+    <!-- Reddit Pixel -->
+    <script>
+      !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
+          rdt('init','t2_cgpfwyx4c', {"optOut":false,"useDecimalCurrencyValues":true});
+      rdt('track', 'PageVisit');
+    </script>
+    <!-- End Reddit Pixel -->
+
+    <!-- Taboola Pixel Code -->
+    <script type='text/javascript'>
+      window._tfa = window._tfa || [];
+      window._tfa.push({notify: 'event', name: 'page_view', id: 1544607});
+      !function (t, f, a, x) {
+        if (!document.getElementById(x)) {
+          t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+        }
+      }(document.createElement('script'),
+        document.getElementsByTagName('script')[0],
+        '//cdn.taboola.com/libtrc/unip/1544607/tfa.js',
+        'tb_tfa_script');
+    </script>
+    <!-- End of Taboola Pixel Code -->
+
+    <!-- Outbrain Pixel Code -->
+    <script data-obct type="text/javascript">
+      /** DO NOT MODIFY THIS CODE**/
+      !function(_window, _document) {
+        var OB_ADV_ID = '002feba1ebc50f84d5b096d71e817f5cc9';
+        if (_window.obApi) {
+          var toArray = function(object) {
+            return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
+          };
+          _window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));
+          return;
+        }
+        var api = _window.obApi = function() {
+          api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
+        };
+        api.version = '1.1';
+        api.loaded = true;
+        api.marketerId = OB_ADV_ID;
+        api.queue = [];
+        var tag = _document.createElement('script');
+        tag.async = true;
+        tag.src = '//amplify.outbrain.com/cp/obtp.js';
+        tag.type = 'text/javascript';
+        var script = _document.getElementsByTagName('script')[0];
+        script.parentNode.insertBefore(tag, script);
+      }(window, document);
+
+      obApi('track', 'PAGE_VIEW');
+    </script>
+    <!-- End Outbrain Pixel Code -->
+
+    <!-- Applovin pixel -->
+    <script>
+        var AXON_EVENT_KEY="563cfb75-06f5-4031-a02c-e5ce163815a1";
+        !function(e,r){var t=["https://s.axon.ai/pixel.js","https://c.albss.com/p/l/loader.iife.js"];if(!e.axon){var a=e.axon=function(){a.performOperation?a.performOperation.apply(a,arguments):a.operationQueue.push(arguments)};a.operationQueue=[],a.ts=Date.now(),a.eventKey=AXON_EVENT_KEY;for(var n=r.getElementsByTagName("script")[0],o=0;o<t.length;o++){var i=r.createElement("script");i.async=!0,i.src=t[o],n.parentNode.insertBefore(i,n)}}}(window,document);
+        axon("init");
+        axon("track", "page_view");
+    </script>
+    <!-- end Applovin pixel -->
+
+    <!-- Hotjar Tracking Code for https://www.mdhair.co -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2666800,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- end Hotjar -->
+
+
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BlogPosting","headline":"How to slow down hair graying?","datePublished":"2021-08-18T08:20:21Z","dateModified":"2025-03-11T14:22:28Z","author":{"@type":"Person","name":"Yoram Harth, MD","url":"https://en.wikipedia.org/wiki/Yoram_Harth","jobTitle":"Board-Certified Dermatologist","sameAs":["https://en.wikipedia.org/wiki/Yoram_Harth"]},"publisher":{"@type":"Organization","name":"MDhair","logo":{"@type":"ImageObject","url":"https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/080/original/logo-dark-md.svg?1737363954"}},"mainEntityOfPage":"https://www.mdhair.co/article/premature-hair-graying","reviewedBy":{"@type":"Person","name":"Dr. Yoram Harth","jobTitle":"Board-Certified Dermatologist","sameAs":["https://en.wikipedia.org/wiki/Yoram_Harth"]},"image":"https://d2u2x4jugfrtkr.cloudfront.net/blog_articles/thumbnails/000/000/053/original/skin58_Beautiful_woman_with_grey_hair_in_her_50s_sitting_in_a_1c73edd8-c6f6-4c06-bc26-1d0923d1ddbe_3.jpg?1741702947","description":"Premature graying hair is frustrating. Fo-ti ( aka Polygonum Multiflorum or He Shou Wu) is believed to increase melanocyte activity and help prevent and slow down hair graying."}
+  </script>
+
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"MedicalWebPage","lastReviewed":"2025-03-11","reviewedBy":{"@type":"Person","name":"Dr. Yoram Harth","jobTitle":"Board-Certified Dermatologist","sameAs":["https://en.wikipedia.org/wiki/Yoram_Harth"]}}
+  </script>
+</head>
+
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="wrapper">
+      <header class="header" style="z-index: 110;">
+  <div class="container _lg">
+    <div class="header-holder">
+      <button name="button" type="button" class="nav-opener" aria-label="Toggle navigation" aria-expanded="false" aria-controls="header-navigation">
+        <img alt="" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/085/original/icon-menu.svg?1737364988" />
+</button>
+      <div class="nav-wrap" id="header-navigation">
+        <span class="nav-wrap__banner">dermatologist recommended</span>
+        <div class="nav-banner">
+          <div class="nav-banner__info">
+            <h4>Custom Treatment Kits</h4>
+            <a class="btn btn-primary" href="/quiz">Take the quiz</a>
+          </div>
+          <div class="nav-banner__img">
+            <img srcset="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/000/668/original/MDhair_Shipper_3.png?1735203482 2x" alt="" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/000/668/original/MDhair_Shipper_3.png?1735203482" />
+          </div>
+        </div>
+        <nav class="nav">
+          <div class="nav-side">
+            <a class="nav-item" href="/products">Products</a>
+            <a class="nav-item" href="/how_it_works">How it works</a>
+            <a class="nav-item" href="/science">Science</a>
+          </div>
+          <div class="nav-side">
+            <a class="nav-item" href="/reviews">Reviews</a>
+            <a class="nav-item" href="/mission">About Us</a>
+
+              <button class="open-cart-btn" id="openCart" type="button" aria-label="Shopping cart, 0 items" aria-haspopup="dialog" aria-controls="cartOffcanvas" aria-expanded="false">
+                <div class="center-contents">
+                  <img width="40" height="40" alt="" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/066/original/cart-icon.png?1737131836" />
+                  <span class="cart-badge"></span>
+                </div>
+              </button>
+
+              <a class="btn btn-outline mobile-hidden" href="/quiz">Take the quiz</a>
+          </div>
+
+          <div class="nav-bot-mobile">
+              <a class="btn btn-primary" href="/quiz">Take the quiz</a>
+          </div>
+        </nav>
+      </div>
+
+      <a class="header-logo" href="/">
+        <img alt="MDhair home" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/080/original/logo-dark-md.svg?1737363954" />
+</a>
+        <button class="open-cart-small-scr-btn" id="openCartSmallScr" type="button" aria-label="Shopping cart, 0 items" aria-haspopup="dialog" aria-controls="cartOffcanvas" aria-expanded="false">
+          <div class="center-contents">
+            <img width="40" height="40" alt="" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/066/original/cart-icon.png?1737131836" />
+            <span class="cart-badge"></span>
+          </div>
+        </button>
+
+    </div>
+  </div>
+</header>
+  <style>
+  .offcanvas {
+    position: fixed;
+    top: 0;
+    right: -500px; /* Offcanvas starts off-screen */
+    width: 500px;
+    height: 100vh;
+    transition: right 0.3s ease-in-out;
+    z-index: 125;
+  }
+
+  .offcanvas-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 248, 245, 1);
+  }
+  .cart-box {
+    height: calc(100vh - 94px - 158px); 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    margin-top: 94px;
+    margin-bottom: 158px;
+  }
+  .cart-items {
+    flex: 0 1 auto; 
+    overflow-y: auto; 
+    padding: 0;
+    max-height: 100%;
+  }
+  .shop-btn-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+  }
+  .cart-btn {
+    width: 100%;
+    height: 40px; 
+    margin: 30px 0; 
+    padding-top: 11px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .cart-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border-bottom: 1px solid rgba(186, 168, 158, 0.5);
+  }
+  .cart-item-img {
+    height: 80px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(186, 168, 158, 1);
+    border-radius: 8px;
+    background-color: rgba(231, 224, 221, 1);
+  }
+  .cart-item-img img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .cart-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+  }
+  .cart-item-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Copernicus;
+    color: rgba(2, 7, 17, 1);
+    padding: 0;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .solid-divider {
+    border-top: 1px solid rgba(186, 168, 158, 0.5);
+  }
+  hr {
+    margin-bottom: 0px !important;
+  }
+  .position-relative {
+    position: relative;
+  }
+
+  .absolute-bottom {
+    position: absolute;
+    bottom: 10px;
+  }
+  .padding-40-20 {
+    padding: 0 40px;
+  }
+  .total-and-checkout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    border-top: 1px solid rgba(186, 168, 158, 1);
+    background-color: rgba(255, 248, 245, 1);
+  }
+
+  .cart-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 94px;
+    border-bottom: 1px solid rgba(186, 168, 158, 1);
+  }
+  .cart-title h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-take-quiz {
+    margin-top: 40px; 
+    width: 100%; 
+    background-color: rgba(231, 224, 221, 1);
+    display: block;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-take-quiz:hover {
+    background-color: #c5c0c0;
+  }
+
+  .open-cart-small-scr-btn { display: none; }
+
+  .open-cart-btn {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent !important;
+    padding: 0;
+    margin-top: 0px !important;
+    box-shadow: none !important;
+    width: 40px !important;
+    height: 40px !important;
+    color: unset !important;
+  }
+
+  .center-contents {
+    position: relative;
+    line-height: 1.7 !important;
+  }
+
+  .cart-badge {
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    color: black;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500 !important;
+  }
+
+  .overlay-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 102;
+  }
+
+  .close-cart-btn {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    font-size: 18px !important;
+    color: rgba(2, 7, 17, 1) !important;
+    cursor: pointer;
+  }
+  .x-shape {
+    width: 18px;
+    height: 18px;
+    position: relative;
+  }
+  .x-shape::before,
+  .x-shape::after {
+    content: "";
+    position: absolute;
+    height: 1px; /* Adjust thickness as needed */
+    background: #022230;
+  }
+  .x-shape::before {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .x-shape::after {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .tnc-text {
+    color: #A1A1A1;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+ 
+  .free-ship-text {
+    text-align: center; 
+    margin: 30px 0 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .progress-container {
+    border-radius: 7px;
+    width: 100%;
+    background-color: rgba(95, 190, 216, 0.4);
+    margin-bottom: 30px;
+  }
+
+  .progress-bar {
+    border-radius: 7px;
+    width: 0;
+    height: 14px;
+    background-color: rgba(95, 190, 216, 1);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+
+  .grey-text {
+    font-size: 14px;
+    font-weight: 350;
+    color: rgba(2, 7, 17, 1);
+  }
+
+  @media (max-width: 1023px) {
+    .cart-box {
+      height: calc(100vh - 67px - 158px); 
+      margin-top: 67px;
+    }
+    .cart-item {
+      padding: 30px 20px;
+    }
+
+    .padding-40-20 {
+      padding: 0 20px;
+    }
+
+    .open-cart-btn { display: none; }
+
+    .open-cart-small-scr-btn.old-design {
+      margin-right: 10px;
+      margin-top: 0;
+      right: 2vw;
+      left: auto;
+      position: absolute;
+      top: 2vw;
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .open-cart-small-scr-btn {
+      margin-top: 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      background: transparent !important;
+      box-shadow: none !important;
+      width: 40px !important;
+      height: 40px !important;
+      z-index: 100;
+    }
+
+    .offcanvas {
+      position: fixed;
+      top: 0;
+      max-width: 500px;
+      width: 100% !important;
+      max-height: 100%;
+      background-color: #fff;
+      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease-in-out;
+    }
+    .cart-item-img {
+      height: 70px;
+    }
+    .cart-item-title {
+      font-size: 16px;
+    }
+
+    .cart-title {
+      height: 67px;
+    }
+    .cart-title h2 {
+      font-size: 22px;
+    }
+    .x-shape {
+      width: 16px;
+      height: 16px;
+      position: relative;
+    }
+
+    .subtitle {
+      font-size: 20px;
+    }
+    .free-ship-text {
+      font-size: 14px;
+    }
+  }
+</style>
+
+
+<div class="offcanvas" id="cartOffcanvas" role="dialog" aria-modal="true" aria-label="Shopping cart" tabindex="-1" hidden>
+    <div class="offcanvas-content">
+
+  <div class="cart-title padding-40-20 flex">
+    <h2 style="margin: 0; line-height: 1;">Your Cart is Empty </h2>
+      <button class="close-cart-btn" id="closeCart" type="button" aria-label="Close cart">
+        <div class="x-shape"></div>
+      </button>
+  </div>
+
+  <div class="cart-box">
+
+    <div style="padding: 60px 30px;">
+      <h3 class="subtitle">Start Your journey to thicker, healthier hair.</h3>
+
+      <a href="/quiz" class="btn btn-take-quiz" style="height: 40px; padding-top: 11px;"><span style="font-size: 13px; font-weight: 500;">Take the quiz</span></a>
+      <a href="/products" class="btn btn-primary" style=" width: 100%; height: 40px; margin-top: 20px; padding-top: 11px;"><span style="font-size: 13px; font-weight: 500;">Shop all products</span></a>
+    </div>
+
+ </div>
+</div>
+ 
+</div>
+
+<div class="overlay-background" id="overlayBackground"></div>
+
+<script>
+  function handleOpenCartClick() { window.MDHairAccessibility.openCart(); }
+</script>
+
+
+
+      <script>
+  (function () {
+    function sendEvents() {
+      var events = [];
+      events.forEach(function (event) {
+        window.uapx.sendConversion(event[0], event[1]);
+      });
+
+      var purchase = null;
+      if (purchase) {
+        var key = 'ua-purchase-' + purchase.order_id;
+        // Storage can be unavailable in private browsing; tracking must still work.
+        try { if (window.sessionStorage.getItem(key)) return; } catch (e) {}
+        window.uapx.sendConversion('purchase', purchase);
+        try { window.sessionStorage.setItem(key, '1'); } catch (e) {}
+      }
+    }
+    if (window.mdhairUaReady) {
+      sendEvents();
+    } else {
+      window.addEventListener('mdhair:ua-ready', sendEvents, { once: true });
+    }
+  })();
+</script>
+
+      <div id="main-content" tabindex="-1"><main class="main">
+
+  <section class="art bg-sand-lighter">
+    <div class="container _lg">
+      <div class="art-content">
+        <div class="art-head">
+          <span style="display: inline-block; margin-bottom: 30px;">
+            <a class="art-cat" href="/articles">ARTICLES</a>
+             /
+            <a class="art-cat" href="/after-50">AFTER 50</a>
+          </span>
+
+          <h1 class="art-title">How to slow down hair graying?</h1>
+
+          <div class="art-meta">
+              <div class="art-meta-img">
+                <img alt="Yoram Harth, MD" src="https://dql5a1uh5bnf3.cloudfront.net/photos/images/000/001/491/original/Yoram_avatar.png?1735058318" />
+              </div>
+              <div class="art-meta-content">
+                By <a href="https://en.wikipedia.org/wiki/Yoram_Harth" target="_blank" rel="noopener" class="art-meta-img">Yoram Harth, MD</a> | Mar 11, 2025
+              </div>
+          </div>
+          <div class="art-review" style="display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 14px; color: #6b6b6b;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+  </svg>
+  <span>
+    Medically reviewed by
+    <a href="https://en.wikipedia.org/wiki/Yoram_Harth" target="_blank" rel="noopener" style="color: #4a4a4a; text-decoration: underline;">Dr. Yoram Harth</a>,
+    Board-Certified Dermatologist
+      | Mar 11, 2025
+  </span>
+</div>
+
+        </div>
+
+        <div class="art-entry">
+          <p><img alt="" src="https://d2u2x4jugfrtkr.cloudfront.net/app/public/ckeditor_assets/pictures/892/content_skin58_Beautiful_woman_with_grey_hair_in_her_50s_sitting_in_a_1c73edd8-c6f6-4c06-bc26-1d0923d1ddbe_3.jpg" /></p>
+
+<p><meta name="uuid" content="uuid43bIUag6PLyx" /><meta charset="utf-8" /></p>
+
+<p>Premature graying is generally defined as a change in hair color before 30. Understandably, a young person would want to do what they could to stop premature graying in its tracks and maintain their hair color. What are the factors that can lead to early hair graying? Is it possible to prevent premature graying or slow its pace by taking supplements?</p>
+
+<h3>What causes premature hair graying?</h3>
+
+<p>Hair color is created by melanocytes (pigment cells) in the hair follicles, which produce melanin (pigment). The melanocytes become less active during aging and produce less melanin, which means less pigmentation in the hair. Hair turns gray because it has little to no melanin, meaning all that is showing is the color of keratin (the protein that makes up the hair). </p>
+
+<p style="margin-left: 80px;">1. Nutritional deficiencies are one <span style="box-sizing: border-box; margin: 0px; padding: 0px;">cause of early hair graying. One <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3746220/?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying" target="_blank">study</a> found that a deficit in a few micronutrients, including ferritin, vitamin D, folate, vitamin B12, and selenium</span>, has been associated with premature hair graying in students. These researchers suggested screening for these vitamins and minerals in patients with premature graying of hair and subsequent supplementation of the deficient micronutrients. Correcting those deficiencies with the right dietary supplements can help slow hair graying. </p>
+
+<p style="margin-left: 80px;">2. External oxidative stress (caused by smoking, pollution, UV rays, and numerous other factors we may encounter daily) can also lead to graying. Smoking, in particular, has been linked to premature graying.</p>
+
+<p style="margin-left: 80px;">3. Acute and chronic anxiety and stress may contribute to early hair graying. Relaxation techniques like meditation, sports, certain medications, and dietary supplements can help calm down emotional stress and help reduce hair loss and premature hair graying. </p>
+
+<p style="margin-left: 80px;">4. Genetics is a common cause of premature graying hair, and race and ethnicity also play a role. Typically, caucasian people can deal with graying as early as 20 years old. Asians can be as young as 25, while Black populations can deal with graying at 30.</p>
+
+<p style="margin-left: 80px;">5. It seems that repeated plucking of white hair strands can increase the rate of hair graying. By plucking gray hair, you exert stress on the hair follicle, which may also affect the surrounding hair follicles. This stress could theoretically lead to premature graying of the hair.</p>
+
+<p><img alt="" src="https://d2u2x4jugfrtkr.cloudfront.net/app/public/ckeditor_assets/pictures/624/content_causes_premature_hair_graying.png" /></p>
+
+<h3>Can hair turn gray overnight? </h3>
+
+<p>Hair fibers can not change their color overnight. That said, in people with a mix of black or brown and white hair, the hair can look whiter after a stressful event. In rare cases, stress can cause a large number of hair follicles to enter their shedding phase (telogen) simultaneously. This synchronized sudden hair shedding causes many older pigmented hair stars to fall simultaneously, leaving behind the younger, finer, and less pigmented hair. This can suddenly cause the hair to turn gray - usually over a few days. </p>
+
+<h3>How does stress cause premature hair graying? The science.</h3>
+
+<p>Stress is believed to be another pathway to developing a head full of gray hairs. One study conducted in 2021 examined hair samples from only 14 individuals and found a correlation between changes in color within a single strand and periods of reported stress. Interestingly, in 10 out of the 14 subjects, researchers discovered strands with light tips and dark roots, suggesting that some reversal of graying hair might be feasible.</p>
+
+<p>When it comes to mice, the connection between stress and graying hair is stronger, as experiments have revealed potential mechanisms. In a 2020 paper, researchers observed that injecting mice with norepinephrine, the body&#39;s fight-or-flight hormone, caused melanocyte stem cells to transform into melanocytes and rapidly migrate away from the follicle. As a result, the fur that grew from these melanocyte-depleted follicles turned gray. So, when an unleashed dog begins to growl at you, not only will your heart rate increase and your pupils dilate, but your hair might also embark on its journey toward graying.</p>
+
+<h3>What are the best natural remedies for premature hair graying? </h3>
+
+<h4>Polygonum Multiflorum (Fo-ti or He Shou Wu)</h4>
+
+<p>Polygonum multiflorum (AKA Fo-ti or He Shou Wu) is a tuberous plant native to China and Japan. The meaning of He Shou Wu (pronounced as Her show woo) is &quot;black-haired, Mr. He.&quot; It has been used for centuries in Chinese medicine for anti-aging, lifespan expansion, and reversal of grey hair. </p>
+
+<h4>How does Polygonum Multiflorum (Fo-ti) work?</h4>
+
+<p>Small amounts of hydrogen peroxide molecules are naturally formed in our cells. With time, this molecule is believed to damage the hair melanocytes, reduce the production of melanin, and thus cause premature graying of the hair. In one study, it was found that taking Fo-ti prevented the hair-bleaching effects of hydrogen peroxide. Polygonum Multiflorum is believed to neutralize the excess hydrogen peroxide and, thus, stop and reverse hair graying. <br />
+<br />
+Fo-ti also increases blood circulation and melanin production. Better scalp blood flow improves hair growth rate and nourishment by increasing melanin production, which feeds and supports the hair follicles. The increased melanin production also boosts color in the hair, which helps maintain your natural hue and delays new gray hairs from developing/ Studies have shown that fo-ti can help speed up the transition of hair follicles from the dormant stage of hair growth (telogen phase) to the growth stage (anagen phase) by working on the FGF0-7 gene encodes proteins particular to epithelial cell growth. This is especially important to those suffering from hair thinning or hair loss. </p>
+
+<h4>Maitake and Reishi Mushrooms</h4>
+
+<p>By helping to lower oxidative stress, your hair follicles are healthier, which allows your hair to grow thicker and stronger and retain its natural color. </p>
+
+<h4>Ashwagandha </h4>
+
+<p>Ashwagandha has been used in Ayurvedic medicine for over 2500 years to reduce stress and help balance our immune system. Lowering stress levels can be one of the mechanisms behind the role of Ashwagandha in healthier hair regrowth and slower hair greying. </p>
+
+<h3>What are the best Vitamins and minerals used to prevent premature gray hair?</h3>
+
+<p>You can&#39;t reverse hairs that have already turned gray (besides using a hair dye). Still, besides addressing other root causes affecting your hair, some vitamins and minerals can help slow and prevent further color change. You need these nutrients to maintain your hair color and support healthy hair. </p>
+
+<h4>Pantothenic Acid (Vitamin B5)</h4>
+
+<p>Lab studies have shown that vitamin B5 can reverse graying hair. While further research is needed to pinpoint how it affects human graying hair, this vitamin is essential for overall hair health. Vitamin B5 promotes the production of red blood cells, helping to nourish follicles to encourage growth and prevent shedding. </p>
+
+<h4>Biotin (Vitamin B7)</h4>
+
+<p>Biotin is a key vitamin for hair growth and strength, as it stimulates the production of the hair protein keratin. Research has shown that people with prematurely gray hair tend to have lower levels of biotin, so supplementation may help counteract graying hair.</p>
+
+<h4>Folic Acid (Vitamin B9)</h4>
+
+<p>Folic acid (also known as folate or vitamin B9) is a B vitamin, and a deficiency has been linked to premature graying. This vitamin is vital in producing methionine, an amino acid that plays a role in hair color. Folic acid is also crucial for hair health because it helps with the keratinization of hair, which aids the hair follicles in producing more keratin for stronger hair. </p>
+
+<h4>Vitamin B12</h4>
+
+<p>Like folic acid, a deficiency in vitamin B12 has been linked to graying hair in younger people. Vitamin B12 also works alongside folic acid to produce red blood cells, supporting overall hair health. </p>
+
+<h4>Vitamin C</h4>
+
+<p>When it comes to hair graying, vitamin C can be beneficial because it has potent antioxidant properties, which can fight against free radicals that can damage hair follicles. It is also a great hair care vitamin because it supports iron absorption &ndash; we&#39;ll talk more about the link between iron and gray hair below. Additionally, vitamin C supports overall hair health by promoting the production of collagen, which provides the body with the amino acids needed to build keratin.</p>
+
+<h4>Vitamin D</h4>
+
+<p>Research has found that young people with graying hair tend to have a vitamin D deficiency. Vitamin D deficiency has also been linked to alopecia (hair loss), and research indicates that supplementation may boost hair growth. </p>
+
+<h4>Copper</h4>
+
+<p>There are many ways in which copper supports hair color and overall hair health. Copper plays a role in melanin production, helping to make the color more vibrant and preventing early graying. It also supports collagen production, helping the body build keratin for strong hair. Additionally, copper is an antioxidant that can fight oxidative stress that could lead to early graying (and negatively impact overall health). </p>
+
+<h4>Iron</h4>
+
+<p>Low iron levels are associated with premature hair graying, and it is believed that iron influences melanogenesis, AKA melanin production. This means supplementation can help get melanin production back on track to prevent further graying. Iron also supports red blood cells in carrying oxygen and nutrients to the hair follicles, essential for hair growth and overall wellness. </p>
+
+<h4>Calcium</h4>
+
+<p>Like iron, lower calcium levels have been linked with prematurely graying hair. Also, like iron, calcium plays a role in melanin production, so supplementation may help support that process to promote vibrant hair color. Calcium also promotes overall hair health and helps prevent hair loss. </p>
+
+<h4>Zinc</h4>
+
+<p>Low zinc levels may be associated with early graying, and zinc may also affect melanin production. This mineral is also essential for overall hair health and strength, promoting tissue growth and repair. </p>
+
+<h4>Marine collagen</h4>
+
+<p>Collagen is thought to play a role in diminishing the presence of gray hair. This is attributed to its potential to maintain the robustness of the hair follicle, which is integral in the generation of hair pigment, responsible for giving hair its natural color. By supporting the health and stability of these follicles, collagen might contribute to preserving the original hue of the hair, thereby possibly lessening the occurrence of graying. Free radical damage to cells that produce hair color may accelerate graying to some extent. Since collagen can act as an antioxidant, it may be able to fight this damage and slow graying.</p>
+
+<h3>How do you prevent premature hair greying? </h3>
+
+<ol>
+	<li style="margin-left: 40px;">Manage stress levels, as stress hormones can interrupt melanin production in the hair follicles. Implement stress-management techniques such as exercise, meditation, or therapy to reduce stress levels and promote healthy hair growth.</li>
+	<li style="margin-left: 40px;">Quit smoking, as smoking can damage hair follicles and disrupt blood flow to the scalp, leading to premature graying. Work with a doctor to create a cessation plan that works for you and helps you successfully quit smoking.</li>
+	<li style="margin-left: 40px;">Maintain a healthy weight by eating a healthy diet and getting regular exercise. Being overweight or underweight can disrupt hormonal balance, impact hair growth, and lead to premature graying.</li>
+	<li style="margin-left: 40px;">Reduce exposure to harsh hair styling chemicals and pollution, as they can damage hair follicles and impact hair growth. Avoid harsh hair products and limit exposure to pollutants in the air to protect your hair and promote healthy growth.</li>
+	<li style="margin-left: 40px;">Protect your hair from the sun by wearing hats and scarves. UV radiation can damage hair and cause it to become brittle and prone to breakage. Using hair products that contain SPF can also help protect your hair from UV radiation.</li>
+</ol>
+
+<h3>Can catalase help with premature hair greying? </h3>
+
+<p>There is no scientific evidence to support the claim that catalase can prevent premature hair graying. Premature graying is typically caused by genetics, age, stress, smoking, and poor nutrition. Catalase is an enzyme that helps break down hydrogen peroxide, which can accumulate in hair follicles and contribute to premature graying. However, the amount of hydrogen peroxide accumulating in the hair follicles is typically insufficient to cause premature graying. Taking care of your hair, maintaining a healthy lifestyle, and managing stress are more effective ways to promote healthy hair growth. Taking high doses of catalase supplements can cause digestive issues such as stomach pain, nausea, and diarrhea. It can also interfere with the body&#39;s ability to absorb other essential nutrients.</p>
+
+<h3>Best shampoo and conditioner to slow down hair graying.</h3>
+
+<p>The Fo-ti in MDhair products is thought to neutralize excess hydrogen peroxide in the hair follicles, potentially stopping and even reversing hair graying. Together with other ingredients in the MDhair products, it also promotes increased blood circulation to the scalp, nourishing hair follicles and potentially boosting melanin production to maintain natural hair color and delay the development of new gray hairs. In an IRB-approved clinical study on females using the fully customized MDhair kit (serum, shampoo, supplements, and marine collagen) for 6 months, 65.1% of participants reported a favorable change in the color of the roots of their hair.</p>
+
+<p>The MDhair <a href="https://www.mdhair.co/products/restore-shampoo?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying" target="_blank">Restore Shampoo</a> and <a href="https://www.mdhair.co/products/conditioner?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying" target="_blank">MDhair&#39;s conditioner </a>include Fo-ti, a unique ingredient believed to help fight hair graying. The effects of the Fo-ti can be enhanced by oral supplements that include the essential vitamins and minerals needed for the optimal function of the melanocytes in the hair follicles. For best results, look for hair supplements containing vitamins from the B family, mainly B5, Vitamins C and D, and zinc, iron, and copper.</p>
+
+<h3>Best supplements to slow down hair graying.</h3>
+
+<p>A few studies have shown that increasing blood circulation in the scalp and promoting hair regrowth can slow premature hair graying. The greying hair process can be targeted from the outside with natural plant ingredients like fo-ti and from the inside by taking <a href="https://www.mdhair.co/products/regrowth-supplements?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying" target="_blank">supplements with Ashwagandha</a>, the natural stress reliever, Maitake, and Reishi mushrooms, and the vitamins and minerals required for melanin production. (Vitamins B, D, Folate, and the minerals zinc, selenium, and copper). </p>
+
+<h3>Takeaway: </h3>
+
+<p>Genetics isn&#39;t the only reason hair turns grey. Ultraviolet radiation and other external factors can produce oxidative stress, leading to the damage and eventual death of melanocytes in hair follicles. These melanocytes produce melanin, the pigment that gives hair its color. When they die off, hair loses its pigment and turns grey. Additionally, grey hair often exhibits changes in texture and strength. The absence of melanin can make the hair thinner, slower to grow, and more prone to breakage, as melanin provides some degree of protection and strength to the hair. Using scalp treatments and serums that contain antioxidative ingredients and the micronutrients needed for a healthier scalp can help support better hair regrowth and possibly slow down hair greying.<br />
+ </p>
+
+<p><a href="https://www.mdhair.co/products/restore-shampoo?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying" target="_blank">Treatment shampoo with Fo-TI</a><br />
+<a href="https://www.mdhair.co/products/conditioner?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying" target="_blank">Treatment conditioner with Fo-TI</a><br />
+<a href="https://www.mdhair.co/products/regrowth-supplements?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying" target="_blank">MDhair Regrowth Supplements with Ashwagandha</a><br />
+<a href="https://www.mdhair.co/products/peptide-bond-repair-oil?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying">Peptide Bond Repair Oil for dry and damaged hair</a><br />
+<a href="https://www.mdhair.co/products/marine-collagen?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying">MDhair Marine Collagen</a></p>
+
+<h3>References:</h3>
+
+<ol>
+	<li style="margin-left: 40px;">Huang, C. et al. (2017). The role of vitamin B6 in the prevention of hair graying. Dermatologica Sinica, 35(1), 1-5.</li>
+	<li style="margin-left: 40px;">Almohanna, H.M. et al. (2019). The Role of Vitamins and Minerals in Hair Loss: A Review. Dermatology and Therapy, 9(1), 51-70.</li>
+	<li style="margin-left: 40px;">Rushton, D. H. (2002). Nutritional factors and hair loss. Clinical and experimental dermatology, 27(5), 396-404.</li>
+	<li style="margin-left: 40px;">Bhat, R. M. et al. (2013). Trace element levels in alopecia areata. Indian Journal of Dermatology, Venereology, and Leprology, 79(4), 547.</li>
+	<li style="margin-left: 40px;">S. Chan, Y. et al. (2002). Polygonum multiflorum root decoction can delay the process of skin aging in humans. International Journal of Experimental Pathology, 83, 33-38.</li>
+	<li style="margin-left: 40px;">Daulatabad D, et al.. Prospective Analytical Controlled Study Evaluating Serum Biotin, Vitamin B<sub>12</sub>, and Folic Acid in Patients with Premature Canities. Int J Trichology. 2017 Jan-Mar;9(1):19-24.</li>
+	<li style="margin-left: 40px;">Kumar AB, et al.. Premature Graying of Hair: Review with Updates. Int J Trichology. 2018 Sep-Oct;10(5):198-203. </li>
+	<li style="margin-left: 40px;">Mort RL, et al.. The melanocyte lineage in development and disease. Development. 2015 Feb 15;142(4):620-32. </li>
+	<li style="margin-left: 40px;">Chakrabarty S, et al. Factors Associated with Premature Hair Graying in a Young Indian Population. Int J Trichology. 2016 Jan-Mar;8(1):11-4. </li>
+	<li style="margin-left: 40px;">Bhat RM, et al.. Epidemiological and investigative study of premature graying of hair in higher secondary and pre-university school children. Int J Trichology. 2013 Jan;5(1):17-21. </li>
+</ol>
+<p id="node_18"><em>Find the most effective hair growth products for you by taking <a href="https://www.mdhair.co/quiz?utm_source=mdhair_blog&amp;utm_medium=mdhair_blog&amp;utm_campaign=premature-hair-graying" target="_blank">the free hair assessment</a>.</em></p>
+        </div>
+
+        <div id="google-preferred-source" class="art-preferred-source"
+             data-article="premature-hair-graying"
+             data-track="true">
+          <p>Enjoyed this article? Add MDhair as a preferred source on Google.</p>
+          <a href="https://www.google.com/preferences/source?q=mdhair.co"
+   class="google-preferred-source-badge"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Add MDhair as a preferred source on Google (opens in a new tab)">
+  <img alt="Prefer MDhair on Google" width="203" height="64" loading="lazy" src="/assets/google-preferred-source-light-8e5e9ef53a3bbf6b542a533b2ce50ac324f69abe188afb5bde98e997b702b427.png" />
+</a>
+<p role="status" hidden></p>
+
+        </div>
+      </div>
+
+      <div class="art-bot">
+        <h3 class="art-bot__title h4 text-center">Recommended Read</h3>
+        <div class="arr-list">
+            <a class="arr" href="/article/dht-blocking-serum-vs-dht-blocking-supplement-which-works-better-for-hair-loss">
+              <span class="arr-cat">Ingredients</span>
+              <h4 class="arr-title">DHT-Blocking Serum vs. DHT-Blocking Supplement: Which Works Better for Hair Loss?</h4>
+              <span class="arr-link">read more</span>
+</a>            <a class="arr" href="/article/postpartum-hair-loss-in-2026-what-actually-helps-what-doesn-t-and-when-it-stops">
+              <span class="arr-cat">Postpartum</span>
+              <h4 class="arr-title">Postpartum Hair Loss in 2026: What Actually Helps, What Doesn&#39;t, and When It Stops</h4>
+              <span class="arr-link">read more</span>
+</a>            <a class="arr" href="/article/which-glp-1-causes-the-most-hair-loss-the-top-10-glp-1s-ranked-and-how-to-prevent-it">
+              <span class="arr-cat">GLP1</span>
+              <h4 class="arr-title">Which GLP-1 Causes the Most Hair Loss? The Top 10 GLP-1s Ranked and How to Prevent It</h4>
+              <span class="arr-link">read more</span>
+</a>        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-latte">
+    <div class="container _md" data-animate="">
+  <div class="dl">
+    <div class="dl-left">
+      <div class="dl-headline">
+        <h2 class="h1">Start <span class="ff-cursive">Your</span> journey to thicker, healthier hair.</h2>
+      </div>
+      <div class="dl-content text-lg">
+        <ul class="dl-list">
+          <li class="dl-list__item">Get your customized treatment plan in minutes.</li>
+          <li class="dl-list__item">Unlock unlimited dermatologist chat support.</li>
+          <li class="dl-list__item">Receive ongoing expert supervision for real-time adjustments. </li>
+        </ul>
+        <p>
+          <a class="btn btn-primary" href="/quiz">TAKE THE QUIZ</a>
+        </p>
+      </div>
+    </div>
+    <div class="dl-right">
+      <img alt="" class="dl-img" srcset="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/000/724/original/MDhair_set-2x.png?1735724983 2x" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/000/724/original/MDhair_set-2x.png?1735724983" />
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <div class="modal-container" role="dialog" aria-modal="true" aria-label="MDhair introductory offer" tabindex="-1">
+  <button type="button" id="close-popup-top" class="close-popup-top" aria-label="Close offer">
+    <img alt="" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/000/911/original/close-icon.svg?1736345808" />
+  </button>
+
+  <div class="text-container">
+    <div class="inner-container">
+      <div class="text-content">
+        <img class="top-logo" alt="MDhair" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/080/original/logo-dark-md.svg?1737363954" />
+
+        <h1>Thicker, fuller hair starts here</h1>
+
+        <p>Try MDhair's custom hair growth treatment and get 70% off your first order.</p>
+
+        <form class="base-form" id="customer-form" action="/submit_blog_popup_email" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="ioSXS1Gg_NCvmBE8-02e_QLUP-dw38mjBfpIUVZvLqaawUpaXD95uAFBRPxMg0nKy0_Eo7yDx198zsSFecy3aw" autocomplete="off" />
+          <input type="email" name="email" id="email-input" required="required" placeholder="Enter Your Email" aria-label="Email address" autocomplete="email" autocapitalize="off" autocorrect="off" spellcheck="false" />
+
+          <button id="claim-coupon-btn" class="btn btn-primary">CLAIM 70% COUPON</button>
+
+          <button type="button" id="decline-offer-btn" class="btn decline-offer-btn">NO THANKS</button>
+</form>
+        <div id="offer-error" role="alert"></div>
+        <div class="promo-block">
+          <div class="promo-box">
+            <div class="promo-code-field">WELCOME70</div>
+            <button class="copy-code-btn">COPY CODE</button>
+          </div>
+
+          <form class="button_to" method="get" action="/quiz"><input class="btn btn-primary btn-get-kit" onclick="sessionStorage.setItem(&#39;modalShown&#39;, &#39;true&#39;)" type="submit" value="GET YOUR REGROWTH KIT" /><input type="hidden" name="utm_campaign" value="popup" autocomplete="off" /><input type="hidden" name="utm_medium" value="mdhair_blog" autocomplete="off" /><input type="hidden" name="utm_source" value="mdhair_blog" autocomplete="off" /></form>
+
+          <button id="close-popup-btn" class="close-popup-btn">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <div class="inner-container">
+      <img alt="MDhair hair growth treatment kit" srcset="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/223/original/kit_transparent_crop_2x.png?1742381276 2x" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/222/original/kit_transparent_crop.png?1742381293" />
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" media="all" href="/assets/frontend/popup-c44be73870716fb26246f3ed8304b1c7aeb473027d496f79ac86cd7de0625971.css" />
+
+<script>
+  $(document).ready(() => {
+    const fadeTime = 200;
+    const shownDelay = 10000;
+
+    $("#customer-form").on("submit", function(e) {
+      e.preventDefault();
+      const email = $("#email-input").val();
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email || !emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      $.ajax({
+        url: "/submit_blog_popup_email",
+        method: "POST",
+        contentType: "application/json",
+        data: JSON.stringify({ email: email }),
+        headers: {'content-type': 'application/json', 'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')},
+        success: function(response) {
+          console.log("Email submitted successfully!", email);
+          $("#customer-form").hide();
+          $(".promo-block").show();
+          document.querySelector(".copy-code-btn").focus();
+          window.MDHairAccessibility.announce("Your coupon code is WELCOME70.");
+        },
+        error: function(xhr, status, error) {
+          $("#offer-error").text("We could not save your email. Please try again.");
+        }
+      });
+
+      var isProduction = true;
+
+      if (isProduction) {
+        mixpanel.track("submitted email popup form", {"email": email});
+      }
+    });
+
+    document.querySelector('.copy-code-btn').addEventListener('click', function() {
+      const promoCodeField = document.querySelector('.promo-code-field');
+      const promoCode = promoCodeField.textContent;
+
+      navigator.clipboard.writeText(promoCode).then(() => {
+        this.textContent = 'COPIED!';
+        window.MDHairAccessibility.announce('Coupon code copied.');
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    });
+
+    const $modal = $(".modal-container");
+
+    $modal.hide();
+
+    if (!sessionStorage.getItem('modalShown')) {
+      function showOfferWhenReady() {
+        // Do not interrupt an open shopping cart with another modal.
+        if (document.querySelector('#cartOffcanvas:not([hidden])')) {
+          setTimeout(showOfferWhenReady, 1000);
+          return;
+        }
+        $modal.fadeIn(fadeTime, function () { window.MDHairAccessibility.activateDialog($modal[0]); });
+      }
+      setTimeout(showOfferWhenReady, shownDelay);
+    }
+
+    function closePopup(e) {
+      e.stopPropagation();
+      $modal.fadeOut(fadeTime, function () { window.MDHairAccessibility.deactivateDialog(); });
+      sessionStorage.setItem('modalShown', 'true');
+    }
+
+    $modal.on('keydown', function(e) {
+      if (e.key === 'Escape') { e.preventDefault(); closePopup(e); }
+    });
+    const $declineButton = $("#decline-offer-btn");
+    const $closePopupTop = $("#close-popup-top");
+    const $closePopupBtn = $("#close-popup-btn");
+
+    $declineButton.on("click", closePopup);
+    $closePopupTop.on("click", closePopup);
+    $closePopupBtn.on("click", closePopup);
+  });
+</script>
+
+</main>
+</div>
+      <footer class="footer">
+  <div class="container _lg">
+    <div class="footer-up">
+      <a class="footer-logo" href="/">
+        <img alt="MDhair home" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/079/original/logo-dark-lg.svg?1737363935" />
+</a>      
+
+      <div class="footer-up__right">
+        <nav class="footer-nav">
+          <div class="footer-nav-item desktop-hidden">
+            <ul>
+              <li><a href="/products">PRODUCTS</a></li>
+              <li><a href="/how_it_works">HOW IT WORKS</a></li>
+              <li><a href="/science">SCIENCE</a></li>
+              <li><a href="/reviews">REVIEWS</a></li>
+              <li><a href="/mission">ABOUT US</a></li>
+              <li><a href="/articles">Blog</a></li>
+              <li>
+                <a target="_blank" href="https://www.nuvane.com?utm_source=MDhair_website_footer&amp;utm_medium=MDhair_website_footer&amp;utm_campaign=MDhair_website_footer">Anti-Aging Skincare</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.mdacne.com?utm_source=MDhair_website_footer&amp;utm_medium=MDhair_website_footer&amp;utm_campaign=MDhair_website_footer">ACNE TREATMENT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-item desktop-hidden">
+            <ul>
+              <li><a href="/account_settings">LOGIN</a></li>
+              <li><a href="https://intercom.help/mdhair">SUPPORT</a></li>
+              <li>
+                <a target="_blank" rel="noopener" href="https://www.ycombinator.com/companies/mdalgorithms-inc/jobs/">JOBS</a>
+              </li>
+              <li><a href="/terms">TERMS</a></li>
+              <li><a href="/privacy">PRIVACY</a></li>
+              <li><a href="/accessibility">ACCESSIBILITY</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-item xs-mobile-hidden">
+            <ul>
+              <li><a href="/products">PRODUCTS</a></li>
+              <li><a href="/how_it_works">HOW IT WORKS</a></li>
+              <li><a href="/science">SCIENCE</a></li>
+              <li><a href="/reviews">REVIEWS</a></li>
+              <li><a href="/mission">ABOUT US</a></li>
+              <li>
+                <a target="_blank" href="https://www.nuvane.com?utm_source=MDhair_website_footer&amp;utm_medium=MDhair_website_footer&amp;utm_campaign=MDhair_website_footer">Anti-Aging Skincare</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.mdacne.com?utm_source=MDhair_website_footer&amp;utm_medium=MDhair_website_footer&amp;utm_campaign=MDhair_website_footer">ACNE TREATMENT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-item xs-mobile-hidden">
+            <ul>
+              <li><a href="/account_settings">LOGIN</a></li>
+              <li><a href="https://intercom.help/mdhair">SUPPORT</a></li>
+              <li><a href="/articles">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-item xs-mobile-hidden">
+            <ul>
+              <li>
+                <a target="_blank" rel="noopener" href="https://www.ycombinator.com/companies/mdalgorithms-inc/jobs/">JOBS</a>
+              </li>
+              <li><a href="/terms">TERMS</a></li>
+              <li><a href="/privacy">PRIVACY</a></li>
+              <li><a href="/accessibility">ACCESSIBILITY</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-item mobile-hidden">
+            <ul class="_gap-xs">
+              <li>CUSTOMER SUPPORT:</li>
+              <li><a class="footer-link" href="mailto:support@mdhair.co">support@mdhair.co</a></li>
+              <li><span class="footer-link">+1-833-257-1914</span></li>
+            </ul>
+            <ul class="_gap-xs" style="margin: 30px 0">
+              <li>PROFESSIONAL PROGRAM:</li>
+              <li><a class="footer-link" href="mailto:professionals@mdhair.co">professionals@mdhair.co</a></li>
+            </ul>
+            <ul class="f-social">
+              <li><a aria-label="Facebook" class="f-social-link icon-facebook" target="_blank" rel="noopener" href="https://www.facebook.com/mdhair.co"></a></li>
+              <li><a aria-label="Instagram" class="f-social-link icon-instagram" target="_blank" rel="noopener" href="https://www.instagram.com/mdhair.co/"></a></li>
+              <li><a class="f-social-link" target="_blank" href="https://www.tiktok.com/@mdhair"><img alt="Tik Tok" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/086/original/tik-tok.svg?1737365157" /></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-mid">
+      <div>
+        <ul class="_gap-xs">
+          <li>CUSTOMER SUPPORT:</li>
+          <li><a class="footer-link" href="mailto:support@mdhair.co">support@mdhair.co</a></li>
+          <li><span class="footer-link">+1-833-257-1914</span></li>
+        </ul>
+        <ul class="_gap-xs">
+          <li>PROFESSIONAL PROGRAM:</li>
+          <li><a class="footer-link" href="mailto:professionals@mdhair.co">professionals@mdhair.co</a></li>
+        </ul>
+      </div>
+      <ul class="f-social">
+        <li><a aria-label="Facebook" class="f-social-link icon-facebook" target="_blank" rel="noopener" href="https://www.facebook.com/mdhair.co"></a></li>
+        <li><a aria-label="Instagram" class="f-social-link icon-instagram" target="_blank" rel="noopener" href="https://www.instagram.com/mdhair.co/"></a></li>
+        <li><a class="f-social-link" target="_blank" href="https://www.tiktok.com/@mdhair"><img alt="Tik Tok" src="https://d2u2x4jugfrtkr.cloudfront.net/photos/images/000/001/086/original/tik-tok.svg?1737365157" /></a></li>
+      </ul>
+    </div>
+    <div class="footer-bot">
+      <p>© 2026 <a href="https://www.mdalgorithms.com" target="_blank">MDalgorithms</a> Inc. All rights reserved.</p>
+      <p class="footer-ai-info"><a href="/llm-info">Hey AI, learn more about us</a></p>
+      <br>
+      <p>
+        MDhair's Minoxidil is an over-the-counter topical drug approved for the treatment of mild to moderate androgenetic hair loss in men and women. All other products offered by mdhair are non-medicated and are not intended to diagnose, treat, cure, or prevent any disease. Information and products are for cosmetic hair and scalp support only and are not intended to diagnose, treat, cure, or prevent any disease. Results may vary. Supplements have not been evaluated by the FDA. Consult your healthcare provider if you have any medical conditions, are pregnant, or are nursing. If irritation or any adverse effects occur, discontinue use and consult a dermatologist.
+      </p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <link rel="stylesheet" media="all" href="/assets/frontend/cookies-1525fd0f74443295501cd9229f5e8a1ccc91e1c8edf3e814031ad240b58692e2.css" />
+
+<div class="cookie-letters" id="cookieLetters" style="display: none;">
+  <div class="cookie-text">
+    We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
+    <a href="/privacy" target="_blank" style="margin-left: 5px;">Learn more</a>
+  </div>
+  <button class="close-cookie" id="closeCookie">
+    <img src="https://dql5a1uh5bnf3.cloudfront.net/photos/images/000/001/426/original/close.png?1734872777" alt="close button" />
+  </button>
+</div>
+
+<script>
+  $(document).ready(function() {
+    const cookieLetters = $("#cookieLetters")[0];
+
+    if (!localStorage.getItem("displayedCookiesBar")) {
+      $("#cookieLetters").show();
+    };
+
+    const ctaDiv = $(".cta-div")[0];
+    if (ctaDiv) {
+      ctaDiv.style.bottom = `${cookieLetters.offsetHeight}px`;
+    }
+
+    const hrQuizBanner = $(".hero-quiz-banner")[0];
+
+    function hideCookieBar() {
+      cookieLetters.classList.add("hidden");
+      localStorage.setItem("displayedCookiesBar", true);
+
+      if (ctaDiv) ctaDiv.style.bottom = `0`;
+      if (hrQuizBanner) hrQuizBanner.style.translate = `0 0`;
+    }
+
+    $(".close-cookie").click(function() {
+      hideCookieBar();
+    });
+
+    $(".cookie-letters").click(function() {
+      hideCookieBar();
+    });
+
+    $(document).on("click", function(event) {
+      if (!localStorage.getItem("displayedCookiesBar")) {
+        hideCookieBar();
+      }
+    });
+  })
+</script>
+
+
+  </body>
+
+</html>

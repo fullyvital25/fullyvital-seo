@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"221","retmax":"7","retstart":"0","idlist":["39440586","30576994","29565296","27012047","30745628","26409267","37143478"],"translationset":[],"querytranslation":"\"manganese\"[Title/Abstract] AND (\"hair\"[Title] OR \"alopecia\"[Title])"}}

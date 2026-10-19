@@ -1,0 +1,12 @@
+endpoint,rows,cost_usd,cached
+/v3/dataforseo_labs/google/competitors_domain/live,20,0.0144,False
+/v3/serp/google/organic/live/advanced,12,0.002,False
+/v3/serp/google/organic/live/advanced,12,0.002,False
+/v3/serp/google/organic/live/advanced,16,0.002,False
+/v3/serp/google/organic/live/advanced,14,0.002,False
+/v3/serp/google/organic/live/advanced,12,0.002,False
+/v3/serp/google/organic/live/advanced,13,0.002,False
+/v3/serp/google/organic/live/advanced,16,0.002,False
+/v3/serp/google/organic/live/advanced,12,0.002,False
+/v3/serp/google/organic/live/advanced,14,0.002,False
+/v3/serp/google/organic/live/advanced,13,0.002,False

@@ -1,0 +1,3 @@
+path,decision,redirect_to
+/blogs/hair-care/5-best-foods-hair-growth,MERGE: unpublish + 301 to target,/blogs/hair-care/foods-for-hair-growth
+/blogs/hair-vitamins/protein,MERGE: unpublish + 301 to target,/blogs/hair-care/foods-for-hair-growth

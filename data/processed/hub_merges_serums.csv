@@ -1,0 +1,6 @@
+path,decision,redirect_to
+/blogs/hair-care/the-best-hair-growth-serum,MERGE: unpublish + 301 to target,/blogs/hair-care/best-hair-growth-serums
+/blogs/hair-care/hair-growth-serum,MERGE: unpublish + 301 to target,/blogs/hair-care/best-hair-growth-serums
+/blogs/hair-care/best-hair-serum,MERGE: unpublish + 301 to target,/blogs/hair-care/best-hair-growth-serums
+/blogs/hair-care/scalp-serum,MERGE: unpublish + 301 to target,/blogs/hair-care/best-hair-growth-serums
+/blogs/hair-care/how-the-fullyvital-hair-serum-works-to-create-thicker-fuller-hair,MERGE: unpublish + 301 to target,/blogs/hair-care/how-to-use-fully-vital-hair-serums

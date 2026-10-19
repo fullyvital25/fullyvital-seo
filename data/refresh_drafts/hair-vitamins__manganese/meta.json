@@ -1,0 +1,25 @@
+{
+ "title": "Manganese for Hair: Benefits, Food Sources & How Much You Need",
+ "seo_title": "Manganese Benefits for Hair: What It Does & Best Sources | FullyVital",
+ "seo_description": "How manganese supports the antioxidant and energy enzymes your hair follicles rely on, the best food sources, how much you need and when more is too much.",
+ "notes": [
+  "Citation style v2 (your rule): 3 studies, each cited once, all in the second half; Key Takeaways and FAQ carry no links. Dropped Saxena, Barceloux, Freeland-Graves and Filippini. Removed the oxidative-stress-and-graying line, the whole-grain 8 to 9 mg history, the 'absorption is limited' detail and the 'nutrients that work alongside' section.",
+  "Kept the positive angle: manganese's real role in MnSOD and energy enzymes, tied to oxidative stress research on hair.",
+  "Removed unsupported claims that manganese directly promotes hair growth or prevents hair loss; the article now says direct hair studies haven't been done.",
+  "Food sources and intake figures now come from three studies, including the 1.8-2.3 mg/day adequate intake.",
+  "Added a safety section on manganese overexposure and the Key Takeaways and FAQ blocks.",
+  "No reviewer line, as agreed."
+ ],
+ "sources": {
+  "29293455": "Manganese enzymes (MnSOD etc.), roles, deficiency rare, toxicity",
+  "32549695": "Oxidative stress linked to premature graying",
+  "39440586": "Micronutrients and pattern hair loss systematic review",
+  "10382563": "Food is main source; absorption limited; bile excretion",
+  "16118651": "Adequate intake 1.8-2.3 mg/day; tea as a major source",
+  "27264059": "Whole grains vs processed foods; intake decline; water exposure",
+  "28339021": "Fruits, vegetables, legumes and nuts linked to higher manganese levels"
+ },
+ "flags": [
+  "The closing FullyVital product box (unchanged) says products 'Promote Hair Regrowth'. Left for you, as with boron."
+ ]
+}

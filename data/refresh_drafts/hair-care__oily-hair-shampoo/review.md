@@ -1,0 +1,28 @@
+# Refresh draft: /blogs/hair-care/oily-hair-shampoo
+
+- Live title: Shampoo for Oily Hair: What the Research Shows About Ingredients
+- New title: Shampoo for Oily Hair: What the Research Shows About Ingredients
+- New SEO title: Shampoo for Oily Hair: Ingredients & What Research Shows | FullyVital
+- New meta description: What research shows about shampoo and oily hair: how shampooing changes the scalp, one extract that reduced sebum, and why washing less doesn't help.
+- Words: 787 → 819
+- Study links: 6 → 3
+- Product widgets, testimonial, images and footer: copied unchanged from the live article
+
+## What changed and why
+
+- Citation style v2: 3 studies, each cited once, all in the second half; Key Takeaways and FAQ carry no links.
+- Old post (2,225 words, 0 study links) listed '5 essential ingredients' with unsourced claims. Replaced with an evidence-based overview; no ingredient is named as essential.
+- Built with the extended builder: unclassed testimonial and best-sellers blocks, two centred images and the closing table are copied by position, unchanged. The old long product-claim paragraph near the end was not carried over.
+
+## Sources (each checked against its PubMed record)
+
+| PMID | Year | Study | Journal | Used for |
+|---|---|---|---|---|
+| [12190640](https://pubmed.ncbi.nlm.nih.gov/12190640/) | 2002 | Nutritional factors and hair loss. | Clinical and experimental dermatology | — |
+| [35979727](https://pubmed.ncbi.nlm.nih.gov/35979727/) | 2022 | Targeting inflammation and pro-resolving mediators with Anetholea anisita extract to improve scalp condition. | International journal of cosmetic science | — |
+| [40790470](https://pubmed.ncbi.nlm.nih.gov/40790470/) | 2025 | High-throughput sequencing to analyze changes in the human scalp microbiome during the use of a shampoo. | BMC microbiology | — |
+
+## For you to decide
+- 'Is it OK to shampoo oily hair often? Yes... there is no evidence that shampooing causes hair loss' is partly an absence-of-evidence statement; the Rushton item supports that reducing shampooing is not helpful.
+- The Duroux extract is a cosmetic ingredient; it's named as a study of one extract, not recommended.
+- 'A scalp-treatment shampoo if you have dandruff... A dermatologist can advise' is general guidance.

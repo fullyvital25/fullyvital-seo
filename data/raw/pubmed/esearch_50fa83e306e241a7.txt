@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"68","retmax":"8","retstart":"0","idlist":["38918881","35453727","39272579","22605966","32462070","37021004","23152148","23768354"],"translationset":[],"querytranslation":"\"Elaeis\"[All Fields] AND \"oleifera\"[All Fields] AND \"oil\"[All Fields]"}}

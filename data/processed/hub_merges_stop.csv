@@ -1,0 +1,5 @@
+path,decision,redirect_to
+/blogs/hair-care/how-to-make-hair-grow-back-faster,MERGE: unpublish + 301 to target,/blogs/hair-care/how-to-stop-hair-loss
+/blogs/hair-care/regrow-hair,MERGE: unpublish + 301 to target,/blogs/hair-care/how-to-stop-hair-loss
+/blogs/hair-care/types-of-hair-loss,MERGE: unpublish + 301 to target,/blogs/hair-care/how-to-stop-hair-loss
+/blogs/hair-care/micro-needling,MERGE: unpublish + 301 to target,/blogs/hair-care/microneedling-before-and-after

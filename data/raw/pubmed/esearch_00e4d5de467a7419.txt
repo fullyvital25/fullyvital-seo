@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"25","retmax":"7","retstart":"0","idlist":["29366416","36237143","38688645","39970445","28978760","16205932","17960402"],"translationset":[],"querytranslation":"\"choline\"[Title/Abstract] AND (\"hair\"[Title] OR \"alopecia\"[Title])"}}

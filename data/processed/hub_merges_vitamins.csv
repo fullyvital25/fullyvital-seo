@@ -1,0 +1,6 @@
+path,decision,redirect_to
+/blogs/hair-care/hair-loss-vitamins,MERGE: unpublish + 301 to target,/blogs/hair-care/best-hair-growth-vitamins
+/blogs/hair-care/which-vitamin-deficiency-causes-hair-loss,MERGE: unpublish + 301 to target,/blogs/hair-care/best-hair-growth-vitamins
+/blogs/hair-vitamins/vitamin-d,MERGE: unpublish + 301 to target,/blogs/hair-care/vitamin-d3
+/blogs/hair-care/iron,MERGE: unpublish + 301 to target,/blogs/hair-care/iron-deficiency-hair-loss
+/blogs/hair-vitamins/vitamin-a-gateway-to-vibrant-hair-growth,MERGE: unpublish + 301 to target,/blogs/hair-care/vitamin-a

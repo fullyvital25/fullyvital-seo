@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"29","retmax":"7","retstart":"0","idlist":["32607303","31686886","33541773","36919388","26500992","12190639","9407163"],"translationset":[],"querytranslation":"\"telogen effluvium\"[Title] AND \"review\"[Publication Type]"}}

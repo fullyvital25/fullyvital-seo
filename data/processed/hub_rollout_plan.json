@@ -1,0 +1,677 @@
+[
+ {
+  "date": "2026-10-18",
+  "key": "stop",
+  "folder": "hair-care__how-to-stop-hair-loss",
+  "hub": "/blogs/hair-care/how-to-stop-hair-loss",
+  "new": true,
+  "merges": [
+   {
+    "path": "/blogs/hair-care/how-to-make-hair-grow-back-faster",
+    "redirect_to": "/blogs/hair-care/how-to-stop-hair-loss",
+    "approved": true,
+    "why": "weak duplicate, '3-week recovery' title; approved 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-care/regrow-hair",
+    "redirect_to": "/blogs/hair-care/how-to-stop-hair-loss",
+    "approved": true,
+    "why": "removed in batch 2 (404), 2,303 impressions; redirect approved 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-care/types-of-hair-loss",
+    "redirect_to": "/blogs/hair-care/how-to-stop-hair-loss",
+    "approved": true,
+    "why": "batch 2 'fold into planned hub' (approved); hub step 1 covers types"
+   },
+   {
+    "path": "/blogs/hair-care/micro-needling",
+    "redirect_to": "/blogs/hair-care/microneedling-before-and-after",
+    "approved": true,
+    "why": "batch 2 'fold into planned hub' (approved); 0 impressions, duplicate of the refreshed microneedling page"
+   },
+   {
+    "path": "/blogs/hair-care/can-hair-loss-be-reversed",
+    "redirect_to": "/blogs/hair-care/how-to-stop-hair-loss",
+    "approved": true,
+    "why": "rewrite queue; 5,858 impressions on 'can I reverse hair loss', which the hub's FAQ answers; approved 2026-10-18"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/hairline-receding-on-one-side",
+   "/blogs/hair-care/dandruff-cause-hair-thinning",
+   "/blogs/hair-care/finasteride-results-timeline",
+   "/blogs/hair-care/normal-hair-part-vs-thinning",
+   "/blogs/hair-care/finasteride-before-and-after",
+   "/blogs/hair-care/mature-hairline",
+   "/blogs/hair-care/low-level-laser-therapy",
+   "/blogs/hair-care/microneedling-before-and-after",
+   "/blogs/hair-care/ultimate-guide-to-derma-roller",
+   "/blogs/hair-care/regrow-hair-naturally-in-3-weeks",
+   "/blogs/hair-care/low-hairlines",
+   "/blogs/hair-care/ugly-hairlines",
+   "/blogs/hair-care/microneedling-hairline",
+   "/blogs/hair-care/early-receding-hairline",
+   "/blogs/hair-care/female-pattern-baldness",
+   "/blogs/hair-care/finasteride",
+   "/blogs/hair-care/androgenetic-alopecia",
+   "/blogs/hair-care/how-to-use-derma-roller-for-hair",
+   "/blogs/hair-care/thinning-hair-shampoo",
+   "/blogs/hair-care/derma-roller-for-hair-loss",
+   "/blogs/hair-care/minoxidil",
+   "/blogs/hair-care/does-hrt-help-with-hair-loss",
+   "/blogs/hair-care/thyroid-hair-loss",
+   "/blogs/hair-care/can-hormone-replacement-therapy-cause-hair-loss",
+   "/blogs/hair-care/does-perimenopause-cause-hair-loss",
+   "/blogs/hair-care/dht-connection-perimenopausal-hair-thinning",
+   "/blogs/hair-care/diffuse-thinning-vs-pattern-baldness",
+   "/blogs/hair-care/postpartum-hair-loss-timeline",
+   "/blogs/hair-care/perimenopause-hair-loss-hormone-connection",
+   "/blogs/hair-care/sudden-hair-shedding-telogen-effluvium",
+   "/blogs/hair-care/how-long-does-telogen-effluvium-last",
+   "/blogs/hair-care/best-ingredients-perimenopausal-hair-thinning",
+   "/blogs/hair-care/cortisol-and-hair-loss",
+   "/blogs/hair-care/best-ingredients-stress-related-hair-loss",
+   "/blogs/hair-care/premenopausal-vs-perimenopausal-hair-loss",
+   "/blogs/hair-care/when-does-postpartum-hair-shedding-stop",
+   "/blogs/hair-care/menopause-hair-loss-treatment-what-actually-works",
+   "/blogs/hair-care/is-stress-related-hair-loss-reversible",
+   "/blogs/hair-care/is-this-normal-shedding",
+   "/blogs/hair-care/derma-roller-for-hair",
+   "/blogs/hair-care/hair-thinning",
+   "/blogs/hair-care/does-wearing-a-hat-cause-hair-loss",
+   "/blogs/hair-care/postpartum-hair-loss-vs-something-else",
+   "/blogs/hair-care/postpartum-hair-loss-causes",
+   "/blogs/hair-care/best-ingredients-postpartum-hair-thinning",
+   "/blogs/hair-care/hair-growth-products-that-work",
+   "/blogs/hair-care/how-to-thicken-hair",
+   "/blogs/hair-care/dermatologist"
+  ],
+  "spoke_sentence": "For the bigger picture on what helps with thinning and shedding, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/how-to-stop-hair-loss\">how to stop hair loss</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "vitamins",
+  "folder": "hair-care__best-hair-growth-vitamins",
+  "hub": "/blogs/hair-care/best-hair-growth-vitamins",
+  "new": false,
+  "merges": [
+   {
+    "path": "/blogs/hair-care/hair-loss-vitamins",
+    "redirect_to": "/blogs/hair-care/best-hair-growth-vitamins",
+    "approved": true,
+    "why": "weak duplicate; approved 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-care/which-vitamin-deficiency-causes-hair-loss",
+    "redirect_to": "/blogs/hair-care/best-hair-growth-vitamins",
+    "approved": true,
+    "why": "rewrite queue; 0 impressions; the hub answers 'what vitamin am I lacking'; approved 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-vitamins/vitamin-d",
+    "redirect_to": "/blogs/hair-care/vitamin-d3",
+    "approved": true,
+    "why": "rewrite queue; 0 impressions; title 'Can Vitamin D Cure Baldness?' is a disease claim; duplicate of /vitamin-d3; approved 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-care/iron",
+    "redirect_to": "/blogs/hair-care/iron-deficiency-hair-loss",
+    "approved": true,
+    "why": "467 impressions vs 13,478 on the refreshed iron page; duplicate; approved 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-vitamins/vitamin-a-gateway-to-vibrant-hair-growth",
+    "redirect_to": "/blogs/hair-care/vitamin-a",
+    "approved": true,
+    "why": "163 impressions; duplicate of the refreshed vitamin A page; approved 2026-10-18"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/zinc",
+   "/blogs/hair-care/biotin-vs-prenatal-vitamins-for-hair-growth",
+   "/blogs/hair-vitamins/silica",
+   "/blogs/hair-care/iron-deficiency-hair-loss",
+   "/blogs/hair-care/b-vitamins-hair-growth",
+   "/blogs/hair-vitamins/magnesium",
+   "/blogs/hair-care/vitamin-a",
+   "/blogs/hair-vitamins/vitamin-c",
+   "/blogs/hair-care/vitamin-k",
+   "/blogs/hair-vitamins/selenium",
+   "/blogs/hair-care/vitamin-b12",
+   "/blogs/hair-care/how-long-does-it-take-for-biotin-to-work",
+   "/blogs/hair-vitamins/vitamin-f-linoleic-acid",
+   "/blogs/hair-vitamins/pantothenic-acid",
+   "/blogs/hair-care/nutrafol-vs-fully-vital",
+   "/blogs/hair-vitamins/vitamin-b6",
+   "/blogs/hair-vitamins/oyster-extract",
+   "/blogs/hair-care/hair-growth-supplements-for-men",
+   "/blogs/hair-care/hair-mineral-analysis",
+   "/blogs/hair-vitamins/tocotrienols",
+   "/blogs/hair-care/vitamin-d3",
+   "/blogs/hair-care/shedavi-or-fully-vital",
+   "/blogs/hair-care/folate",
+   "/blogs/hair-care/viviscal-vs-fully-vital",
+   "/blogs/hair-care/is-biotin-good-for-hair",
+   "/blogs/hair-care/how-to-use-fully-vital-hair-supplements",
+   "/blogs/hair-care/prenatal-vitamins-hair-growth",
+   "/blogs/hair-care/amino-acids-for-hair-growth"
+  ],
+  "spoke_sentence": "To see how this fits with the other nutrients hair needs, read our guide to <a href=\"https://fullyvital.com/blogs/hair-care/best-hair-growth-vitamins\">the best vitamins for hair growth</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "oils",
+  "folder": "hair-care__rosemary-oil-for-hair-growth",
+  "hub": "/blogs/hair-care/rosemary-oil-for-hair-growth",
+  "new": false,
+  "merges": [],
+  "spokes": [
+   "/blogs/hair-care/batana-oil-for-hair-growth",
+   "/blogs/hair-vitamins/black-seed-oil",
+   "/blogs/hair-care/lavender-oil-for-hair",
+   "/blogs/hair-vitamins/peppermint-oil",
+   "/blogs/hair-vitamins/hemp-seed-oil",
+   "/blogs/hair-care/pumpkin-seed-oil-for-hair",
+   "/blogs/hair-vitamins/sunflower-oil",
+   "/blogs/hair-vitamins/best-essential-oils",
+   "/blogs/hair-vitamins/borage-seed-oil",
+   "/blogs/hair-care/vitamin-e-oil-for-hair",
+   "/blogs/hair-vitamins/evening-primrose-oil",
+   "/blogs/hair-vitamins/olive-oil",
+   "/blogs/hair-vitamins/wheat-germ-oil",
+   "/blogs/hair-vitamins/sea-buckthorn-oil",
+   "/blogs/hair-vitamins/kukui-nut-oil",
+   "/blogs/hair-vitamins/avocado-oil",
+   "/blogs/hair-vitamins/raspberry-seed-oil",
+   "/blogs/hair-vitamins/baobab-oil",
+   "/blogs/hair-vitamins/sacha-inchi-oil",
+   "/blogs/hair-vitamins/pomegranate-seed-oil",
+   "/blogs/hair-vitamins/tea-tree-oil",
+   "/blogs/hair-care/castor-oil-for-hair-growth",
+   "/blogs/hair-vitamins/almond-oil",
+   "/blogs/hair-vitamins/flaxseed-oil",
+   "/blogs/hair-vitamins/coconut-oil",
+   "/blogs/hair-vitamins/jojoba-oil",
+   "/blogs/hair-vitamins/argan-oil",
+   "/blogs/hair-care/hair-growth-serum",
+   "/blogs/hair-care/brush-scalp-for-hair-growth",
+   "/blogs/hair-care/scalp-massage"
+  ],
+  "spoke_sentence": "Comparing oils? See our guide to <a href=\"https://fullyvital.com/blogs/hair-care/rosemary-oil-for-hair-growth\">rosemary oil for hair growth</a>, the oil with the most research behind it."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "foods",
+  "folder": "hair-care__foods-for-hair-growth",
+  "hub": "/blogs/hair-care/foods-for-hair-growth",
+  "new": true,
+  "merges": [
+   {
+    "path": "/blogs/hair-care/5-best-foods-hair-growth",
+    "redirect_to": "/blogs/hair-care/foods-for-hair-growth",
+    "approved": true,
+    "why": "removed in batch 2 (404), 367 impressions; redirect approved 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-vitamins/protein",
+    "redirect_to": "/blogs/hair-care/foods-for-hair-growth",
+    "approved": true,
+    "why": "rewrite queue; 0 impressions in 16 months; the hub covers it; approved 2026-10-18"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/protein-overload-hair",
+   "/blogs/hair-vitamins/whey-protein",
+   "/blogs/hair-vitamins/quinoa-extract",
+   "/blogs/hair-care/hydrolyzed-protein",
+   "/blogs/hair-vitamins/pea-protein",
+   "/blogs/hair-care/creatine-hair-loss",
+   "/blogs/hair-care/vital-proteins-or-fully-vital",
+   "/blogs/hair-vitamins/collagen",
+   "/blogs/hair-care/biotin-vs-collagen",
+   "/blogs/hair-care/what-triggers-telogen-effluvium",
+   "/blogs/hair-care/amino-acids-for-hair-growth",
+   "/blogs/hair-care/essential-fatty-acids"
+  ],
+  "spoke_sentence": "For the foods that matter most for hair, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/foods-for-hair-growth\">protein-rich foods for hair growth</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "biotin",
+  "folder": "hair-care__is-biotin-good-for-hair",
+  "hub": "/blogs/hair-care/is-biotin-good-for-hair",
+  "new": false,
+  "merges": [],
+  "redirects": [
+   {
+    "path": "/blogs/hair-care/does-biotin-work-hair-thinning",
+    "redirect_to": "/blogs/hair-care/is-biotin-good-for-hair"
+   },
+   {
+    "path": "/blogs/hair-care/biotin-gummies",
+    "redirect_to": "/blogs/hair-care/is-biotin-good-for-hair"
+   },
+   {
+    "path": "/blogs/hair-care/biotin-hair-growth-serum",
+    "redirect_to": "/blogs/hair-care/is-biotin-good-for-hair"
+   },
+   {
+    "path": "/blogs/hair-care/how-long-does-it-take-for-biotin-to-start-working",
+    "redirect_to": "/blogs/hair-care/how-long-does-it-take-for-biotin-to-work"
+   },
+   {
+    "path": "/blogs/hair-care/how-long-does-it-take-biotin-to-work",
+    "redirect_to": "/blogs/hair-care/how-long-does-it-take-for-biotin-to-work"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/how-long-does-it-take-for-biotin-to-work",
+   "/blogs/hair-care/biotin-vs-prenatal-vitamins-for-hair-growth",
+   "/blogs/hair-care/biotin-vs-collagen",
+   "/blogs/hair-care/prenatal-vitamins-hair-growth",
+   "/blogs/hair-care/hair-growth-supplements-for-men",
+   "/blogs/hair-care/b-vitamins-hair-growth",
+   "/blogs/hair-care/how-to-use-fully-vital-hair-supplements",
+   "/blogs/hair-vitamins/collagen"
+  ],
+  "spoke_sentence": "For the full picture on biotin, including who is likely to be low and how it affects lab tests, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/is-biotin-good-for-hair\">biotin for hair growth</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "hairline",
+  "folder": "hair-care__receding-hairlines",
+  "hub": "/blogs/hair-care/receding-hairlines",
+  "new": false,
+  "merges": [],
+  "redirects": [
+   {
+    "path": "/blogs/hair-care/female-receding-hairline",
+    "redirect_to": "/blogs/hair-care/receding-hairlines"
+   },
+   {
+    "path": "/blogs/hair-care/types-of-hairlines",
+    "redirect_to": "/blogs/hair-care/receding-hairlines"
+   },
+   {
+    "path": "/blogs/hair-care/normal-hairline",
+    "redirect_to": "/blogs/hair-care/receding-hairlines"
+   },
+   {
+    "path": "/blogs/hair-care/uneven-hairline",
+    "redirect_to": "/blogs/hair-care/receding-hairlines"
+   },
+   {
+    "path": "/blogs/hair-care/traction-alopecia",
+    "redirect_to": "/blogs/hair-care/receding-hairlines"
+   },
+   {
+    "path": "/blogs/hair-care/hairlines",
+    "redirect_to": "/blogs/hair-care/receding-hairlines"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/hairline-receding-on-one-side",
+   "/blogs/hair-care/mature-hairline",
+   "/blogs/hair-care/early-receding-hairline",
+   "/blogs/hair-care/low-hairlines",
+   "/blogs/hair-care/ugly-hairlines",
+   "/blogs/hair-care/widows-peak-hair",
+   "/blogs/hair-care/microneedling-hairline",
+   "/blogs/hair-care/normal-hair-part-vs-thinning",
+   "/blogs/hair-care/female-pattern-baldness",
+   "/blogs/hair-care/androgenetic-alopecia",
+   "/blogs/hair-care/how-to-get-rid-of-cowlicks",
+   "/blogs/hair-care/finasteride",
+   "/blogs/hair-care/finasteride-results-timeline",
+   "/blogs/hair-care/finasteride-before-and-after",
+   "/blogs/hair-care/minoxidil",
+   "/blogs/hair-care/low-level-laser-therapy",
+   "/blogs/hair-care/diffuse-thinning-vs-pattern-baldness"
+  ],
+  "spoke_sentence": "For the causes in men and women and what can slow it, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/receding-hairlines\">receding hairlines</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "cycle",
+  "folder": "hair-care__hair-cycle",
+  "hub": "/blogs/hair-care/hair-cycle",
+  "new": false,
+  "merges": [],
+  "redirects": [
+   {
+    "path": "/blogs/hair-care/how-long-does-it-take-for-hair-to-grow",
+    "redirect_to": "/blogs/hair-care/hair-cycle"
+   },
+   {
+    "path": "/blogs/hair-care/how-long-does-it-take-for-hair-to-grow-back",
+    "redirect_to": "/blogs/hair-care/hair-cycle"
+   },
+   {
+    "path": "/blogs/hair-care/hair-growth-cycle",
+    "redirect_to": "/blogs/hair-care/hair-cycle"
+   },
+   {
+    "path": "/blogs/hair-care/telogen-phase",
+    "redirect_to": "/blogs/hair-care/hair-cycle"
+   },
+   {
+    "path": "/blogs/hair-care/how-many-hairs-on-a-human-head",
+    "redirect_to": "/blogs/hair-care/hair-cycle"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/anagen-phase",
+   "/blogs/hair-care/catagen-phase",
+   "/blogs/hair-care/hair-shaft",
+   "/blogs/hair-care/sebaceous-gland",
+   "/blogs/hair-care/clogged-hair-follicles",
+   "/blogs/hair-care/inflamed-hair-follicles",
+   "/blogs/hair-care/is-this-normal-shedding",
+   "/blogs/hair-care/how-long-does-telogen-effluvium-last",
+   "/blogs/hair-care/sudden-hair-shedding-telogen-effluvium",
+   "/blogs/hair-care/brush-scalp-for-hair-growth",
+   "/blogs/hair-care/how-to-thicken-hair",
+   "/blogs/hair-care/regrow-hair-naturally-in-3-weeks",
+   "/blogs/hair-care/cortex"
+  ],
+  "spoke_sentence": "For how each stage of hair growth works and how fast hair grows back, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/hair-cycle\">the hair growth cycle</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "conditions",
+  "folder": "hair-care__types-of-alopecia",
+  "hub": "/blogs/hair-care/types-of-alopecia",
+  "new": true,
+  "merges": [],
+  "redirects": [
+   {
+    "path": "/blogs/hair-care/scarring-alopecia",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   },
+   {
+    "path": "/blogs/hair-care/cicatricial-alopecia",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   },
+   {
+    "path": "/blogs/hair-care/triangular-alopecia",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   },
+   {
+    "path": "/blogs/hair-care/lichen-planopilaris",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   },
+   {
+    "path": "/blogs/hair-care/frontal-fibrosing-alopecia",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   },
+   {
+    "path": "/blogs/hair-care/discoid-lupus-erythematosus",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   },
+   {
+    "path": "/blogs/hair-care/systemic-lupus-erythematosus",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   },
+   {
+    "path": "/blogs/hair-care/alopecia-mucinosa",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   },
+   {
+    "path": "/blogs/hair-care/trichotillomania",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   },
+   {
+    "path": "/blogs/hair-care/alopecia",
+    "redirect_to": "/blogs/hair-care/types-of-alopecia"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/androgenetic-alopecia",
+   "/blogs/hair-care/female-pattern-baldness",
+   "/blogs/hair-care/thyroid-hair-loss",
+   "/blogs/hair-care/dandruff-cause-hair-thinning",
+   "/blogs/hair-care/the-root-cause-of-scalp-inflammation-understanding-the-triggers-and-treatment-options",
+   "/blogs/hair-care/diffuse-thinning-vs-pattern-baldness",
+   "/blogs/hair-care/sudden-hair-shedding-telogen-effluvium",
+   "/blogs/hair-care/iron-deficiency-hair-loss",
+   "/blogs/hair-care/inflamed-hair-follicles",
+   "/blogs/hair-care/postpartum-hair-loss-vs-something-else",
+   "/blogs/hair-care/how-to-stop-hair-loss",
+   "/blogs/hair-care/receding-hairlines"
+  ],
+  "spoke_sentence": "For an overview of every type of hair loss and how to tell them apart, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/types-of-alopecia\">types of alopecia</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "areata",
+  "folder": "hair-care__alopecia-areata",
+  "hub": "/blogs/hair-care/alopecia-areata",
+  "new": false,
+  "merges": [],
+  "redirects": [
+   {
+    "path": "/blogs/hair-care/alopecia-areata-treatments",
+    "redirect_to": "/blogs/hair-care/alopecia-areata"
+   },
+   {
+    "path": "/blogs/hair-care/how-to-stop-alopecia-areata-from-spreading",
+    "redirect_to": "/blogs/hair-care/alopecia-areata"
+   },
+   {
+    "path": "/blogs/hair-care/alopecia-universalis",
+    "redirect_to": "/blogs/hair-care/alopecia-areata"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/thyroid-hair-loss"
+  ],
+  "spoke_sentence": "If you have round, smooth bald patches, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/alopecia-areata\">alopecia areata</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "serums",
+  "folder": "hair-care__best-hair-growth-serums",
+  "hub": "/blogs/hair-care/best-hair-growth-serums",
+  "new": false,
+  "merges": [
+   {
+    "path": "/blogs/hair-care/the-best-hair-growth-serum",
+    "redirect_to": "/blogs/hair-care/best-hair-growth-serums",
+    "approved": true,
+    "why": "weak overlapping 2023 serum post; merged into the serum hub 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-care/hair-growth-serum",
+    "redirect_to": "/blogs/hair-care/best-hair-growth-serums",
+    "approved": true,
+    "why": "weak overlapping 2023 serum post; merged into the serum hub 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-care/best-hair-serum",
+    "redirect_to": "/blogs/hair-care/best-hair-growth-serums",
+    "approved": true,
+    "why": "weak overlapping 2023 serum post; merged into the serum hub 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-care/scalp-serum",
+    "redirect_to": "/blogs/hair-care/best-hair-growth-serums",
+    "approved": true,
+    "why": "weak overlapping 2023 serum post; merged into the serum hub 2026-10-18"
+   },
+   {
+    "path": "/blogs/hair-care/how-the-fullyvital-hair-serum-works-to-create-thicker-fuller-hair",
+    "redirect_to": "/blogs/hair-care/how-to-use-fully-vital-hair-serums",
+    "approved": true,
+    "why": "10 impressions; same topic as the brand serum guide"
+   }
+  ],
+  "redirects": [],
+  "spokes": [
+   "/blogs/hair-care/adenosine",
+   "/blogs/hair-care/prostaglandin-analog",
+   "/blogs/hair-care/best-hair-growth-serum-for-black-hair",
+   "/blogs/hair-care/best-hair-growth-serum-for-blondes",
+   "/blogs/hair-care/best-hair-growth-serum-for-vibrant-hair",
+   "/blogs/hair-care/organic-hair-serum",
+   "/blogs/hair-care/how-to-use-fully-vital-hair-serums",
+   "/blogs/hair-care/is-fullyvital-hair-growth-proven",
+   "/blogs/hair-care/act-acre-vs-fullyvital",
+   "/blogs/hair-care/scandinavian-biolabs-vs-fullyvital",
+   "/blogs/hair-care/fully-vital-vs-thrive",
+   "/blogs/hair-care/hair-growth-products-that-work",
+   "/blogs/hair-care/rosemary-oil-for-hair-growth",
+   "/blogs/hair-care/microneedling-before-and-after",
+   "/blogs/hair-vitamins/caffeine"
+  ],
+  "spoke_sentence": "For the ingredients with real evidence and how to choose one, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/best-hair-growth-serums\">the best hair growth serums</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "shampoo",
+  "folder": "hair-care__thinning-hair-shampoo",
+  "hub": "/blogs/hair-care/thinning-hair-shampoo",
+  "new": false,
+  "merges": [],
+  "redirects": [],
+  "spokes": [
+   "/blogs/hair-care/anti-dandruff-shampoo",
+   "/blogs/hair-care/pyrithione-zinc",
+   "/blogs/hair-care/what-is-a-clarifying-shampoo",
+   "/blogs/hair-care/how-often-should-you-use-clarifying-shampoo",
+   "/blogs/hair-care/oily-hair-shampoo",
+   "/blogs/hair-care/what-shampoo-is-good-for-oily-hair",
+   "/blogs/hair-care/shampoo-for-damaged-hair",
+   "/blogs/hair-care/surfactants",
+   "/blogs/hair-care/silicones-in-hair-products",
+   "/blogs/hair-care/discover-the-best-detox-shampoos-transform-your-hair-naturally",
+   "/blogs/hair-care/dandruff-cause-hair-thinning",
+   "/blogs/hair-care/hair-growth-products-that-work",
+   "/blogs/hair-care/how-to-stop-hair-loss",
+   "/blogs/hair-vitamins/poysorbate-80"
+  ],
+  "spoke_sentence": "If your hair is thinning, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/thinning-hair-shampoo\">shampoo for thinning hair</a>."
+ },
+ {
+  "date": "2026-10-18",
+  "key": "styling",
+  "folder": "hair-care__hairstyles-for-thinning-hair",
+  "hub": "/blogs/hair-care/hairstyles-for-thinning-hair",
+  "new": true,
+  "merges": [
+   {
+    "path": "/blogs/hair-care/microbangs",
+    "redirect_to": "/blogs/hair-care/micro-bangs-short-hair",
+    "approved": true,
+    "why": "141 impressions; duplicate of /micro-bangs-short-hair"
+   }
+  ],
+  "redirects": [
+   {
+    "path": "/blogs/hair-care/how-to-thicken-your-hair",
+    "redirect_to": "/blogs/hair-care/how-to-thicken-hair"
+   },
+   {
+    "path": "/blogs/hair-care/how-to-thicken-hair-naturally",
+    "redirect_to": "/blogs/hair-care/how-to-thicken-hair"
+   },
+   {
+    "path": "/blogs/hair-care/best-volumizing-shampoo",
+    "redirect_to": "/blogs/hair-care/thinning-hair-shampoo"
+   },
+   {
+    "path": "/blogs/hair-care/best-volumizing-shampoos",
+    "redirect_to": "/blogs/hair-care/thinning-hair-shampoo"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/widows-peak-hair",
+   "/blogs/hair-care/normal-hair-part-vs-thinning",
+   "/blogs/hair-care/fine-hair",
+   "/blogs/hair-care/hair-volumizer",
+   "/blogs/hair-care/how-to-thicken-hair",
+   "/blogs/hair-care/micro-bangs-short-hair",
+   "/blogs/hair-care/aesthetic-korean-bangs",
+   "/blogs/hair-care/how-to-get-rid-of-cowlicks",
+   "/blogs/hair-care/microbead-extensions",
+   "/blogs/hair-care/receding-hairlines",
+   "/blogs/hair-care/thinning-hair-shampoo",
+   "/blogs/hair-care/how-to-stop-hair-loss",
+   "/blogs/hair-care/female-pattern-baldness",
+   "/blogs/hair-care/mature-hairline",
+   "/blogs/hair-care/low-hairlines",
+   "/blogs/hair-care/ugly-hairlines"
+  ],
+  "spoke_sentence": "For cuts and styling tricks that make thinning hair look fuller, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/hairstyles-for-thinning-hair\">hairstyles for thinning hair</a>."
+ },
+ {
+  "date": "2026-10-19",
+  "key": "drugs",
+  "folder": "hair-care__minoxidil",
+  "hub": "/blogs/hair-care/minoxidil",
+  "new": false,
+  "merges": [
+   {
+    "path": "/blogs/hair-care/finasteride-before-and-after",
+    "redirect_to": "/blogs/hair-care/finasteride-results-timeline",
+    "approved": true,
+    "why": "splits the finasteride results search with /finasteride-results-timeline (about 10,000 impressions each, almost no clicks)"
+   }
+  ],
+  "redirects": [
+   {
+    "path": "/blogs/hair-care/spironolactone-for-hair-loss",
+    "redirect_to": "/blogs/hair-care/minoxidil"
+   },
+   {
+    "path": "/blogs/hair-care/dutasteride",
+    "redirect_to": "/blogs/hair-care/minoxidil"
+   },
+   {
+    "path": "/blogs/hair-care/rogaine",
+    "redirect_to": "/blogs/hair-care/minoxidil"
+   },
+   {
+    "path": "/blogs/hair-care/rogaine-or-fully-vital",
+    "redirect_to": "/blogs/hair-care/minoxidil"
+   },
+   {
+    "path": "/blogs/hair-care/finasteride-results",
+    "redirect_to": "/blogs/hair-care/finasteride-results-timeline"
+   },
+   {
+    "path": "/blogs/hair-care/propecia",
+    "redirect_to": "/blogs/hair-care/finasteride"
+   },
+   {
+    "path": "/blogs/hair-care/ketoconazole",
+    "redirect_to": "/blogs/hair-care/thinning-hair-shampoo"
+   },
+   {
+    "path": "/blogs/hair-care/laser-hair-therapy",
+    "redirect_to": "/blogs/hair-care/low-level-laser-therapy"
+   }
+  ],
+  "spokes": [
+   "/blogs/hair-care/finasteride",
+   "/blogs/hair-care/finasteride-results-timeline",
+   "/blogs/hair-care/low-level-laser-therapy",
+   "/blogs/hair-care/microneedling-before-and-after",
+   "/blogs/hair-care/microneedling-hairline",
+   "/blogs/hair-care/how-to-stop-hair-loss",
+   "/blogs/hair-care/receding-hairlines",
+   "/blogs/hair-care/female-pattern-baldness",
+   "/blogs/hair-care/androgenetic-alopecia",
+   "/blogs/hair-care/best-hair-growth-serums",
+   "/blogs/hair-care/rosemary-oil-for-hair-growth",
+   "/blogs/hair-care/hair-growth-supplements-for-men",
+   "/blogs/hair-care/adenosine",
+   "/blogs/hair-care/prostaglandin-analog",
+   "/blogs/hair-care/dht-connection-perimenopausal-hair-thinning",
+   "/blogs/hair-care/menopause-hair-loss-treatment-what-actually-works",
+   "/blogs/hair-care/ultimate-guide-to-derma-roller",
+   "/blogs/hair-care/types-of-alopecia"
+  ],
+  "spoke_sentence": "For how minoxidil and finasteride work, their results and side effects, see our guide to <a href=\"https://fullyvital.com/blogs/hair-care/minoxidil\">minoxidil and finasteride</a>."
+ }
+]

@@ -1,0 +1,18 @@
+{"title": "What Causes Gray Hair? Every Cause, Explained by the Research",
+ "seo_title": "What Causes Gray Hair? 7 Causes, Explained | FullyVital",
+ "seo_description": "What causes gray (grey) hair? Genetics, age, oxidative stress, stress, smoking and nutrient shortfalls, what the research shows and what you can change.",
+ "ref_tags": {"22716034": "Age of Onset · Worldwide Survey", "32654282": "Premature Graying · Systematic Review", "34155974": "Stress · Graying and Repigmentation"},
+ "extra_refs": [{"tag": "Copper · Normal Hair Pigmentation (EFSA)", "citation": "EFSA Panel on Dietetic Products, Nutrition and Allergies. Scientific Opinion on health claims related to copper, including maintenance of normal hair pigmentation. <em>EFSA Journal</em>, 2009;7(9):1211.", "url": "https://doi.org/10.2903/j.efsa.2009.1211", "label": "View Opinion (EFSA)"}],
+ "notes": [
+  "Upgraded into the hub for the 'what causes gray hair' cluster (about 47,000 searches a month across variants). Title and meta now cover both 'gray' and 'grey'.",
+  "Added an at-a-glance table: cause, what happens, can you change it. Every cause section now links to its supporting article (stress, cortisol, hydrogen peroxide, catalase, smoking, vitamins, nutrient depletion, copper, thyroid, medications, sudden gray).",
+  "Replaced the 8 references with the 3 strongest studies under your citation rule: a 4,192-person worldwide survey on age of onset, a 2020 systematic review of risk factors, and the 2021 human stress and repigmentation study. All three are linked once, in the references at the end.",
+  "Claims that depended on the dropped sources were made general or removed: the 2009 hydrogen-peroxide study figures, the 2020 mouse stress study, the BMJ smoking letter, the 2017 B12/biotin case-control study, the premature-graying age cut-offs and the PTP-20 lab finding.",
+  "FAQ rebuilt around Google's 'People also ask' questions for this search (average age, stress, sudden graying, vitamin deficiency, how to stop it). FAQPage markup is rebuilt from the visible FAQ.",
+  "Product section kept to structure/function wording. Ingredients named are all in the product sheet (copper, B12, folate, L-tyrosine, glutathione).",
+  "No survey statistic on this page (there wasn't one before either). No reviewer line."
+ ],
+ "flags": [
+  "The EFSA copper opinion is kept as a fourth, non-study source, because it backs the 'copper contributes to normal hair pigmentation' product line. Your rule is 3 studies; OK to keep this regulatory source as well, or should the copper line go?",
+  "The 'premature graying' age cut-offs moved to the early-graying hub, so this page links there instead of repeating them."
+ ]}

@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env.*
+!.env.example
+.claude/settings.local.json
+data/shopify_backup/
+data/shopify_changes/

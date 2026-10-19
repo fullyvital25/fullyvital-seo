@@ -1,0 +1,237 @@
+{
+ "gsc": {
+  "range": "2025-06-10..2026-10-09",
+  "site_clicks": 21712,
+  "site_impressions": 5475834,
+  "query_level_clicks": 8687,
+  "query_level_impressions": 3247787,
+  "anonymized_click_share": 0.6,
+  "anonymized_impression_share": 0.407,
+  "brand_clicks": 4351,
+  "brand_impressions": 34313,
+  "in_scope_nonbrand_queries": 17744,
+  "in_scope_nonbrand_clicks": 1341,
+  "in_scope_nonbrand_impressions": 755007,
+  "by_cluster": {
+   "gray": {
+    "queries": 2213,
+    "clicks": 303,
+    "impressions": 69901
+   },
+   "hair growth/loss": {
+    "queries": 15531,
+    "clicks": 1038,
+    "impressions": 685106
+   }
+  },
+  "in_scope_top3": 1108,
+  "in_scope_top10": 2717,
+  "in_scope_top20": 4345
+ },
+ "site_monthly": [
+  {
+   "month": "2025-06",
+   "clicks": 3511,
+   "impressions": 982388
+  },
+  {
+   "month": "2025-07",
+   "clicks": 2776,
+   "impressions": 949440
+  },
+  {
+   "month": "2025-08",
+   "clicks": 2082,
+   "impressions": 754185
+  },
+  {
+   "month": "2025-09",
+   "clicks": 1741,
+   "impressions": 504259
+  },
+  {
+   "month": "2025-10",
+   "clicks": 1685,
+   "impressions": 287086
+  },
+  {
+   "month": "2025-11",
+   "clicks": 1642,
+   "impressions": 230510
+  },
+  {
+   "month": "2025-12",
+   "clicks": 1037,
+   "impressions": 265788
+  },
+  {
+   "month": "2026-01",
+   "clicks": 929,
+   "impressions": 210552
+  },
+  {
+   "month": "2026-02",
+   "clicks": 807,
+   "impressions": 147963
+  },
+  {
+   "month": "2026-03",
+   "clicks": 813,
+   "impressions": 190832
+  },
+  {
+   "month": "2026-04",
+   "clicks": 887,
+   "impressions": 204007
+  },
+  {
+   "month": "2026-05",
+   "clicks": 890,
+   "impressions": 214841
+  },
+  {
+   "month": "2026-06",
+   "clicks": 628,
+   "impressions": 147949
+  },
+  {
+   "month": "2026-07",
+   "clicks": 638,
+   "impressions": 140089
+  },
+  {
+   "month": "2026-08",
+   "clicks": 693,
+   "impressions": 129854
+  },
+  {
+   "month": "2026-09",
+   "clicks": 762,
+   "impressions": 89115
+  },
+  {
+   "month": "2026-10",
+   "clicks": 191,
+   "impressions": 26976
+  }
+ ],
+ "dfs_fullyvital": {
+  "total_ranked_keywords": 6694,
+  "in_scope_keywords": 2020,
+  "top3": 11,
+  "top10": 63,
+  "top20": 111,
+  "gray_keywords": 279,
+  "gray_top10": 10,
+  "gray_top20": 20
+ },
+ "inventory": {
+  "articles": 746,
+  "pages": 34,
+  "by_blog": {
+   "hair-care": 600,
+   "hair-vitamins": 146
+  },
+  "median_word_count": 1968.0,
+  "articles_with_byline": 746,
+  "authors": {
+   "Faraz Khan, MSC": 733,
+   "FullyVital Editorial Team": 13
+  },
+  "articles_with_study_citation": 102,
+  "articles_with_any_external_link": 115,
+  "articles_with_product_link": 741,
+  "schema_types": {
+   "Article, BlogPosting, BreadcrumbList, Organization, Person": 653,
+   "Article, BlogPosting, BreadcrumbList, FAQPage, Organization, Person": 88,
+   "Article, BlogPosting, BreadcrumbList, FAQPage, HowTo, Organization, Person": 4,
+   "Article, BlogPosting, BreadcrumbList, DefinedTermSet, Organization, Person": 1
+  },
+  "published_by_year": {
+   "2021": 10,
+   "2022": 22,
+   "2023": 432,
+   "2024": 186,
+   "2026": 96
+  },
+  "lastmod_by_year": {
+   "2023": 29,
+   "2024": 1,
+   "2025": 1,
+   "2026": 715
+  },
+  "articles_zero_clicks_16m": 315,
+  "articles_clicks_16m": 10503,
+  "top10_articles_click_share": 0.267,
+  "gsc_pages_not_in_inventory_clicks": 10127
+ },
+ "gsc_by_page_type": {
+  "blog": {
+   "clicks": 12845,
+   "impressions": 5467907
+  },
+  "collection": {
+   "clicks": 457,
+   "impressions": 57517
+  },
+  "home": {
+   "clicks": 3059,
+   "impressions": 38691
+  },
+  "other": {
+   "clicks": 32,
+   "impressions": 17191
+  },
+  "page": {
+   "clicks": 1421,
+   "impressions": 59890
+  },
+  "product": {
+   "clicks": 4234,
+   "impressions": 455641
+  }
+ },
+ "own_nonbrand_ctr_top3": 0.0055,
+ "striking_distance": {
+  "pairs": 66,
+  "in_scope_pairs": 14,
+  "in_scope_expected_gain_90d": 31.900000000000006
+ },
+ "cannibalization": {
+  "queries": 1031,
+  "in_scope_queries": 431
+ },
+ "decay": {
+  "pages_with_10plus_clicks_last_year_window": 98,
+  "decayed_30pct": 94,
+  "clicks_lost": 2911,
+  "all_pages_clicks_jul_sep_2025": 6689,
+  "all_pages_clicks_jul_sep_2026": 2132
+ },
+ "zero_performers": {
+  "articles_under_50_impr_90d": 312,
+  "of_articles": 746,
+  "with_zero_impr_90d": 117,
+  "words_total": 578091
+ },
+ "keyword_gap": {
+  "keywords": 514,
+  "volume_sum": 618690,
+  "by_cluster": {
+   "gray": {
+    "keywords": 71,
+    "volume": 48770
+   },
+   "hair growth/loss": {
+    "keywords": 443,
+    "volume": 569920
+   }
+  },
+  "fullyvital_absent": 437,
+  "by_intent": {
+   "informational": 423,
+   "transactional": 66,
+   "commercial": 25
+  }
+ }
+}

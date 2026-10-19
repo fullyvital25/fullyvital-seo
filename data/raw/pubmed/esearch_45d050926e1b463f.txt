@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"63","retmax":"8","retstart":"0","idlist":["32540004","41455578","31610392","40908646","33186684","27581303","30726406","29173483"],"translationset":[],"querytranslation":"\"boron\"[Title/Abstract] AND (\"hair\"[Title/Abstract] OR \"alopecia\"[Title/Abstract])"}}

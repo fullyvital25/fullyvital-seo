@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"6","retmax":"6","retstart":"0","idlist":["11677811","2502579","12232242","1581047","3170357","1610689"],"translationset":[],"querytranslation":"\"glucosamine\"[Title/Abstract] AND (\"hair\"[Title] OR \"alopecia\"[Title])"}}

@@ -1,0 +1,71 @@
+[
+ {
+  "id": "hub-indexing-check",
+  "due": "2026-10-25",
+  "run": [
+   "python",
+   "-W",
+   "ignore",
+   "hub_tracker.py",
+   "--inspect"
+  ],
+  "note": "See reports/hub-tracking.md (indexing section)."
+ },
+ {
+  "id": "hub-tracking-update",
+  "due": "2026-11-08",
+  "repeat_days": 14,
+  "run": [
+   "python",
+   "-W",
+   "ignore",
+   "hub_tracker.py",
+   "--inspect"
+  ],
+  "note": "See reports/hub-tracking.md."
+ },
+ {
+  "id": "aeo-monthly",
+  "due": "2026-11-17",
+  "repeat_days": 30,
+  "run": [
+   "python",
+   "aeo_tracker.py"
+  ],
+  "note": "About $0.10 of DataForSEO. See reports/aeo-tracking.md."
+ },
+ {
+  "id": "refresh-test-update",
+  "due": "2026-11-15",
+  "run": [
+   "python",
+   "refresh_tracker.py"
+  ],
+  "note": "Interim refresh-test numbers in reports/refresh-tracking.md."
+ },
+ {
+  "id": "claims-and-survey-standardization",
+  "due": "2026-11-01",
+  "remind": "Time to standardize the survey numbers and claims (product pages, blog widgets, derma-roller needle advice). Open Claude in fullyvital-seo and say: claims pass."
+ },
+ {
+  "id": "refresh-test-readout",
+  "due": "2026-12-03",
+  "run": [
+   "python",
+   "refresh_tracker.py"
+  ],
+  "note": "Readout ready. Open Claude and say: refresh test readout, then do the deferred test-page items."
+ },
+ {
+  "id": "refresh-test-readout-reminder",
+  "due": "2026-12-03",
+  "remind": "Refresh test readout is ready. Open Claude in fullyvital-seo and say: refresh test readout + deferred items (telogen merge, glutathione merge, test-page renames, copper-peptides redirect)."
+ },
+ {
+  "id": "content-queue-weekly",
+  "due": "2026-11-16",
+  "repeat_days": 7,
+  "remind": "Content queue: this week's 2 articles are in data/reference/content_queue.csv (see reports/content-queue.md). Open Claude in fullyvital-seo and say: next articles from the content queue."
+ }
+]

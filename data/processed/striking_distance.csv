@@ -1,0 +1,67 @@
+query,page,clicks,impressions,ctr,position,expected_click_gain_90d,in_scope,cluster,volume,kd,intent
+hair loss treatment,https://fullyvital.com/products/hair-growth-serum,0,2845,0.0,7.38066783831283,15.6,True,hair growth/loss,,,
+clogged hair follicles,https://fullyvital.com/blogs/hair-care/clogged-hair-follicles,1,1308,0.0007645259938837921,11.81651376146789,6.2,False,hair growth/loss,,,
+hair loss treatment,https://fullyvital.com/products/hair-growth-kit,0,1044,0.0,8.710727969348659,5.7,True,hair growth/loss,,,
+best prenatal vitamins for hair growth,https://fullyvital.com/blogs/hair-care/the-ultimate-guide-to-prenatal-vitamins-and-hair-growth-are-they-worth-the-hype,0,849,0.0,10.199057714958776,4.6,True,hair growth/loss,,,
+trichoptilosis,https://fullyvital.com/blogs/hair-care/trichoptilosis,0,746,0.0,6.833780160857909,4.1,False,hair growth/loss,1300.0,5.0,informational
+batana oil side effects,https://fullyvital.com/blogs/hair-care/batana-oil-for-hair-growth,0,709,0.0,7.679830747531735,3.9,False,hair growth/loss,590.0,2.0,informational
+symptoms of clogged hair follicles on scalp,https://fullyvital.com/blogs/hair-care/clogged-hair-follicles,0,674,0.0,7.384272997032641,3.7,False,hair growth/loss,,,
+low hairline,https://fullyvital.com/blogs/hair-care/low-hairlines,0,602,0.0,11.970099667774086,3.3,False,hair growth/loss,,,
+clogged hair follicles on scalp,https://fullyvital.com/blogs/hair-care/clogged-hair-follicles,0,602,0.0,7.928571428571429,3.3,False,hair growth/loss,,,
+keravis protein,https://fullyvital.com/blogs/hair-vitamins/keravis-protein,0,356,0.0,10.320224719101123,1.9,False,hair growth/loss,,,
+propanediol for hair,https://fullyvital.com/blogs/hair-care/propanediol,0,300,0.0,9.03,1.6,False,hair growth/loss,,,
+protein overload hair symptoms,https://fullyvital.com/blogs/hair-care/protein-overload-hair,0,287,0.0,7.871080139372823,1.6,False,hair growth/loss,,,
+are baby hairs a sign of balding,https://fullyvital.com/blogs/hair-care/baby-hairs,0,270,0.0,12.02962962962963,1.5,False,hair growth/loss,,,
+normal hair part vs thinning,https://fullyvital.com/blogs/hair-care/normal-hair-part-vs-thinning,0,260,0.0,8.830769230769231,1.4,False,hair growth/loss,880.0,0.0,informational
+copper benefits for hair,https://fullyvital.com/blogs/hair-care/copper,1,417,0.002398081534772182,11.80335731414868,1.3,False,hair growth/loss,,,
+baby hairs on hairline,https://fullyvital.com/blogs/hair-care/baby-hairs,0,241,0.0,6.477178423236515,1.3,False,hair growth/loss,,,
+effects of rubbing alcohol on hair,https://fullyvital.com/blogs/hair-care/isopropyl-alcohol,0,237,0.0,10.164556962025317,1.3,False,hair growth/loss,,,
+treatment of clogged hair follicles on scalp,https://fullyvital.com/blogs/hair-care/clogged-hair-follicles,0,211,0.0,6.251184834123222,1.2,False,hair growth/loss,,,
+baby hair regrowth,https://fullyvital.com/blogs/hair-care/baby-hairs,0,213,0.0,5.187793427230047,1.2,True,hair growth/loss,,,
+ugly hairline,https://fullyvital.com/blogs/hair-care/ugly-hairlines,0,206,0.0,6.815533980582524,1.1,False,hair growth/loss,,,
+purple shampoo before and after,https://fullyvital.com/blogs/hair-care/purple-shampoo-before-and-after,0,204,0.0,19.637254901960784,1.1,False,hair growth/loss,,,
+hair loss treatment,https://fullyvital.com/products/womens-hair-growth-products,0,198,0.0,7.297979797979798,1.1,True,hair growth/loss,,,
+clogged follicles on scalp,https://fullyvital.com/blogs/hair-care/clogged-hair-follicles,0,208,0.0,7.899038461538462,1.1,False,hair growth/loss,,,
+vital strands,https://fullyvital.com/blogs/hair-care/batana-oil-for-hair,0,172,0.0,11.872093023255816,0.9,False,hair growth/loss,,,
+keravis for hair,https://fullyvital.com/blogs/hair-vitamins/keravis-protein,0,171,0.0,14.543859649122806,0.9,False,hair growth/loss,,,
+are baby hairs a sign of balding or regrowth,https://fullyvital.com/blogs/hair-care/baby-hairs,0,168,0.0,10.56547619047619,0.9,True,hair growth/loss,,,
+what is club hair,https://fullyvital.com/blogs/hair-care/club-hair,0,162,0.0,5.179012345679013,0.9,False,hair growth/loss,,,
+do baby hairs grow back on adults,https://fullyvital.com/blogs/hair-care/baby-hairs,0,142,0.0,9.732394366197184,0.8,False,hair growth/loss,,,
+normal hair part vs thinning female,https://fullyvital.com/blogs/hair-care/normal-hair-part-vs-thinning,0,144,0.0,4.416666666666666,0.8,False,hair growth/loss,,,
+clogged scalp pores,https://fullyvital.com/blogs/hair-care/clogged-hair-follicles,0,141,0.0,9.673758865248226,0.8,False,hair growth/loss,,,
+does chlorophyll help with hair growth,https://fullyvital.com/blogs/hair-vitamins/chlorophyll,0,138,0.0,10.282608695652174,0.8,True,hair growth/loss,90.0,3.0,informational
+boron hair loss,https://fullyvital.com/blogs/hair-vitamins/boron,0,140,0.0,9.657142857142857,0.8,True,hair growth/loss,90.0,2.0,informational
+club hairs,https://fullyvital.com/blogs/hair-care/club-hair,0,127,0.0,10.89763779527559,0.7,False,hair growth/loss,,,
+chlorophyll benefits for hair,https://fullyvital.com/blogs/hair-vitamins/chlorophyll,0,120,0.0,12.275,0.7,False,hair growth/loss,,,
+what are baby hairs,https://fullyvital.com/blogs/hair-care/baby-hairs,0,131,0.0,13.82442748091603,0.7,False,hair growth/loss,,,
+clogged follicles,https://fullyvital.com/blogs/hair-care/clogged-hair-follicles,0,131,0.0,8.374045801526718,0.7,False,hair growth/loss,480.0,11.0,informational
+crooked hair,https://fullyvital.com/blogs/hair-care/crooked-hairline,1,303,0.0033003300330033004,5.191419141914191,0.7,False,hair growth/loss,,,
+vitamin k for hair,https://fullyvital.com/blogs/hair-care/vitamin-k,0,130,0.0,8.576923076923077,0.7,False,hair growth/loss,,,
+one side hairline receding,https://fullyvital.com/blogs/hair-care/hairline-receding-on-one-side,0,105,0.0,4.79047619047619,0.6,False,hair growth/loss,,,
+one side receding hairline,https://fullyvital.com/blogs/hair-care/hairline-receding-on-one-side,0,103,0.0,5.902912621359223,0.6,False,hair growth/loss,,,
+new baby hair growth in adults,https://fullyvital.com/blogs/hair-care/baby-hairs,0,102,0.0,7.647058823529412,0.6,True,hair growth/loss,,,
+protein overload hair symptoms,https://fullyvital.com/blogs/hair-care/hair-protein-overload,0,103,0.0,9.407766990291265,0.6,False,hair growth/loss,,,
+club hair meaning,https://fullyvital.com/blogs/hair-care/club-hair,0,115,0.0,6.521739130434782,0.6,False,hair growth/loss,,,
+butylene glycol for hair,https://fullyvital.com/blogs/hair-care/butylene-glycol,0,112,0.0,9.857142857142858,0.6,False,hair growth/loss,,,
+are baby hairs a good sign,https://fullyvital.com/blogs/hair-care/baby-hairs,0,116,0.0,7.732758620689655,0.6,False,hair growth/loss,,,
+choline for hair growth,https://fullyvital.com/blogs/hair-vitamins/choline,0,118,0.0,5.9576271186440675,0.6,True,hair growth/loss,,,
+ferulic for hair,https://fullyvital.com/blogs/hair-vitamins/ferulic-acid,0,106,0.0,8.962264150943396,0.6,False,hair growth/loss,,,
+do bobby pins damage hair,https://fullyvital.com/blogs/hair-care/boby-pins,0,114,0.0,8.947368421052632,0.6,False,hair growth/loss,,,
+how long does baby hair take to grow adults,https://fullyvital.com/blogs/hair-care/baby-hairs,0,110,0.0,8.809090909090909,0.6,False,hair growth/loss,,,
+low hairlines,https://fullyvital.com/blogs/hair-care/low-hairlines,0,100,0.0,6.13,0.5,False,hair growth/loss,880.0,0.0,informational
+trichomycosis,https://fullyvital.com/blogs/hair-care/trichomycosis,0,100,0.0,14.86,0.5,False,hair growth/loss,,,
+receding hairline on one side,https://fullyvital.com/blogs/hair-care/hairline-receding-on-one-side,3,179,0.01675977653631285,8.050279329608937,0.0,False,hair growth/loss,,,
+vital hair complex vs nutrafol,https://fullyvital.com/blogs/hair-care/nutrafol-vs-fully-vital,1,101,0.009900990099009901,10.386138613861386,0.0,False,hair growth/loss,,,
+anti gray hair serum,https://fullyvital.com/products/anti-gray-serum,1,118,0.00847457627118644,13.796610169491526,0.0,True,gray,880.0,0.0,transactional
+molybdenum benefits for hair,https://fullyvital.com/blogs/hair-vitamins/molybdenum,6,118,0.05084745762711865,5.135593220338983,0.0,False,hair growth/loss,,,
+manganese benefits for hair,https://fullyvital.com/blogs/hair-vitamins/manganese,2,222,0.009009009009009009,4.13063063063063,0.0,False,hair growth/loss,,,
+keravis,https://fullyvital.com/blogs/hair-vitamins/keravis-protein,1,126,0.007936507936507936,16.77777777777778,0.0,False,hair growth/loss,,,
+hairstyles for double crown female,https://fullyvital.com/blogs/hair-care/double-crown,4,173,0.023121387283236993,9.046242774566474,0.0,False,hair growth/loss,,,
+hairline receding on one side,https://fullyvital.com/blogs/hair-care/hairline-receding-on-one-side,3,494,0.006072874493927126,7.5465587044534415,0.0,False,hair growth/loss,,,
+hair receding on one side,https://fullyvital.com/blogs/hair-care/hairline-receding-on-one-side,1,169,0.005917159763313609,9.781065088757396,0.0,False,hair growth/loss,,,
+boron hair growth,https://fullyvital.com/blogs/hair-vitamins/boron,6,131,0.04580152671755725,6.9541984732824424,0.0,True,hair growth/loss,70.0,7.0,informational
+boron for hair growth,https://fullyvital.com/blogs/hair-vitamins/boron,3,113,0.02654867256637168,6.743362831858407,0.0,True,hair growth/loss,70.0,12.0,transactional
+boron benefits for hair,https://fullyvital.com/blogs/hair-vitamins/boron,15,1305,0.011494252873563218,5.593869731800766,0.0,False,hair growth/loss,,,
+biotin vs prenatal vitamins for hair growth,https://fullyvital.com/blogs/hair-care/biotin-vs-prenatal-vitamins-for-hair-growth,8,600,0.013333333333333334,5.091666666666667,0.0,True,hair growth/loss,320.0,0.0,informational
+baby hairs on scalp,https://fullyvital.com/blogs/hair-care/baby-hairs,1,143,0.006993006993006993,5.2377622377622375,0.0,False,hair growth/loss,,,
+widows peak hairstyles ladies,https://fullyvital.com/blogs/hair-care/widows-peak-hair,2,123,0.016260162601626018,8.528455284552845,0.0,False,hair growth/loss,,,
